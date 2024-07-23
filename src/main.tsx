@@ -8,6 +8,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App />
     <p>dasda</p>
+    <p>dada</p>
   </React.StrictMode>,
 )
 
