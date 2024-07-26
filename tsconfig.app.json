@@ -20,9 +20,11 @@
     "paths": {  
       "@components/*": ["components/*"],
       "@utils/*": ["utils/*"],
-      "@styles/*": ["styles/*"]
+      "@styles/*": ["styles/*"],
+      "@images/*": ["assets/images/*"],
+      "@slices/*": ["slices/*"],
+      "@store/*": ["store/*"],
     },
-
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,

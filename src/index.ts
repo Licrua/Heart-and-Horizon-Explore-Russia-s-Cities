@@ -1,4 +1,4 @@
-// const isDone: boolean = false;
+import cities from './data/cities.json'
 // const age: number = 32;
 // const userName: string = "Alice";
 // const list: number[] = [1, 2, 3];
@@ -876,3 +876,18 @@
 // console.log(toString(123));
 
 // toString({}); // Ok!
+
+type City = {
+  name: string;
+  population: string; // можно также использовать number, если планируется работа с числовыми значениями
+  foundation_date: number;
+  description: string;
+};
+
+type CitiesData = {
+  cities: City[];
+};
+
+const cit: CitiesData  = cities;
+console.log(cit);
+
