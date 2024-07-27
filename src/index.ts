@@ -1,4 +1,4 @@
-import cities from './data/cities.json'
+import cities from './data/cities.json';
 // const age: number = 32;
 // const userName: string = "Alice";
 // const list: number[] = [1, 2, 3];
@@ -125,8 +125,8 @@ import cities from './data/cities.json'
 //   console.log(obj);
   
   
-  // const jorino = strik.join(' ');
-  // const dsdasd = jorino.split(' ')
+// const jorino = strik.join(' ');
+// const dsdasd = jorino.split(' ')
   
   
 //   const joined = strik.join(' ');
