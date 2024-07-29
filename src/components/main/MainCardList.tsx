@@ -6,8 +6,7 @@ type cityItemProp =  {
     cityItem: City;
 }
 
-const slicer = 'moscow.jpeg';
-console.log(slicer.split('.').shift());
+
 
 
 
