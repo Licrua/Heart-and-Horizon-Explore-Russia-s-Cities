@@ -52,7 +52,6 @@ import cities from './data/cities.json';
 // }
 // console.log(filterAnagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']));
 
-
 // const arrik = ['aabb', 'abcd', 'bbaa', 'dada'];
 // const sortedArrik = arrik.sort();
 // console.log(sortedArrik);
@@ -71,7 +70,7 @@ import cities from './data/cities.json';
 // console.log(current);
 
 // enum ModalStatus {
-//  Opened = "ModalStatus.Opened" , 
+//  Opened = "ModalStatus.Opened" ,
 //  Closed = "ModalStatus.Closed" ,
 // }
 // const buildModal = (text: string, status: ModalStatus) => {
@@ -81,8 +80,6 @@ import cities from './data/cities.json';
 // console.log(buildModal('hexlet is zalupa', ModalStatus.Opened));
 // const user1 = { name: 'Petr', age: 8 };
 // const user2 = { name: 'Petno', age: 10 };
-
-
 
 // type User = {
 //   name: string,
@@ -97,9 +94,6 @@ import cities from './data/cities.json';
 // }
 // console.log(getOlderUser(user1, user2));
 
-
-
-
 // const sentence = 'table cat table dog dog apple table';
 
 // const words = sentence.split(' ');
@@ -108,7 +102,7 @@ import cities from './data/cities.json';
 //  console.log(acc[word]);
 //  console.log('acc', acc);
 //  console.log('word', word);
- 
+
 //   acc[word] = Object.hasOwn(acc, word) ? acc[word] + 1 : 1;
 //   return acc;
 // }, initial);
@@ -123,18 +117,16 @@ import cities from './data/cities.json';
 //   console.log('mapped', mapped);
 //   const obj = {...mapped};
 //   console.log(obj);
-  
-  
+
 // const jorino = strik.join(' ');
 // const dsdasd = jorino.split(' ')
-  
-  
+
 //   const joined = strik.join(' ');
 //   console.log(joined);
-  
+
 //   const joinedSplit = joined.split('=');
 //   console.log('joinedSplit', joinedSplit);
-  
+
 //   const nechetki = [], chetki = []
 //   let obj;
 //   for(let i = 0; i < joinedSplit.length; i++) {
@@ -168,7 +160,6 @@ import cities from './data/cities.json';
 //   return acc;
 // }, {});
 
-
 // const str = "hello world";
 // const newStr = str.split('o');
 // const parik =  newStr.join('a')
@@ -176,19 +167,18 @@ import cities from './data/cities.json';
 
 // console.log(getParams('name=hexlet&count=3&order=asc'));
 
-
 // const getParams = (value: string): any => {
 //   const object: any = {}
 //   const valueSplit = value.split('=').join(':').split('&');
 //   console.log('valueSplit', valueSplit);
-  
+
 //   const result = valueSplit.reduce((acc: any, item: any): any => {
 //     console.log('item', item);
 //       const [key, value] = item.split(':');
 //       console.log('key', key);
 //       console.log('value', value);
 //       console.log('acc', acc[key]);
-      
+
 //       acc[key] = value;
 //       return acc;
 //   }, object);
@@ -196,11 +186,9 @@ import cities from './data/cities.json';
 // };
 // console.log(getParams('name=hexlet&count=3&order=asc'));
 
-
 // const arrik = ['parashka', 'besplatnaie'];
 // const [key, value] = arrik;
 // console.log(key, value);
-
 
 // const obj : {name: string | null
 //  } = {
@@ -217,7 +205,7 @@ import cities from './data/cities.json';
 
 // type User = {
 //   email: string
-// }; 
+// };
 
 // function authorize(user: User | null): boolean {
 //   const companyDomain = 'hexlet.io';
@@ -262,9 +250,8 @@ import cities from './data/cities.json';
 
 // console.log(filter(arr, isEven));
 
-
 // const user : {
-//   firstName: 'ilya', 
+//   firstName: 'ilya',
 //   age: 36
 // }   = {firstName: string, age = number}
 
@@ -275,7 +262,7 @@ import cities from './data/cities.json';
 
 // function foo(valik: number[]) {
 //   console.log(valik);
-  
+
 // }
 // const fogger = [{1: 'sdf', 2: 'dada' ,3: [1,2,3,4,5], 4: {
 //   4.1: 'dada',
@@ -289,9 +276,8 @@ import cities from './data/cities.json';
 //   const arrik = [...rest];
 //   return arrik.length;
 // }
- 
-// console.log(lessonsCount(course))
 
+// console.log(lessonsCount(course))
 
 // function lessonsCount({ lessons }: { lessons: string[] }): number {
 //   console.log(lessons);
@@ -326,8 +312,6 @@ import cities from './data/cities.json';
 // console.log(newYearCongratulate('John')); // Hi John! Happy New Year!
 // console.log(newYearCongratulate(2023, 'Mila')); // Hi Mila! Happy New Year 2023!
 
-
-
 // function last (value: string | number) {
 //     if(typeof value === 'string') {
 //       return value.slice(-1)
@@ -336,7 +320,6 @@ import cities from './data/cities.json';
 //       return Number(String(value).slice(-1))
 //     }
 // }
-
 
 // const unique =  (value: (number | string)[]): (string | number)[] => {
 //   return Array.from(new Set(value))
@@ -379,7 +362,7 @@ import cities from './data/cities.json';
 //         mapperkoni.every(item => console.log(item)
 //         )
 //         return mapperkoni.every(item => item === true)
-        
+
 // }
 // console.log(isTheSamePoint(p1, p2));
 // type CustomType = null | undefined | number
@@ -394,7 +377,6 @@ import cities from './data/cities.json';
 // }
 // console.log(formatPrice(200));
 
-
 // type Turtle = 'turtle' | null;
 
 // type Game = {
@@ -405,11 +387,10 @@ import cities from './data/cities.json';
 // const startGame = (): Game => {
 //   const state: Array<Turtle> = ['turtle', null, null, null, null];
 //         makeTurn.left
-    
+
 //   return { makeTurn, state };
 // };
 // // const { makeTurn, state } = startGame();
-
 
 // console.log(Game.makeTurn);
 // const smth: Turtle[] = ['turtle', null,null,null,null];
@@ -439,13 +420,12 @@ import cities from './data/cities.json';
 //     const turtleIndex = state.indexOf('turtle');
 //     const nextIndex = direction === 'left' ? turtleIndex - 1 : turtleIndex + 1;
 //     console.log(nextIndex);
-    
 
 //     if (nextIndex < 0 || nextIndex > 4) {
 //       throw new Error('Out of bounds');
 //     }
 //     console.log(state[turtleIndex]);
-    
+
 //     state[turtleIndex] = null;
 //     state[nextIndex] = 'turtle';
 //   };
@@ -454,7 +434,7 @@ import cities from './data/cities.json';
 //   return { makeTurn, state };
 // };
 
-// export default startGame; 
+// export default startGame;
 // const {makeTurn, state} = startGame();
 // makeTurn('right')
 // makeTurn('right')
@@ -463,8 +443,6 @@ import cities from './data/cities.json';
 // makeTurn('right')
 
 // console.log(state);
-
-
 
 // enum Permission {
 //   READ = 'READ',
@@ -514,7 +492,6 @@ import cities from './data/cities.json';
 // };
 // console.log(form.age.validator(form.age.value));
 
-
 // type User = {
 //   id: number,
 //   name: string,
@@ -528,7 +505,6 @@ import cities from './data/cities.json';
 //   friends: Friends[]
 // };
 
-
 // const userJson = JSON.stringify({
 //   users: [
 //     { id: 1, name: 'John', age: 20 },
@@ -541,20 +517,17 @@ import cities from './data/cities.json';
 
 // console.log(userJson);
 
-
 // const getUserFriends = (userResponse : UserResponse, userId: number): [] | User[] => {
 //     console.log(userResponse);
-    
+
 //     console.log(result);
-    
+
 //     return result.users.filter((item:User) => item.id === userId)
 // }
 
 // console.log(getUserFriends(userJson, 1));
 
-
 // export default getUserFriends;
-
 
 // const arrik: number[] = [1,2,3,4,5];
 // const jarik: {
@@ -584,10 +557,8 @@ import cities from './data/cities.json';
 
 // const formatUser = (user) => [user.type, ':', user.firstName, user.lastName].join(' ');
 
-
 // console.log(formatUser(user));
 // console.log(formatUser(admin));
-
 
 // class User  {
 //   name: string = 'Tom ';
@@ -616,7 +587,7 @@ import cities from './data/cities.json';
 //     if(this.arr.length > 1) {
 //       this.counter += 1
 //     }
-//     return this.arr[this.counter] === this.arr[this.counter -1] ? 
+//     return this.arr[this.counter] === this.arr[this.counter -1] ?
 //     `(copy) ${this.name} (${this.size} bytes)` : `${this.name} (${this.size} bytes)`
 //     // return `${this.name} (${this.size} bytes)`}
 // }
@@ -624,8 +595,6 @@ import cities from './data/cities.json';
 
 // const file = new CustomFile({ name: 'open-world.jpeg', size: 1000 });
 // const file2 = new CustomFile({ name: 'open-world.jpeg', size: 1000 });
-
-
 
 // type OptionName = string;
 // type OptionSize = number;
@@ -657,8 +626,6 @@ import cities from './data/cities.json';
 // console.log(file.toString());
 // console.log(file2.toString());
 // console.log(file2.toString());
-
-
 
 // type CustomFileOptions = {
 //   name: string;
@@ -704,10 +671,7 @@ import cities from './data/cities.json';
 // });
 // console.log(value.toString());
 
-
 // export default ImageCustomFile;
-
-
 
 // class CustomFile {
 //   constructor(public name: string, private size: number) {}
@@ -721,11 +685,10 @@ import cities from './data/cities.json';
 // console.log(file);
 
 // const obj = {
-//   'name': "pers", 
+//   'name': "pers",
 //   'surname': 'dasda'
 // }
 // console.log(obj);
-
 
 // interface IFlying {
 //   canFly: true;
@@ -758,8 +721,6 @@ import cities from './data/cities.json';
 
 // console.log(superMan.guessWho('superman'));
 
-
-
 // function last<T> (arr: T[]): T |   null {
 //     if(arr.length > 1) {
 //       return arr.pop()
@@ -778,7 +739,6 @@ import cities from './data/cities.json';
 // console.log(pair1);
 // console.log(pair2);
 
-
 // type MySet<T>= {
 //    arr: T[]
 //     add: (param: T): T {
@@ -790,11 +750,10 @@ import cities from './data/cities.json';
 //     }
 // }
 
-
 // type MySetter<T> = {
 //    arr: T[],
 //    add: function (param:T): number,
-//    has: function(param:T): boolean, 
+//    has: function(param:T): boolean,
 //   }
 
 // type MySetter<T> = {
@@ -802,7 +761,6 @@ import cities from './data/cities.json';
 //   add(param:T): number;
 //   has(param:T): boolean;
 // };
-
 
 // const mySet: MySetter = {
 //   arr: [],
@@ -817,7 +775,6 @@ import cities from './data/cities.json';
 
 // console.log(mySet.add(12));
 // console.log(mySet.add(12));
-
 
 // type MyArrayType<T> = {
 //   coll: T[],
@@ -835,15 +792,11 @@ import cities from './data/cities.json';
 //   },
 // }
 
-
-
-
 // type NewMapType<T, U> = {
 //   entries: {[key: string]: U}[];
 //   setMap(key: T, value: U): void;
-//   getMap(value: T): U | undefined 
+//   getMap(value: T): U | undefined
 // }
-
 
 // const newMap: NewMapType<string, number> = {
 //   entries: [],
@@ -861,10 +814,8 @@ import cities from './data/cities.json';
 
 // console.log(newMap.getMap('two'));
 
-
 // const object = {'one': 1};
 // console.log(object.one);
-
 
 // function toString(obj: {}) {
 //   return obj.toString();
@@ -888,6 +839,5 @@ type CitiesData = {
   cities: City[];
 };
 
-const cit: CitiesData  = cities;
+const cit: CitiesData = cities;
 console.log(cit);
-

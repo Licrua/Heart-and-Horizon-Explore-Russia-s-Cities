@@ -1,10 +1,10 @@
 import { Navbar } from 'react-bootstrap';
 
 type themeLogoProps = {
-    themeLogo: string
-}
+  themeLogo: string;
+};
 
-const HeaderTheme = ({themeLogo}: themeLogoProps) => {
+function HeaderTheme({ themeLogo }: themeLogoProps) {
   return (
     <Navbar.Brand>
       <img
@@ -14,7 +14,7 @@ const HeaderTheme = ({themeLogo}: themeLogoProps) => {
         className="d-inline-block align-top"
         alt="theme changer"
       />
-    </Navbar.Brand> 
+    </Navbar.Brand>
   );
-};
+}
 export default HeaderTheme;

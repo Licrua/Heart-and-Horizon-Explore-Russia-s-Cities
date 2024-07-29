@@ -5,10 +5,9 @@ import citiesTrialSlice from '@slices/trial';
 const store = configureStore({
   reducer: {
     cities: citiesSlice,
-    citiesTrial: citiesTrialSlice
-  }
+    citiesTrial: citiesTrialSlice,
+  },
 });
-
 
 store.subscribe(() => {
   const value = store.getState();

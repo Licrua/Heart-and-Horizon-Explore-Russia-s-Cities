@@ -3,9 +3,7 @@ import citiesList from '../data/cities.json';
 
 const citiesTrialAdapter = createEntityAdapter();
 
-
-const {cities} = citiesList;
-
+const { cities } = citiesList;
 
 const initialState = citiesTrialAdapter.setAll(citiesTrialAdapter.getInitialState(), cities);
 
@@ -21,8 +19,8 @@ const citiesTrialSlice = createSlice({
     },
     cityUpdated: (state, action) => {
       citiesTrialAdapter.updateOne(state, action.payload);
-    }
-  }
+    },
+  },
 });
 
 export const { cityAdded, cityRemoved, cityUpdated } = citiesTrialSlice.actions;

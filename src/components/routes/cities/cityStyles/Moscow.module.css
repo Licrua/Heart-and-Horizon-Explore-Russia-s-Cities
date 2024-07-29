@@ -1,0 +1,9 @@
+.title {
+        font-family: fantasy italic; 
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        letter-spacing: -1px;
+        color: rgb(122, 121, 121);
+
+}
