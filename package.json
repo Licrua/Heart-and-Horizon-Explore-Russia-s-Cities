@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.6",
+    "@types/yup": "^0.32.0",
     "axios": "^1.7.2",
+    "bad-words": "^3.0.4",
     "bootstrap": "^5.3.3",
     "formik": "^2.4.6",
     "immer": "^10.1.1",
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
+    "@types/bad-words": "^3.0.3",
     "@types/node": "^20.14.11",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",

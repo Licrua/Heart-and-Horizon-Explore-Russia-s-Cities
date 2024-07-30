@@ -1,7 +1,11 @@
 import { NavDropdown } from 'react-bootstrap';
 
 type languageLogoProp = {
-  languageLogo: string;
+  languageLogo: {
+    src: string;
+    id: number;
+    alt: string;
+  };
 };
 
 function HeaderLanguageLogo({ languageLogo }: languageLogoProp) {
@@ -12,8 +16,8 @@ function HeaderLanguageLogo({ languageLogo }: languageLogoProp) {
         <img
           width="30"
           height="30"
-          src={languageLogo}
-          alt="language selector"
+          src={languageLogo.src}
+          alt={languageLogo.alt}
         />
       }
       id="basic-nav-dropdown"
