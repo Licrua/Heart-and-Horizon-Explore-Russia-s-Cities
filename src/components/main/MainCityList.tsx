@@ -6,9 +6,9 @@ import { useState } from 'react';
 import filterIcon from '@images/navbar-logo/filter.webp';
 import toggleSortOrderOnPopulation from '@utils/populationSort';
 import toggleSortOrderOnDate from '@utils/foundationDateSort';
+import { useAppSelector } from '@store/hooks';
 import MainContentFilterIcon from './MainFilterIcon';
 import MainCardList from './MainCardList';
-import { useAppDispatch, useAppSelector } from '../../store/hooks';
 
 function MainContentCityList() {
   const cityEntities = useAppSelector((state) => selectEntities(state));
