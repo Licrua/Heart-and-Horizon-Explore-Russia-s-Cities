@@ -10,9 +10,10 @@ function MoscowAccordionInfo() {
             <motion.h2
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.5, ease: 'anticipate' }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              className="mb-3"
             >
               Дополнительная информация
             </motion.h2>

@@ -3,6 +3,7 @@ import SocialMediaIcons from '@utils/footerLogos';
 import FooterCopyright from './FooterCopyright';
 import FooterSocialNovbar from './FooterSocialNovbar';
 import FooterForm from './FooterForm';
+import FooterPopUpReccomendation from './FooterPopUpReccomendation';
 
 function Footer() {
   return (
@@ -10,6 +11,7 @@ function Footer() {
       <Container fluid>
         <FooterCopyright />
         <FooterSocialNovbar socialIcons={SocialMediaIcons} />
+        <FooterPopUpReccomendation />
         <FooterForm />
       </Container>
     </footer>

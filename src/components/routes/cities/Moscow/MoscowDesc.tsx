@@ -25,9 +25,10 @@ function MoscowDesc() {
           <motion.h2
             initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.5, type: 'just' }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
+            className="mb-3"
           >
             Информация
           </motion.h2>

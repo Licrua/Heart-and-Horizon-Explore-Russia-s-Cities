@@ -45,10 +45,10 @@ function MainCardList({ cityItem }: cityItemProp) {
       </Card.Body>
       <ListGroup className="list-group-flush">
         <ListGroup.Item>
-          Население - {cityItem.population.toString()} человек
+          Население - {cityItem.population.toString()} человек.
         </ListGroup.Item>
         <ListGroup.Item>
-          Дата основания - {cityItem.foundation_date} год
+          Дата основания - {cityItem.foundation_date} год.
         </ListGroup.Item>
       </ListGroup>
       <Card.Body className="d-flex justify-content-center">
@@ -58,7 +58,7 @@ function MainCardList({ cityItem }: cityItemProp) {
           whileTap={{ scale: 0.9 }}
           className="btn btn-primary"
         >
-          Узнать о достопримечательностях городах
+          Узнать о городе подробнее
         </motion.button>
       </Card.Body>
     </Card>

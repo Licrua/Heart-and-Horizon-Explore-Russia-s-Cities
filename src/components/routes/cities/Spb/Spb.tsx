@@ -1,20 +1,47 @@
 import { motion, useScroll } from 'framer-motion';
+import {
+  fetchUsers,
+  addMany,
+  addCity,
+  selectAllItems,
+  addCityTrial,
+  selectEntities,
+  selectAll,
+  sortCities,
+} from '@slices/trial';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useGetUsersQuery } from '@store/rtkQuery';
+import { useAppDispatch, useAppSelector } from '@store/hooks';
 
 export function Spb() {
-  const { scrollYProgress } = useScroll();
+  const { data, error, isLoading } = useGetUsersQuery();
+  const citiesData = data?.record.cities;
+  console.log('citiesData', citiesData);
+  console.log('data', data);
+  const items = useAppSelector(selectAll);
+  console.log('items', items);
+  const dispatch = useAppDispatch();
+  if (error) <div>Ошибка</div>;
+  if (isLoading) <div>Загрузка</div>;
+
+  useEffect(() => {
+    if (data) {
+      dispatch(addCityTrial(data.record.cities));
+    }
+  }, [dispatch, data]);
+
+  const onHandler = () => {
+    dispatch(sortCities('asc'));
+  };
 
   return (
-    <>
-      <p style={{ height: '10000px' }}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus illum
-        qui ullam, esse in error eum aut laboriosam iusto quae sunt quia cum
-        totam similique vel quos, vero aperiam inventore!
-      </p>
-      <motion.path
-        d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
-        style={{ pathLength: scrollYProgress }}
-      />
-    </>
+    <div>
+      <button onClick={onHandler}>Добавить</button>
+      {Object.values(items).map((item) => (
+        <p>{item.name}</p>
+      ))}
+    </div>
   );
 }
 export default Spb;

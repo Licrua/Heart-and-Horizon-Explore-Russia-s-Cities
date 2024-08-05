@@ -2,6 +2,7 @@ import { Row, Col, Button, Form as BootstrapForm } from 'react-bootstrap';
 import { Formik, Field, Form } from 'formik';
 import validationSchema from '@utils/YupValidationFooter';
 import Filter from 'bad-words';
+import { motion } from 'framer-motion';
 
 function FooterForm() {
   type formikValues = {
@@ -53,14 +54,15 @@ function FooterForm() {
                   type="text"
                 />
               </BootstrapForm.Label>
-              <Button
-                className="m-2"
-                variant="primary"
+              <motion.button
+                className="btn btn-primary"
                 type="submit"
                 disabled={isSubmitting}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
                 Подписаться
-              </Button>{' '}
+              </motion.button>{' '}
             </BootstrapForm>
           )}
         </Formik>

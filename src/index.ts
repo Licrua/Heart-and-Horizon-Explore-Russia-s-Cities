@@ -1,4 +1,4 @@
-import cities from './data/cities.json';
+import axios from 'axios';
 // const age: number = 32;
 // const userName: string = "Alice";
 // const list: number[] = [1, 2, 3];
@@ -828,16 +828,18 @@ import cities from './data/cities.json';
 
 // toString({}); // Ok!
 
-type City = {
-  name: string;
-  population: string; // можно также использовать number, если планируется работа с числовыми значениями
-  foundation_date: number;
-  description: string;
-};
+const token = '$2a$10$6tvyNhCxOm0AK.h7AyjXYO3Ze3iJkkcSKJt1l2WyH9cvQVmAkRW3y';
 
-type CitiesData = {
-  cities: City[];
-};
+export default async function xuisFunc() {
+  const axiosda = await axios.get(
+    'https://api.jsonbin.io/v3/b/66abd94dacd3cb34a86e93db',
+    {
+      headers: {
+        'X-Master-Key': token,
+      },
+    }
+  );
+  return axiosda.data.record;
+}
 
-const cit: CitiesData = cities;
-console.log(cit);
+xuisFunc();
