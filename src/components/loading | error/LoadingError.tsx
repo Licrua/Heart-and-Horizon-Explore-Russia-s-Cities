@@ -1,3 +1,5 @@
+
+
 function LoadingError({ error }) {
   if (error) {
     // Обработка ошибок

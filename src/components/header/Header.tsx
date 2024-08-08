@@ -9,7 +9,15 @@ import HeaderCitiesList from './HeaderCitiesList';
 
 function Header() {
   const citiesEntites = useAppSelector((state) => selectEntities(state));
-  const [cityLogo, themeLogo, languageLogo, cityDropDownLogo] = citiesLogo;
+  const themeToggler = useAppSelector((state) => state.cities.isThemable);
+
+  const [
+    cityLogo,
+    themeDarkLogo,
+    languageLogo,
+    cityDropDownLogo,
+    themeLightLogo,
+  ] = citiesLogo;
 
   return (
     <Navbar
@@ -17,22 +25,27 @@ function Header() {
       expand="lg"
       className="bg-body-tertiary mb-3 border rounded"
     >
-      <Container fluid className="me-2 d-flex">
+      <Container
+        fluid
+        className="d-flex justify-content-between align-items-center"
+      >
         <HeaderLogo cityLogo={cityLogo} />
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse
-          className="d-flex justify-content-center"
-          id="basic-navbar-nav"
-        >
-          <Nav className="me-auto">
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          <Nav className="d-flex align-items-center">
             <HeaderCitiesList
               cities={citiesEntites}
               cityDropDownIcon={cityDropDownLogo}
             />
             <HeaderLanguageLogo languageLogo={languageLogo} />
+            {themeToggler && (
+              <HeaderTheme
+                themeDarkLogo={themeDarkLogo}
+                themeLightLogo={themeLightLogo}
+              />
+            )}
           </Nav>
         </Navbar.Collapse>
-        <HeaderTheme themeLogo={themeLogo} />
       </Container>
     </Navbar>
   );

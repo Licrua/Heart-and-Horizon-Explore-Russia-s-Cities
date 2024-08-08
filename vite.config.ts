@@ -12,6 +12,7 @@ export default defineConfig({
       '@images': path.resolve(__dirname, './src/assets/images'),
       '@slices': path.resolve(__dirname, './src/slices'),
       '@store': path.resolve(__dirname, './src/store'),
+      '@routes': path.resolve(__dirname, './src/components/routes'),
     },
   },
 });

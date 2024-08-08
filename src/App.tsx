@@ -1,17 +1,33 @@
-import MainPage from '@components/routes/MainPage';
-import NotFound from '@components/routes/NotFound';
-import { Route, Routes } from 'react-router-dom';
-import Spb from '@components/routes/cities/Spb/Spb';
-import MoscowMain from '@components/routes/cities/Moscow/MoscowMain';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import styles from '@styles/global.module.css';
+import routes from '@utils/routes';
+import Header from '@components/header/Header';
+import Footer from '@components/footer/Footer';
+import { useAppDispatch } from '@store/hooks';
+import { useEffect } from 'react';
+import { changeThemableToggler } from '@slices/cities';
 
 function App() {
+  const location = useLocation();
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    if (location.pathname !== '/') dispatch(changeThemableToggler(true));
+    else {
+      dispatch(changeThemableToggler(false));
+    }
+  });
+
   return (
-    <Routes>
-      <Route path="/" element={<MainPage />} />
-      <Route path="/moscow" element={<MoscowMain />} />
-      <Route path="/spb" element={<Spb />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <div style={styles}>
+      <Header />
+      <Routes>
+        {routes.map((item) => (
+          <Route key={item.id} path={item.path} element={<item.element />} />
+        ))}
+      </Routes>
+      <Footer />
+    </div>
   );
 }
 

@@ -1,13 +1,13 @@
-import Spinner from 'react-bootstrap/Spinner';
+
+import styles from '@styles/Header/LoadingSpinner.module.css';
 
 function LoadingSpinner() {
   return (
-    <>
-      <Spinner className="me-3" animation="border" role="status">
-        <span className="visually-hidden">Загрузка</span>
-      </Spinner>
-      <p className="mb-3">Загрузка, подождите пожалуйста</p>
-    </>
+    <div className="d-flex justify-content-center w-100 vh-100 align-items-center">
+      <div className={styles.custom_spinner} role="status">
+        <span className="visually-hidden">Loading...</span>
+      </div>
+    </div>
   );
 }
 

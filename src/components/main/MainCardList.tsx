@@ -1,15 +1,18 @@
 import { Card, ListGroup } from 'react-bootstrap';
-import { City } from '@slices/cities';
+import { City, changeThemableToggler } from '@slices/cities';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useAppDispatch } from '@store/hooks';
 
 type cityItemProp = {
   cityItem: City;
 };
 
 function MainCardList({ cityItem }: cityItemProp) {
+  // const dispatch = useAppDispatch();
   const navigate = useNavigate();
   const handleClick = (value: string) => {
+    // dispatch(changeThemableToggler(true));
     navigate(`/${value}`);
   };
   const cityRoute = cityItem.imgName.split('.')[0];

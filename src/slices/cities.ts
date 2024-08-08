@@ -1,7 +1,6 @@
 import {
   createEntityAdapter,
   createSlice,
-  current,
   PayloadAction,
   EntityAdapter,
   EntityState,
@@ -17,13 +16,16 @@ export type City = {
 };
 export type citiesState = EntityState<City, number> & {
   isSorted: boolean;
+  isThemable: boolean;
+  themeColor: string;
 };
 
 const citiesAdapter: EntityAdapter<City, number> = createEntityAdapter<City>();
-console.log('CITIESADAPTER', citiesAdapter);
 
 // Используем адаптер для получения начального состояния
 const initialState: citiesState = citiesAdapter.getInitialState({
+  isThemable: false,
+  themeColor: 'white',
   isSorted: true,
 });
 
@@ -34,8 +36,7 @@ const citiesSlice = createSlice({
     addCity: (state, action: PayloadAction<City>) => {
       citiesAdapter.addOne(state, action.payload);
     },
-    addCities: (state, action: PayloadAction<City[]>) => {
-      // исправляем тип на массив
+    addCities: (state, action: PayloadAction<Record<number, City>>) => {
       citiesAdapter.addMany(state, action.payload);
     },
     removeCity: (state, action: PayloadAction<number>) => {
@@ -54,10 +55,23 @@ const citiesSlice = createSlice({
       citiesAdapter.setAll(state, sortedEntities);
       state.isSorted = !state.isSorted; // инвертируем флаг сортировки
     },
+    changeThemeColor: (state) => {
+      console.log(state.themeColor);
+      state.themeColor = state.themeColor === 'white' ? 'black' : 'white';
+    },
+    changeThemableToggler: (state, { payload }: PayloadAction<boolean>) => {
+      state.isThemable = payload;
+    },
   },
 });
 
-export const { addCity, addCities, sortItems } = citiesSlice.actions;
+export const {
+  addCity,
+  addCities,
+  sortItems,
+  changeThemeColor,
+  changeThemableToggler,
+} = citiesSlice.actions;
 export const {
   selectEntities,
   selectById,

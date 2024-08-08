@@ -13,7 +13,9 @@ function HeaderLogo({ cityLogo }: headerLogoProps) {
   const location = useLocation();
   const navigate = useNavigate();
   const handlerOnButton = () => {
-    if (location.pathname !== '/') navigate('/');
+    if (location.pathname !== '/') {
+      navigate('/');
+    }
   };
   return (
     <Navbar.Brand href="#home" onClick={handlerOnButton}>
@@ -33,7 +35,9 @@ function HeaderLogo({ cityLogo }: headerLogoProps) {
         src={cityLogo.src}
         alt={cityLogo.alt}
       />{' '}
-      <span className="ms-1 mb-3 fw-italic lh-1">Russian Cities</span>
+      <span className="ms-1 mb-3 fw-italic" style={{ letterSpacing: '3px' }}>
+        Russian Cities
+      </span>
     </Navbar.Brand>
   );
 }

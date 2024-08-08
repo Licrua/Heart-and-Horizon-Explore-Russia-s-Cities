@@ -9,6 +9,8 @@ type languageLogoProp = {
 };
 
 function HeaderLanguageLogo({ languageLogo }: languageLogoProp) {
+  console.log('languageLogo', languageLogo);
+
   return (
     <NavDropdown
       className="mx-5"

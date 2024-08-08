@@ -22,7 +22,9 @@
       "@utils/*": ["utils/*"],
       "@styles/*": ["styles/*"],
       "@images/*": ["assets/images/*"],
-      "@store/*": ["store/*"]
+      "@store/*": ["store/*"],
+      "@routes/*": ["components/routes/*"],
+
     },
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
