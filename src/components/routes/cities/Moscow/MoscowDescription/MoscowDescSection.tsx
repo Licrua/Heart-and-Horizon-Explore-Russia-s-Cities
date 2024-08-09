@@ -8,7 +8,7 @@ interface MoscowSectionType {
   };
 }
 
-function MoscowSection({ children, sectionVariant }: MoscowSectionType) {
+function MoscowDescSection({ children, sectionVariant }: MoscowSectionType) {
   return (
     <motion.section
       initial="hidden"
@@ -21,4 +21,4 @@ function MoscowSection({ children, sectionVariant }: MoscowSectionType) {
   );
 }
 
-export default MoscowSection;
+export default MoscowDescSection;

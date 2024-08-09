@@ -1,5 +1,5 @@
 import MainPage from '@routes/MainPage';
-import Moscow from '@routes/cities/Moscow/MoscowMain';
+import Moscow from '@routes/cities/Moscow/MoscowMainContainer';
 import Spb from '@routes/cities/Spb/Spb';
 import Omsk from '@routes/cities/Omsk/OmskMain';
 import Ekaterinburg from '@routes/cities/Ekb/EkaterinburgMain';

@@ -1,8 +1,8 @@
 import { Row, Col } from 'react-bootstrap';
 import MoscowDescHeader from './MoscowDescHeader';
-import MoscowSection from './MoscowSection';
+import MoscowSection from './MoscowDescSection';
 import MoscowDescContainer from './MoscowDescText';
-import MoscowTextSection from './MoscowTextSection';
+import MoscowTextSection from './MoscowDescTextSection';
 
 function MoscowDesc() {
   const sectionVariant = {

@@ -1,8 +1,7 @@
 import MoscowDescriptionSection from '@utils/MoscowDescription';
 
-function MoscowTextSection() {
-  console.log('MoscowDescriptionSection', MoscowDescriptionSection);
-
+function MoscowDescTextSection() {
+  
   return (
     <>
       {MoscowDescriptionSection.map((section) => (
@@ -30,4 +29,4 @@ function MoscowTextSection() {
   );
 }
 
-export default MoscowTextSection;
+export default MoscowDescTextSection;

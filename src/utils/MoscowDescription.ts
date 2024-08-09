@@ -7,12 +7,12 @@ const MoscowDescriptionSection = [
       {
         id: 'highlight1',
         text: 'Кремль',
-        className: 'bg-body-secondary text-dark px-1 me-2',
+        className: 'bg-body-secondary text-dark fst-italic  px-1 me-2',
       },
       {
         id: 'highlight2',
         text: 'Красная площадь',
-        className: 'bg-body-secondary text-black px-1 me-2',
+        className: 'bg-body-secondary text-black fst-italic  px-1 me-2',
       },
     ],
     suffix:
@@ -21,17 +21,17 @@ const MoscowDescriptionSection = [
       {
         id: 'moreHighlight1',
         text: 'Большой театр',
-        className: 'bg-body-secondary text-dark px-1 me-2',
+        className: 'bg-body-secondary fst-italic  text-dark px-1 me-2',
       },
       {
         id: 'moreHighlight2',
         text: 'Третьяковская галерея',
-        className: 'bg-body-secondary text-dark px-1 me-2',
+        className: 'bg-body-secondary  fst-italic text-dark px-1 me-2',
       },
       {
         id: 'moreHighlight3',
         text: 'Музей изобразительных искусств имени Пушкина',
-        className: 'bg-body-secondary text-dark px-1 me-2',
+        className: 'bg-body-secondary fst-italic  text-dark px-1 me-2',
       },
     ],
   },
@@ -43,12 +43,12 @@ const MoscowDescriptionSection = [
       {
         id: 'highlight3',
         text: 'Парк Горького',
-        className: 'bg-body-secondary text-dark px-1 me-2',
+        className: 'bg-body-secondary  fst-italic text-dark px-1 me-2',
       },
       {
         id: 'highlight4',
         text: 'ВДНХ',
-        className: 'bg-body-secondary text-dark px-1 me-2',
+        className: 'bg-body-secondary fst-italic  text-dark px-1 me-2',
       },
     ],
     suffix:
@@ -62,7 +62,7 @@ const MoscowDescriptionSection = [
       {
         id: 'highlight5',
         text: 'Московское метро',
-        className: 'bg-body-secondary text-dark px-1 me-2',
+        className: 'bg-body-secondary fst-italic  text-dark px-1 me-2',
       },
     ],
     suffix:

@@ -55,7 +55,7 @@ function FooterForm() {
                 />
               </BootstrapForm.Label>
               <motion.button
-                className="btn btn-primary"
+                className="btn btn-primary ms-3"
                 type="submit"
                 disabled={isSubmitting}
                 whileHover={{ scale: 1.1 }}

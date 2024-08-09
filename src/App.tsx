@@ -1,5 +1,4 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
-import styles from '@styles/global.module.css';
 import routes from '@utils/routes';
 import Header from '@components/header/Header';
 import Footer from '@components/footer/Footer';
@@ -19,7 +18,7 @@ function App() {
   });
 
   return (
-    <div style={styles}>
+    <div>
       <Header />
       <Routes>
         {routes.map((item) => (
