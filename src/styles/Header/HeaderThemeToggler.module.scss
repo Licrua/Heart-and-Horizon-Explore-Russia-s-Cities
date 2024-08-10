@@ -1,0 +1,31 @@
+
+
+
+.switch {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(65, 63, 63, 0.154);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 6px;
+    cursor: pointer;
+  }
+  
+  .switch[data-colorTheme="white"] {
+    justify-content: flex-end;
+  }
+  
+  .handle {
+    width: 25px;
+    height: 25px;
+    background-color: grey;
+    border-radius: 40px;
+  }
+  
+  .pshka {
+    color: palevioletred;
+    border: 1px;
+  }

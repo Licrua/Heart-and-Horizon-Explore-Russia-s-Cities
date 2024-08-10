@@ -1,6 +1,4 @@
-import { useState } from 'react';
-
-import styles from '@styles/Header/HeaderThemeToggler.module.css';
+import styles from '@styles/Header/HeaderThemeToggler.module.scss';
 import { motion } from 'framer-motion';
 import { useAppDispatch, useAppSelector } from '@store/hooks';
 import { changeThemeColor } from '@slices/cities';

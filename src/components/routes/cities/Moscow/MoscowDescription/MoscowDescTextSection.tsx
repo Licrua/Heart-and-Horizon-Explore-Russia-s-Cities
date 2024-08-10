@@ -1,7 +1,6 @@
 import MoscowDescriptionSection from '@utils/MoscowDescription';
 
 function MoscowDescTextSection() {
-  
   return (
     <>
       {MoscowDescriptionSection.map((section) => (

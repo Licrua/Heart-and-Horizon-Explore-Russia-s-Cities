@@ -1,18 +1,15 @@
 import { Card, ListGroup } from 'react-bootstrap';
-import { City, changeThemableToggler } from '@slices/cities';
+import { City } from '@slices/cities';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { useAppDispatch } from '@store/hooks';
 
 type cityItemProp = {
   cityItem: City;
 };
 
 function MainCardList({ cityItem }: cityItemProp) {
-  // const dispatch = useAppDispatch();
   const navigate = useNavigate();
   const handleClick = (value: string) => {
-    // dispatch(changeThemableToggler(true));
     navigate(`/${value}`);
   };
   const cityRoute = cityItem.imgName.split('.')[0];
@@ -25,6 +22,13 @@ function MainCardList({ cityItem }: cityItemProp) {
         x: 1 % 2 === 0 ? 50 : -50,
         y: -50,
       }}
+      whileHover={{
+        x: [0, -5, 5, -5, 5, 0],
+        filter: 'saturate(150%)',
+        boxShadow:
+          '0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8)',
+        transition: { duration: 1, ease: 'easeInOut' },
+      }}
       whileInView={{
         opacity: 1,
         x: 0,
@@ -34,7 +38,7 @@ function MainCardList({ cityItem }: cityItemProp) {
         },
       }}
       viewport={{ once: true }}
-      className="shadow-lg p-3 mb-5 bg-body rounded"
+      className="p-3 mb-5 bg-body rounded"
     >
       <Card.Img
         variant="top"

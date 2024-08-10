@@ -1,5 +1,4 @@
-
-import styles from '@styles/Header/LoadingSpinner.module.css';
+import styles from '@styles/Header/LoadingSpinner.module.scss';
 
 function LoadingSpinner() {
   return (

@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap';
-import styles from '@styles/Cities/MoscowMainContainer.module.css';
+import styles from '@styles/Cities/MoscowMainContainer.module.scss';
 import { useAppSelector } from '@store/hooks';
 import MoscowAttractionCarousel from './MoscowCarousel/MoscowCarouselMain';
 import MoscowAccordionInfo from './MoscowAccordion/MoscowAccordionMain';
