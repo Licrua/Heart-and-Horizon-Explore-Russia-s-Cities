@@ -9,7 +9,7 @@ type headerLogoProps = {
     src: string;
   };
 };
-function HeaderLogo({ cityLogo }: headerLogoProps) {
+function HeaderMainLogo({ cityLogo }: headerLogoProps) {
   const location = useLocation();
   const navigate = useNavigate();
   const handlerOnButton = () => {
@@ -20,6 +20,7 @@ function HeaderLogo({ cityLogo }: headerLogoProps) {
   return (
     <Navbar.Brand href="#home" onClick={handlerOnButton}>
       <motion.img
+        style={{ float: 'left' }}
         initial={{ scale: 0 }}
         animate={{
           scale: 1,
@@ -34,12 +35,17 @@ function HeaderLogo({ cityLogo }: headerLogoProps) {
         height="40"
         src={cityLogo.src}
         alt={cityLogo.alt}
-      />{' '}
-      <span className="ms-1 mb-3 fw-italic" style={{ letterSpacing: '3px' }}>
-        Russian Cities
+      />
+      <span className="ms-2 fw-italic" style={{ letterSpacing: '3px' }}>
+        Heart and Horizon
+        <em>
+          <div style={{ fontSize: '0.6em' }}>
+            -Exploring Russia&apos;s Cities
+          </div>
+        </em>
       </span>
     </Navbar.Brand>
   );
 }
 
-export default HeaderLogo;
+export default HeaderMainLogo;

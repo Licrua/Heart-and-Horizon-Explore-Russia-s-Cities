@@ -1,8 +1,8 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAppSelector } from '@store/hooks';
 import { selectEntities } from '@slices/cities';
-import citiesLogo from '@utils/headerLogos';
-import HeaderLogo from './HeaderMainLogo';
+import citiesLogo from '@utils/headerUtils/headerLogos';
+import HeaderMainLogo from './HeaderMainLogo';
 import HeaderTheme from './HeaderThemeLogo';
 import HeaderLanguageLogo from './HeaderLanguageLogo';
 import HeaderCitiesList from './HeaderCitiesList';
@@ -29,9 +29,12 @@ function Header() {
         fluid
         className="d-flex justify-content-between align-items-center"
       >
-        <HeaderLogo cityLogo={cityLogo} />
+        <HeaderMainLogo cityLogo={cityLogo} />
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+        <Navbar.Collapse
+          id="basic-navbar-nav"
+          className="justify-content-center"
+        >
           <Nav className="d-flex align-items-center">
             <HeaderCitiesList
               cities={citiesEntites}

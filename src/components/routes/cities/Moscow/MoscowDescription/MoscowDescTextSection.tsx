@@ -1,4 +1,4 @@
-import MoscowDescriptionSection from '@utils/MoscowDescription';
+import MoscowDescriptionSection from '@utils/MoscowUtils/MoscowDescription';
 
 function MoscowDescTextSection() {
   return (

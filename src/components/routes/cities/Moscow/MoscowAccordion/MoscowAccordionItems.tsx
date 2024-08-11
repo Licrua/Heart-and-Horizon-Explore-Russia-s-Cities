@@ -1,5 +1,5 @@
 import { Accordion } from 'react-bootstrap';
-import accordionData from '@utils/MoscowAccordionData';
+import accordionData from '@utils/MoscowUtils/MoscowAccordionData';
 import styles from '@styles/Cities/MoscowAccordionMain.module.scss';
 import { useAppSelector } from '@store/hooks';
 
