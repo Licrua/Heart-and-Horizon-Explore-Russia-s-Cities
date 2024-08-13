@@ -31,12 +31,12 @@ function HeaderMainLogo({ cityLogo }: headerLogoProps) {
           type: 'just',
           duration: 1,
         }}
-        width="40"
-        height="40"
+        width="50"
+        height="50"
         src={cityLogo.src}
         alt={cityLogo.alt}
       />
-      <span className="ms-2 fw-italic" style={{ letterSpacing: '3px' }}>
+      <span className="ms-2 fw-italic" style={{ letterSpacing: '2px' }}>
         Heart and Horizon
         <em>
           <div style={{ fontSize: '0.6em' }}>

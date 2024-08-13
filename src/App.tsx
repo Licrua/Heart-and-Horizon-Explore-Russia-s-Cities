@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
-import routes from '@utils/routes';
+import routes from '@data/routesData';
 import Header from '@components/header/HeaderMain';
 import FooterMain from '@components/footer/FooterMain';
 import { useAppDispatch, useAppSelector } from '@store/hooks';

@@ -1,6 +1,6 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import moscowAttractions from '@utils/MoscowUtils/MoscowPictures';
+import moscowAttractions from '@data/MoscowAttrData/MoscowPictures';
 import { useState } from 'react';
 import MoscowCarouselCaption from './MoscowCarouselCaption';
 

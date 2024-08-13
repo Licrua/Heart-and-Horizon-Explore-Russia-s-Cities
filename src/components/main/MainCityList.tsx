@@ -21,7 +21,7 @@ function MainContentCityList({ cityEntities }: MainContentListType) {
       <MainContentFilterIcon filterIcon={filterIcon} />
       <Row xs={1} md={2} className="g-4">
         {cityEntities.map((item) => (
-          <Col key={item.id}>
+          <Col id={`col/${item.id}`} key={item.id}>
             <MainCardList cityItem={item} />
           </Col>
         ))}

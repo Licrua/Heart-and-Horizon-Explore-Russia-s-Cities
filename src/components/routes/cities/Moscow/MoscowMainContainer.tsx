@@ -1,5 +1,4 @@
 import { Container } from 'react-bootstrap';
-import styles from '@styles/Cities/MoscowMainContainer.module.scss';
 import { useAppSelector } from '@store/hooks';
 import MoscowAttractionCarousel from './MoscowCarousel/MoscowCarouselMain';
 import MoscowAccordionInfo from './MoscowAccordion/MoscowAccordionMain';
@@ -12,7 +11,7 @@ function MoscowMainContainer() {
 
   return (
     <Container
-      className={currentThemeCurrent === 'black' ? styles.container : ''}
+      className={currentThemeCurrent === 'black' ? 'text-white bg-black' : ''}
     >
       <MoscowDesc />
       <MoscowAttractionCarousel />

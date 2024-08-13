@@ -1,11 +1,11 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAppSelector } from '@store/hooks';
 import { selectEntities } from '@slices/cities';
-import citiesLogo from '@utils/headerUtils/headerLogos';
+import citiesLogo from '@data/headerLogos/headerLogosList';
 import HeaderMainLogo from './HeaderMainLogo';
 import HeaderTheme from './HeaderThemeLogo';
 import HeaderLanguageLogo from './HeaderLanguageLogo';
-import HeaderCitiesList from './HeaderCitiesList';
+import HeaderCitiesList from './HeaderCitiesListNavigation';
 
 function Header() {
   const citiesEntites = useAppSelector((state) => selectEntities(state));
@@ -23,7 +23,7 @@ function Header() {
     <Navbar
       sticky="top"
       expand="lg"
-      className="bg-body-tertiary mb-3 border rounded"
+      className="bg-body-tertiary mb-3 border rounded p-1"
     >
       <Container
         fluid

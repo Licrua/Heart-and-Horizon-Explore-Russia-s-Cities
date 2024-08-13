@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap';
-import SocialMediaIcons from '@utils/footerUtils/footerLogos';
+import SocialMediaIcons from '@data/footerData/footerLogosList';
 import FooterCopyright from './FooterCopyright';
 import FooterSocialNovbar from './FooterSocialNovbar';
 import FooterForm from './FooterForm';

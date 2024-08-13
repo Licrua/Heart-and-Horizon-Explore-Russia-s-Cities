@@ -1,0 +1,20 @@
+$primary-color: #3600fb;
+$secondary-color: #f70404;
+$text-color: #180101;
+$overlay-color: rgba(249, 249, 249, 0.742);
+$maxWidth: 100%;
+$background-overlay: rgba(0, 0, 0, 0.3);
+$spinnerSize: 120px;
+$maxHeight: 100%;
+$shadow-text: linear-gradient(to right, #000000, $primary-color, $secondary-color);
+$font-family: "Oswald", sans-serif;
+$font-stack:  Helvetica, sans-serif;
+$font-weight: 500;
+$cursor: pointer;
+$motionSliderSize: 25px;
+$gradient-bg: linear-gradient(180deg, 
+  rgba(255, 255, 255, 1) 33.3%, 
+  rgba(4, 12, 255, 0.5) 33.3%, 
+  rgba(4, 12, 255, 0.5) 66.6%, 
+  rgba(255, 0, 25, 0.687) 66.6%, 
+  rgba(255, 0, 25, 0.687) 100%);

@@ -1,4 +1,4 @@
-import { Row, Col, Button, Form as BootstrapForm } from 'react-bootstrap';
+import { Row, Col, Form as BootstrapForm } from 'react-bootstrap';
 import { Formik, Field, Form } from 'formik';
 import validationSchema from '@utils/YupValidationFooter';
 import Filter from 'bad-words';

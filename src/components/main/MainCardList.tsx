@@ -19,7 +19,7 @@ function MainCardList({ cityItem }: cityItemProp) {
       as={motion.div}
       initial={{
         opacity: 0,
-        x: 1 % 2 === 0 ? 50 : -50,
+        x: 50,
         y: -50,
       }}
       whileHover={{

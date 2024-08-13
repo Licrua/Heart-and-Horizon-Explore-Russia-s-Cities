@@ -13,15 +13,20 @@ export function HeaderThemeToggler() {
     damping: 30,
   };
 
-  const toggleSwitch = () => dispatch(changeThemeColor());
+  const onClickSwitchToggler = () => dispatch(changeThemeColor());
+  const onKeySwitchToggle = () => dispatch(changeThemeColor());
 
   return (
     <div
-      className={styles.switch}
+      aria-label="togglerSwitcher"
+      className={styles.themeSwitcher}
       data-colorTheme={currentColor}
-      onClick={toggleSwitch}
+      role="button"
+      tabIndex={0}
+      onClick={onClickSwitchToggler}
+      onKeyDown={onKeySwitchToggle}
     >
-      <motion.div className={styles.handle} layout transition={spring} />
+      <motion.div className={styles.motionSlider} layout transition={spring} />
     </div>
   );
 }

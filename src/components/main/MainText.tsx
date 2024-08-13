@@ -1,4 +1,5 @@
-import mainTextContent from '@utils/mainRussiaText';
+import mainTextContent from '@data/mainData/mainTextContent';
+import styles from '@styles/MainComponent/MainText.module.scss';
 import { motion } from 'framer-motion';
 
 function MainText() {
@@ -11,21 +12,17 @@ function MainText() {
     },
   };
   return (
-    <>
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-        className="visible"
-      >
-        <h1
-          style={{ textShadow: '4px 16px 7px rgba(80,80,80,1)' }}
-          className="mb-4"
-        >
-          Россия: Путешествие в бесконечность
-        </h1>
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      className={styles.background_container}
+    >
+      <div className={styles.background_image} />
+      <div className={styles.content}>
+        <h1 className="mb-3 px-3 pt-2">Россия: Путешествие в бесконечность</h1>
         {mainTextContent.map((paragraph) => (
-          <p key={paragraph.id}>
+          <p className="px-3" key={paragraph.id}>
             {paragraph.initial && (
               <span className="float-start lh-1 fw-bold fs-1 me-1">
                 {paragraph.initial}
@@ -34,9 +31,8 @@ function MainText() {
             {paragraph.text}
           </p>
         ))}
-      </motion.div>
-      <hr />
-    </>
+      </div>
+    </motion.div>
   );
 }
 

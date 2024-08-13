@@ -1,7 +1,6 @@
 import { Accordion } from 'react-bootstrap';
-import accordionData from '@utils/MoscowUtils/MoscowAccordionData';
-import styles from '@styles/Cities/MoscowAccordionMain.module.scss';
 import { useAppSelector } from '@store/hooks';
+import accordionData from '../../../../../data/MoscowAttrData/MoscowAccordionData';
 
 function MoscowAccordionItems() {
   const currentTheme = useAppSelector((state) => state.cities.themeColor);
@@ -13,7 +12,7 @@ function MoscowAccordionItems() {
           <Accordion.Header>{item.title}</Accordion.Header>
           <Accordion.Body
             className={
-              currentTheme === 'black' ? `lh-3 ${styles.accordionBody}` : 'lh-3'
+              currentTheme === 'black' ? 'lh-3 text-white bg-black ' : 'lh-3'
             }
           >
             {item.text}

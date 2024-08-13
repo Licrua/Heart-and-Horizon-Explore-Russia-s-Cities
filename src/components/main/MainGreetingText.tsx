@@ -1,15 +1,22 @@
 import { useAppDispatch } from '@store/hooks';
 import { motion } from 'framer-motion';
 import { setGreetingButtonPress } from '@slices/cities';
+import { useTranslation } from 'react-i18next';
+import MainGreetingLanguageSelector from './MainGreetingLanguageSelector';
 
 type MainGreetingTextType = {
   styles: CSSModuleClasses;
 };
 
 function MainGreetingText({ styles }: MainGreetingTextType) {
+  const { t, i18n } = useTranslation('mainGreetingText');
+
   const dispatch = useAppDispatch();
   const onGrettingTogglerHandler = () => {
     dispatch(setGreetingButtonPress(true));
+  };
+  const changeLanguage = (language: string) => {
+    i18n.changeLanguage(language);
   };
 
   return (
@@ -29,36 +36,27 @@ function MainGreetingText({ styles }: MainGreetingTextType) {
       }}
       className={styles.content}
     >
-      <h1>Добро пожаловать на сайт о городах России</h1>
+      <h1>{t('welcome')}</h1>
+      <MainGreetingLanguageSelector changeLanguage={changeLanguage} />
       <div className={styles.font}>
+        <p>{t('greeting')}</p>
         <p>
-          <strong>
-            Я рад приветствовать вас в мире, где величественные горы встречаются
-            с бескрайними равнинами, где каждый город хранит свои уникальные
-            традиции и историю. Здесь вы сможете узнать больше о великой стране,
-            которая объединяет в себе удивительное разнообразие культур,
-            природных богатств и удивительных людей.
-          </strong>
+          <strong>{t('explore')}</strong>
         </p>
         <p>
-          Пусть ваше путешествие по страницам нашего сайта откроет перед вами
-          новые горизонты и даст возможность увидеть Россию с самых неожиданных
-          сторон.{' '}
-          <em>
-            Исследуйте, вдохновляйтесь и открывайте для себя все грани этой
-            великой страны.
-          </em>
+          <em>{t('exploreEmphasized')}</em>
         </p>
-        <p>Приятного вам времяпровождения!</p>
+        <p>{t('enjoy')}</p>
       </div>
       <button
         onClick={onGrettingTogglerHandler}
         type="button"
         className="btn btn-light"
       >
-        Начать знакомство
+        {t('startExploring')}
       </button>
     </motion.div>
   );
 }
+
 export default MainGreetingText;
