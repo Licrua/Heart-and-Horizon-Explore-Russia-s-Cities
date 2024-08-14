@@ -1,8 +1,8 @@
-type MainGreetingVideoType = {
+type WelcomePageVideoType = {
   styles: CSSModuleClasses;
 };
 
-function MainGreetingVideo({ styles }: MainGreetingVideoType) {
+function WelcomePageVideo({ styles }: WelcomePageVideoType) {
   return (
     <video autoPlay muted loop className={styles.background_video}>
       <source
@@ -16,4 +16,4 @@ function MainGreetingVideo({ styles }: MainGreetingVideoType) {
     </video>
   );
 }
-export default MainGreetingVideo;
+export default WelcomePageVideo;

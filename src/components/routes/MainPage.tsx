@@ -4,8 +4,8 @@ import LoadingError from '@components/loading | error/LoadingError';
 import LoadingSpinner from '@components/loading | error/LoadingSpinner';
 import { addCities, selectAllCitites } from '@slices/cities';
 import { useAppSelector, useAppDispatch } from '@store/hooks';
-import MainGreetingMain from '@components/main/MainGreetingMain';
 import MainContentCityList from '@components/main/MainCityList';
+import WelcomePageMain from './welcomePage/WelcomePageMain';
 
 function MainPage() {
   const cityEntities = useAppSelector(selectAllCitites);
@@ -24,7 +24,7 @@ function MainPage() {
   if (isLoading) return <LoadingSpinner />;
   if (error) return <LoadingError error={error} />;
   return CurrentGreetingState === false ? (
-    <MainGreetingMain />
+    <WelcomePageMain />
   ) : (
     <MainContentCityList cityEntities={cityEntities} />
   );

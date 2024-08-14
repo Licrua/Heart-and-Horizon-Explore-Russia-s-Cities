@@ -11,10 +11,9 @@
     top: 0;
     left: 0;
     @include full-size;
-    background-image: url('/src/assets/images/russianFlag.svg');
-    background-size: cover;
-    background-position: center right;
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, white 33.3%, blue 33.3%, blue 66.6%, red 66.6%);
+    filter: blur(5px);
+    margin-top: 25;
 
     &::after {
       content: '';

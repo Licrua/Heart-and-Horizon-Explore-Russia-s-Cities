@@ -2,20 +2,20 @@ import { useAppDispatch } from '@store/hooks';
 import { motion } from 'framer-motion';
 import { setGreetingButtonPress } from '@slices/cities';
 import { useTranslation } from 'react-i18next';
-import MainGreetingLanguageSelector from './MainGreetingLanguageSelector';
+import WelcomePageLanguageSelector from './WelcomePageLanguageSelector';
 
 type MainGreetingTextType = {
   styles: CSSModuleClasses;
 };
 
-function MainGreetingText({ styles }: MainGreetingTextType) {
-  const { t, i18n } = useTranslation('mainGreetingText');
+function WelcomePageText({ styles }: MainGreetingTextType) {
+  const { t, i18n } = useTranslation('welcomePageTranslation');
 
   const dispatch = useAppDispatch();
   const onGrettingTogglerHandler = () => {
     dispatch(setGreetingButtonPress(true));
   };
-  const changeLanguage = (language: string) => {
+  const changeLanguage = (language: 'ru' | 'en' | undefined): void => {
     i18n.changeLanguage(language);
   };
 
@@ -37,7 +37,7 @@ function MainGreetingText({ styles }: MainGreetingTextType) {
       className={styles.content}
     >
       <h1>{t('welcome')}</h1>
-      <MainGreetingLanguageSelector changeLanguage={changeLanguage} />
+      <WelcomePageLanguageSelector changeLanguage={changeLanguage} />
       <div className={styles.font}>
         <p>{t('greeting')}</p>
         <p>
@@ -59,4 +59,4 @@ function MainGreetingText({ styles }: MainGreetingTextType) {
   );
 }
 
-export default MainGreetingText;
+export default WelcomePageText;

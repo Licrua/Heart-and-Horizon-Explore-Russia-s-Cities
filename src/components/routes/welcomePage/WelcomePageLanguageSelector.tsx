@@ -1,12 +1,13 @@
 import { NavDropdown } from 'react-bootstrap';
 import languageSelector from '@images/navbar-logo/languageSelector.png';
 
-type MainGreetingLanguageSelectorType = {
-  changeLanguage: (language: string) => string;
+type WelcomePageLanguageSelectorType = {
+  changeLanguage: (language?: 'en' | 'ru') => void;
 };
-function MainGreetingLanguageSelector({
+
+function WelcomePageLanguageSelector({
   changeLanguage,
-}: MainGreetingLanguageSelectorType) {
+}: WelcomePageLanguageSelectorType) {
   return (
     <NavDropdown
       align="end"
@@ -32,4 +33,4 @@ function MainGreetingLanguageSelector({
   );
 }
 
-export default MainGreetingLanguageSelector;
+export default WelcomePageLanguageSelector;

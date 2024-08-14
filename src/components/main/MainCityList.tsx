@@ -5,16 +5,18 @@ import { City } from '@slices/cities';
 import filterIcon from '@images/navbar-logo/filter.webp';
 import MainContentFilterIcon from './MainFilterIcon';
 import MainCardList from './MainCardList';
-import MainText from './MainText';
+import MainText from './MainOpeningText';
 
 type MainContentListType = {
   cityEntities: City[];
 };
 function MainContentCityList({ cityEntities }: MainContentListType) {
+  console.log('cityEntites', cityEntities);
+
   return (
     <Container>
       <Row>
-        <Col>
+        <Col className="mb-3 p-3  border-bottom border-dark">
           <MainText />
         </Col>
       </Row>

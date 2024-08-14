@@ -1,19 +1,19 @@
 import i18n from 'i18next';
 import I18nextBrowserLanguageDetector from 'i18next-browser-languagedetector/cjs';
 import { initReactI18next } from 'react-i18next';
-import enTranslation from '../locales/en/translation.json';
-import ruTranslation from '../locales/ru/translation.json';
-import MainGreetingTextEn from '../locales/en/mainGreetingText.json';
-import MainGreetingTextRu from '../locales/ru/mainGreetingText.json';
+import welcomePageTranslationRu from '../locales/ru/welcomePageTranslation.json';
+import welcomePageTranslationEn from '../locales/en/welcomePageTranslation.json';
+import mainPageTranslationRu from '../locales/en/mainPageTranslation.json';
+import mainPageTranslationEn from '../locales/ru/mainPainTranslation.json';
 
 const resources = {
   en: {
-    translation: enTranslation,
-    mainGreetingText: MainGreetingTextEn,
+    welcomePageText: welcomePageTranslationRu,
+    mainOpeningText: mainPageTranslationEn,
   },
   ru: {
-    translation: ruTranslation,
-    mainGreetingText: MainGreetingTextRu,
+    welcomePageText: welcomePageTranslationEn,
+    mainOpeningText: mainPageTranslationRu,
   },
 };
 
@@ -24,8 +24,8 @@ i18n
     resources,
     lng: 'ru',
     fallbackLng: 'ru',
-    ns: ['translation', 'mainGreetingText'],
-    defaultNS: 'translation',
+    ns: ['welcomePageTranslation', 'mainPageTranslation'],
+    defaultNS: 'welcomePageTranslation',
     interpolation: {
       escapeValue: false,
       debug: true,

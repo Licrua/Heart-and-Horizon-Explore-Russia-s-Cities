@@ -1,4 +1,3 @@
-
 import 'i18next';
 import ns1 from '../locales/ru/translation.json';
 import ns2 from '../locales/en/translation.json';
