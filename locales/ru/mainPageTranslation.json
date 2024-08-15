@@ -1,5 +1,5 @@
-{
-    "mainTextContent": {
+{   "introductoryTitle": "Россия: Путешествие в бесконечность",
+    "introductoryText": {
       "0": {
         "id": "0",
         "initial": "Д",
@@ -20,6 +20,12 @@
         "initial": "",
         "text": "Ниже вы можете узнать о самых ярких и интересных городах в подробностях."
       }
+    },
+    "sortingOrder": {"sortOnPopulation": "Отсортировать по населению", "sortOnFoundationDate": "Отсортировать по дате основания"},
+    "cityInfo": {
+      "Population": "Население - {{number}} человек",
+      "FoundationDate": "Дата основания - {{date}} год",
+      "moreDetails": "Узнать о городе подробнее"
     }
   }
   

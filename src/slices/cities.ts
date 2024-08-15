@@ -30,7 +30,6 @@ const initialState: citiesState = citiesAdapter.getInitialState({
   isSorted: true,
   isGreetingButtonPressed: false,
 });
-
 const citiesSlice = createSlice({
   name: 'cities',
   initialState,
@@ -38,8 +37,11 @@ const citiesSlice = createSlice({
     addCity: (state, action: PayloadAction<City>) => {
       citiesAdapter.addOne(state, action.payload);
     },
-    addCities: (state, action: PayloadAction<Record<number, City>>) => {
-      citiesAdapter.addMany(state, action.payload);
+    // addCities: (state, action: PayloadAction<Record<number, City>>) => {
+    //   citiesAdapter.addMany(state, action.payload);
+    // },
+    setCities: (state, action: PayloadAction<Record<number, City>>) => {
+      citiesAdapter.setAll(state, action.payload);
     },
     removeCity: (state, action: PayloadAction<number>) => {
       citiesAdapter.removeOne(state, action.payload);
@@ -71,11 +73,12 @@ const citiesSlice = createSlice({
 
 export const {
   addCity,
-  addCities,
+  // addCities,
   sortItems,
   changeThemeColor,
   changeThemableToggler,
   setGreetingButtonPress,
+  setCities,
 } = citiesSlice.actions;
 export const {
   selectEntities,

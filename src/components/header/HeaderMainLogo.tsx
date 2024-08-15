@@ -1,6 +1,7 @@
 import { Navbar } from 'react-bootstrap';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { TFunction } from 'i18next';
 
 type headerLogoProps = {
   cityLogo: {
@@ -8,8 +9,9 @@ type headerLogoProps = {
     id: number;
     src: string;
   };
+  t: TFunction;
 };
-function HeaderMainLogo({ cityLogo }: headerLogoProps) {
+function HeaderMainLogo({ cityLogo, t }: headerLogoProps) {
   const location = useLocation();
   const navigate = useNavigate();
   const handlerOnButton = () => {
@@ -37,11 +39,9 @@ function HeaderMainLogo({ cityLogo }: headerLogoProps) {
         alt={cityLogo.alt}
       />
       <span className="ms-2 fw-italic" style={{ letterSpacing: '2px' }}>
-        Heart and Horizon
+        {t('header.title')}
         <em>
-          <div style={{ fontSize: '0.6em' }}>
-            -Exploring Russia&apos;s Cities
-          </div>
+          <div style={{ fontSize: '0.6em' }}>{t('header.subtitle')}</div>
         </em>
       </span>
     </Navbar.Brand>

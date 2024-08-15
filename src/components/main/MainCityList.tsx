@@ -3,28 +3,28 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { City } from '@slices/cities';
 import filterIcon from '@images/navbar-logo/filter.webp';
+import { useTranslation } from 'react-i18next';
 import MainContentFilterIcon from './MainFilterIcon';
 import MainCardList from './MainCardList';
-import MainText from './MainOpeningText';
+import MainOpeningText from './MainOpeningText';
 
 type MainContentListType = {
   cityEntities: City[];
 };
 function MainContentCityList({ cityEntities }: MainContentListType) {
-  console.log('cityEntites', cityEntities);
-
+  const { t } = useTranslation('mainPageTranslation');
   return (
     <Container>
       <Row>
         <Col className="mb-3 p-3  border-bottom border-dark">
-          <MainText />
+          <MainOpeningText t={t} />
         </Col>
       </Row>
-      <MainContentFilterIcon filterIcon={filterIcon} />
+      <MainContentFilterIcon t={t} filterIcon={filterIcon} />
       <Row xs={1} md={2} className="g-4">
         {cityEntities.map((item) => (
           <Col id={`col/${item.id}`} key={item.id}>
-            <MainCardList cityItem={item} />
+            <MainCardList t={t} cityItem={item} />
           </Col>
         ))}
       </Row>

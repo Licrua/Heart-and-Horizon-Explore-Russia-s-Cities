@@ -1,3 +1,4 @@
+import { TFunction } from 'i18next';
 import { Navbar, Row } from 'react-bootstrap';
 
 type FooterSocialNovbarType = {

@@ -1,8 +1,12 @@
 import styles from '@styles/MainComponent/MainText.module.scss';
 import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
+import { TFunction } from 'i18next';
 
-function MainText() {
+type MainOpeningTextPropsType = {
+  t: TFunction;
+};
+
+function MainOpeningText({ t }: MainOpeningTextPropsType) {
   const containerVariants = {
     hidden: { opacity: 0, y: '-100vh' },
     visible: {
@@ -11,10 +15,11 @@ function MainText() {
       transition: { type: 'spring', stiffness: 70 },
     },
   };
-  const { t } = useTranslation('mainPageTranslation');
+  // const { t } = useTranslation('mainPageTranslation');
   const introductoryTextTranslation = Object.values(
     t('introductoryText', { returnObjects: true })
   );
+  const introductoryTitleTranslation = t('introductoryTitle');
 
   return (
     <motion.div
@@ -25,7 +30,7 @@ function MainText() {
     >
       <div className={styles.background_image} />
       <div className={styles.content}>
-        <h1 className="mb-3 px-3 pt-2">Россия: Путешествие в бесконечность</h1>
+        <h1 className="mb-3 px-3 pt-2">{introductoryTitleTranslation}</h1>
         {introductoryTextTranslation.map((paragraph) => (
           <p className="px-3" key={paragraph.id}>
             {paragraph.initial && (
@@ -41,4 +46,4 @@ function MainText() {
   );
 }
 
-export default MainText;
+export default MainOpeningText;

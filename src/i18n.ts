@@ -3,17 +3,25 @@ import I18nextBrowserLanguageDetector from 'i18next-browser-languagedetector/cjs
 import { initReactI18next } from 'react-i18next';
 import welcomePageTranslationRu from '../locales/ru/welcomePageTranslation.json';
 import welcomePageTranslationEn from '../locales/en/welcomePageTranslation.json';
-import mainPageTranslationRu from '../locales/en/mainPageTranslation.json';
-import mainPageTranslationEn from '../locales/ru/mainPainTranslation.json';
+import mainPageTranslationRu from '../locales/ru/mainPageTranslation.json';
+import mainPageTranslationEn from '../locales/en/mainPageTranslation.json';
+import headerPageTranslationEn from '../locales/en/headerPageTranslation.json';
+import headerPageTranslationRu from '../locales/ru/headerPageTranslation.json';
+import footerPageTranslationEn from '../locales/en/footerPageTranslation.json';
+import footerPageTranslationRu from '../locales/ru/footerPageTranslation.json';
 
 const resources = {
   en: {
-    welcomePageText: welcomePageTranslationRu,
-    mainOpeningText: mainPageTranslationEn,
+    welcomePageTranslation: welcomePageTranslationEn,
+    mainPageTranslation: mainPageTranslationEn,
+    headerPageTranslation: headerPageTranslationEn,
+    footerPageTranslation: footerPageTranslationEn,
   },
   ru: {
-    welcomePageText: welcomePageTranslationEn,
-    mainOpeningText: mainPageTranslationRu,
+    welcomePageTranslation: welcomePageTranslationRu,
+    mainPageTranslation: mainPageTranslationRu,
+    headerPageTranslation: headerPageTranslationRu,
+    footerPageTranslation: footerPageTranslationRu,
   },
 };
 
@@ -23,8 +31,13 @@ i18n
   .init({
     resources,
     lng: 'ru',
-    fallbackLng: 'ru',
-    ns: ['welcomePageTranslation', 'mainPageTranslation'],
+    fallbackLng: 'en',
+    ns: [
+      'welcomePageTranslation',
+      'mainPageTranslation',
+      'headerPageTranslation',
+      'footerPageTranslation',
+    ],
     defaultNS: 'welcomePageTranslation',
     interpolation: {
       escapeValue: false,

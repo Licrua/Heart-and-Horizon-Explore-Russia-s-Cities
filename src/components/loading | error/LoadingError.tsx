@@ -1,16 +1,14 @@
-
-
-function LoadingError({ error }) {
-  if (error) {
+function LoadingError({ errorCitiesRu }) {
+  if (errorCitiesRu) {
     // Обработка ошибок
     let errorMessage = 'Something went wrong';
 
-    if ('status' in error) {
+    if ('status' in errorCitiesRu) {
       // Обработка ошибок FetchBaseQueryError
-      errorMessage = `Error ${error.status}: ${error.data ? JSON.stringify(error.data) : 'No details'}`;
-    } else if ('message' in error) {
+      errorMessage = `Error ${errorCitiesRu.status}: ${errorCitiesRu.data ? JSON.stringify(errorCitiesRu.data) : 'No details'}`;
+    } else if ('message' in errorCitiesRu) {
       // Обработка ошибок SerializedError
-      errorMessage = error.message;
+      errorMessage = errorCitiesRu.message;
     }
 
     return (

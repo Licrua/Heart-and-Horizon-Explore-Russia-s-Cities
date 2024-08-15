@@ -1,4 +1,6 @@
 import { NavDropdown } from 'react-bootstrap';
+import setLanguage from '@utils/setLanguage';
+import { TFunction } from 'i18next';
 
 type languageLogoProp = {
   languageLogo: {
@@ -6,9 +8,10 @@ type languageLogoProp = {
     id: number;
     alt: string;
   };
+  t: TFunction;
 };
 
-function HeaderLanguageLogo({ languageLogo }: languageLogoProp) {
+function HeaderLanguageLogo({ languageLogo, t }: languageLogoProp) {
   return (
     <NavDropdown
       align="end"
@@ -23,9 +26,13 @@ function HeaderLanguageLogo({ languageLogo }: languageLogoProp) {
       }
       id="basic-nav-dropdown"
     >
-      <NavDropdown.Item href="#action/3.1">Русский</NavDropdown.Item>
+      <NavDropdown.Item href="#action/3.1" onClick={() => setLanguage('ru')}>
+        {t('navigation.language.russian')}
+      </NavDropdown.Item>
       <NavDropdown.Divider />
-      <NavDropdown.Item href="#action/3.2">Английскй</NavDropdown.Item>
+      <NavDropdown.Item href="#action/3.2" onClick={() => setLanguage('en')}>
+        {t('navigation.language.english')}
+      </NavDropdown.Item>
     </NavDropdown>
   );
 }

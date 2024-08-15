@@ -1,12 +1,14 @@
 import { City, sortItems } from '@slices/cities';
 import { useAppDispatch } from '@store/hooks';
+import { TFunction } from 'i18next';
 import { Dropdown } from 'react-bootstrap';
 
 type filterIconType = {
   filterIcon: string;
+  t: TFunction;
 };
 
-function MainContentFilterIcon({ filterIcon }: filterIconType) {
+function MainContentFilterIcon({ filterIcon, t }: filterIconType) {
   const dispatch = useAppDispatch();
 
   const onHandlerSort = (value: keyof City) => dispatch(sortItems(value));
@@ -26,13 +28,13 @@ function MainContentFilterIcon({ filterIcon }: filterIconType) {
           onClick={() => onHandlerSort('population')}
           href="#/action-1"
         >
-          Отсортировать по населению
+          {t('sortingOrder.sortOnPopulation')}
         </Dropdown.Item>
         <Dropdown.Item
           onClick={() => onHandlerSort('foundation_date')}
           href="#/action-2"
         >
-          Отсортировать по дате основания
+          {t('sortingOrder.sortOnFoundationDate')}
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>

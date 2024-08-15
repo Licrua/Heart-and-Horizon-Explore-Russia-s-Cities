@@ -2,17 +2,21 @@ import { Card, ListGroup } from 'react-bootstrap';
 import { City } from '@slices/cities';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { TFunction } from 'i18next';
 
 type cityItemProp = {
   cityItem: City;
+  t: TFunction;
 };
 
-function MainCardList({ cityItem }: cityItemProp) {
+function MainCardList({ cityItem, t }: cityItemProp) {
   const navigate = useNavigate();
   const handleClick = (value: string) => {
     navigate(`/${value}`);
   };
   const cityRoute = cityItem.imgName.split('.')[0];
+  const citiesPopulation = cityItem.population.toString();
+  const citiesFoundatonDate = cityItem.foundation_date;
 
   return (
     <Card
@@ -52,10 +56,10 @@ function MainCardList({ cityItem }: cityItemProp) {
       </Card.Body>
       <ListGroup className="list-group-flush">
         <ListGroup.Item>
-          Население - {cityItem.population.toString()} человек.
+          {t('cityInfo.Population', { number: citiesPopulation })}
         </ListGroup.Item>
         <ListGroup.Item>
-          Дата основания - {cityItem.foundation_date} год.
+          {t('cityInfo.FoundationDate', { date: citiesFoundatonDate })}
         </ListGroup.Item>
       </ListGroup>
       <Card.Body className="d-flex justify-content-center">
@@ -65,7 +69,7 @@ function MainCardList({ cityItem }: cityItemProp) {
           whileTap={{ scale: 0.9 }}
           className="btn btn-primary"
         >
-          Узнать о городе подробнее
+          {t('cityInfo.moreDetails')}
         </motion.button>
       </Card.Body>
     </Card>

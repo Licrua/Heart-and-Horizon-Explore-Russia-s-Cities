@@ -1,13 +1,8 @@
 import { NavDropdown } from 'react-bootstrap';
 import languageSelector from '@images/navbar-logo/languageSelector.png';
+import setLanguage from '@utils/setLanguage';
 
-type WelcomePageLanguageSelectorType = {
-  changeLanguage: (language?: 'en' | 'ru') => void;
-};
-
-function WelcomePageLanguageSelector({
-  changeLanguage,
-}: WelcomePageLanguageSelectorType) {
+function WelcomePageLanguageSelector() {
   return (
     <NavDropdown
       align="end"
@@ -22,11 +17,11 @@ function WelcomePageLanguageSelector({
       }
       id="basic-nav-dropdown"
     >
-      <NavDropdown.Item href="#action/3.1" onClick={() => changeLanguage('ru')}>
+      <NavDropdown.Item href="#action/3.1" onClick={() => setLanguage('ru')}>
         Русский
       </NavDropdown.Item>
       <NavDropdown.Divider />
-      <NavDropdown.Item onClick={() => changeLanguage('en')} href="#action/3.2">
+      <NavDropdown.Item onClick={() => setLanguage('en')} href="#action/3.2">
         Английскй
       </NavDropdown.Item>
     </NavDropdown>

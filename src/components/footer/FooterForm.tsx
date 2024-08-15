@@ -3,8 +3,13 @@ import { Formik, Field, Form } from 'formik';
 import validationSchema from '@utils/YupValidationFooter';
 import Filter from 'bad-words';
 import { motion } from 'framer-motion';
+import { TFunction } from 'i18next';
 
-function FooterForm() {
+type FooterFormProps = {
+  t: TFunction;
+};
+
+function FooterForm({ t }: FooterFormProps) {
   type formikValues = {
     email: string;
     name: string;
@@ -33,14 +38,14 @@ function FooterForm() {
           {({ isSubmitting }) => (
             <BootstrapForm className="text-center" as={Form}>
               <p>
-                <strong>Подпишитесь, для получения рассылки!</strong>
+                <strong>{t('footer.subscribe')}</strong>
               </p>
               <BootstrapForm.Label
                 style={{ marginRight: '10px' }}
                 htmlFor="email"
               >
                 <BootstrapForm.Control
-                  placeholder="Почта"
+                  placeholder={t('footer.emailPlaceholder')}
                   as={Field}
                   name="email"
                   type="email"
@@ -48,7 +53,7 @@ function FooterForm() {
               </BootstrapForm.Label>
               <BootstrapForm.Label htmlFor="name">
                 <BootstrapForm.Control
-                  placeholder="Имя"
+                  placeholder={t('footer.emailPlaceholderExample')}
                   as={Field}
                   name="name"
                   type="text"
@@ -61,7 +66,7 @@ function FooterForm() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                Подписаться
+                {t('footer.subscribeButton')}
               </motion.button>{' '}
             </BootstrapForm>
           )}

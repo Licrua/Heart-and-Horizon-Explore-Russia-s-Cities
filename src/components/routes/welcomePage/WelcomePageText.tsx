@@ -9,14 +9,11 @@ type MainGreetingTextType = {
 };
 
 function WelcomePageText({ styles }: MainGreetingTextType) {
-  const { t, i18n } = useTranslation('welcomePageTranslation');
+  const { t } = useTranslation('welcomePageTranslation');
 
   const dispatch = useAppDispatch();
   const onGrettingTogglerHandler = () => {
     dispatch(setGreetingButtonPress(true));
-  };
-  const changeLanguage = (language: 'ru' | 'en' | undefined): void => {
-    i18n.changeLanguage(language);
   };
 
   return (
@@ -37,7 +34,7 @@ function WelcomePageText({ styles }: MainGreetingTextType) {
       className={styles.content}
     >
       <h1>{t('welcome')}</h1>
-      <WelcomePageLanguageSelector changeLanguage={changeLanguage} />
+      <WelcomePageLanguageSelector />
       <div className={styles.font}>
         <p>{t('greeting')}</p>
         <p>

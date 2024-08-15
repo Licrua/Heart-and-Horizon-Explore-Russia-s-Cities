@@ -1,4 +1,4 @@
-import MainPage from '@routes/MainPage';
+import MainPage from '@components/main/MainPage';
 import Moscow from '@routes/cities/Moscow/MoscowMainContainer';
 import Spb from '@routes/cities/Spb/Spb';
 import Omsk from '@routes/cities/Omsk/OmskMain';
