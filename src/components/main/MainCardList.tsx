@@ -17,6 +17,7 @@ function MainCardList({ cityItem, t }: cityItemProp) {
   const cityRoute = cityItem.imgName.split('.')[0];
   const citiesPopulation = cityItem.population.toString();
   const citiesFoundatonDate = cityItem.foundation_date;
+  console.log('MainCardList', cityItem);
 
   return (
     <Card
@@ -48,7 +49,7 @@ function MainCardList({ cityItem, t }: cityItemProp) {
         variant="top"
         width="300px"
         height="300px"
-        src={`/src/assets/images/citiesIMG/${cityItem.imgName}`}
+        src={`/src/assets/images/citiesIMG/${cityItem.imgName}.jpeg`}
       />
       <Card.Body>
         <Card.Title>{cityItem.name}</Card.Title>

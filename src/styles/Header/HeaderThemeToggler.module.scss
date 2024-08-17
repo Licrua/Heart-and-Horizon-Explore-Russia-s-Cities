@@ -2,24 +2,23 @@
 @import '/src/styles/mixins';
 
 .themeSwitcher {
-    width: 100px;
-    height: 30px;
-    background-color: rgba(65, 63, 63, 0.154);
-    @include flexLayout;
-    padding: 10px;
-    border-radius: 50px;
-    margin: 6px;
-    cursor: $cursor;
-  }
-  
-  .themeSwitcher[data-colorTheme="white"] {
-    justify-content: flex-end;
-  }
-  
-  .motionSlider {
-    width: $motionSliderSize;
-    height: $motionSliderSize;
-    background-color: grey;
-    border-radius: 40px;
-  }
-  
+  width: 100px;
+  height: 30px;
+  background-color: rgba(65, 63, 63, 0.154);
+  @include flexLayout;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 6px;
+  cursor: $cursor;
+}
+
+.themeSwitcher[data-colorTheme='white'] {
+  justify-content: flex-end;
+}
+
+.motionSlider {
+  width: $motionSliderSize;
+  height: $motionSliderSize;
+  background-color: grey;
+  border-radius: 40px;
+}

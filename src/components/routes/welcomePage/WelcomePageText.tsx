@@ -2,6 +2,7 @@ import { useAppDispatch } from '@store/hooks';
 import { motion } from 'framer-motion';
 import { setGreetingButtonPress } from '@slices/cities';
 import { useTranslation } from 'react-i18next';
+import notify from '@utils/toastifyNotify';
 import WelcomePageLanguageSelector from './WelcomePageLanguageSelector';
 
 type MainGreetingTextType = {

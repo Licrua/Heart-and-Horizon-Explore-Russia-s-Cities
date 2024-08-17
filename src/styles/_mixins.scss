@@ -1,35 +1,35 @@
 @mixin gradient-text($gradient) {
-    background: $gradient;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  @mixin full-size {
-    width: $maxWidth;
-    height: $maxHeight;
-  }
+  background: $gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  @mixin font-settings {
-    font-family: $font-family;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: $font-weight;
-  }
-  
-  @mixin gradient-background {
-    background: $gradient-bg;
-  }
+@mixin full-size {
+  width: $maxWidth;
+  height: $maxHeight;
+}
 
-  @mixin flexLayout {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
+@mixin font-settings {
+  font-family: $font-family;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: $font-weight;
+}
 
-  @mixin center-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
+@mixin gradient-background {
+  background: $gradient-bg;
+}
+
+@mixin flexLayout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

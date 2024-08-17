@@ -1,0 +1,5 @@
+{
+  "successNotify": "Have a nice time!",
+  "errorNotify": "Opps! Something wents wrong. Try again later.",
+  "formSuccessNotify": "Form has been sent successfully"
+}

@@ -5,6 +5,7 @@ import FooterMain from '@components/footer/FooterMain';
 import { useAppDispatch, useAppSelector } from '@store/hooks';
 import { useEffect } from 'react';
 import { changeThemableToggler } from '@slices/cities';
+import ScrollToTopArrow from '@components/ScrollToTopArrow';
 
 function App() {
   const location = useLocation();
@@ -14,8 +15,10 @@ function App() {
   );
 
   useEffect(() => {
-    if (location.pathname !== '/') dispatch(changeThemableToggler(true));
-    else {
+    if (location.pathname !== '/') {
+      dispatch(changeThemableToggler(true));
+      window.scrollTo(0, 0);
+    } else {
       dispatch(changeThemableToggler(false));
     }
   });
@@ -23,6 +26,7 @@ function App() {
   return (
     <div>
       {currentGreetingStatus && <Header />}
+      <ScrollToTopArrow />
       <Routes>
         {routes.map((item) => (
           <Route key={item.id} path={item.path} element={<item.element />} />

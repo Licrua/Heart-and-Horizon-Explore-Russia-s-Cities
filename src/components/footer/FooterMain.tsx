@@ -3,7 +3,7 @@ import SocialMediaIcons from '@data/footerData/footerLogosList';
 import { useTranslation } from 'react-i18next';
 import FooterCopyright from './FooterCopyright';
 import FooterSocialNovbar from './FooterSocialNovbar';
-import FooterForm from './FooterForm';
+import FooterForm from './FooterFormMain';
 import FooterPopUpReccomendation from './FooterPopUpReccomendation';
 
 function FooterMain() {

@@ -1,0 +1,5 @@
+{
+  "email": "Incorrect email address",
+  "required": "Required field",
+  "min": "Must be at least 3 characters long"
+}

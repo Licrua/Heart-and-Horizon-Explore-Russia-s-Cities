@@ -1,21 +1,44 @@
-function LoadingError({ errorCitiesRu }) {
-  if (errorCitiesRu) {
-    // Обработка ошибок
-    let errorMessage = 'Something went wrong';
+import { FetchBaseQueryError } from '@reduxjs/toolkit/query';
+import { SerializedError } from '@reduxjs/toolkit';
 
-    if ('status' in errorCitiesRu) {
-      // Обработка ошибок FetchBaseQueryError
-      errorMessage = `Error ${errorCitiesRu.status}: ${errorCitiesRu.data ? JSON.stringify(errorCitiesRu.data) : 'No details'}`;
-    } else if ('message' in errorCitiesRu) {
-      // Обработка ошибок SerializedError
-      errorMessage = errorCitiesRu.message;
-    }
+type ErrorType = FetchBaseQueryError | SerializedError | undefined;
 
-    return (
-      <div>
-        <p>{errorMessage}</p>
-      </div>
-    );
-  }
+interface LoadingErrorProps {
+  errorCitiesRu?: ErrorType;
+  errorCitiesEn?: ErrorType;
 }
+
+function LoadingError({ errorCitiesRu, errorCitiesEn }: LoadingErrorProps) {
+  // Функция для получения сообщения об ошибке
+  const getErrorMessage = (error: ErrorType): string => {
+    if (!error) return 'No error provided';
+
+    if ('status' in error) {
+      const { status } = error as FetchBaseQueryError;
+      const { data } = error as FetchBaseQueryError;
+      return `Error ${status}: ${data ? JSON.stringify(data) : 'No details'}`;
+    }
+    if ('message' in error) {
+      // Приведение типа для гарантии строки
+      return (error as SerializedError).message || 'Unknown error';
+    }
+    return 'Unknown error';
+  };
+
+  let errorMessage: string = 'Something went wrong';
+
+  // Проверка и получение сообщения об ошибке для каждого из источников ошибок
+  if (errorCitiesRu) {
+    errorMessage = getErrorMessage(errorCitiesRu);
+  } else if (errorCitiesEn) {
+    errorMessage = getErrorMessage(errorCitiesEn);
+  }
+
+  return (
+    <div>
+      <p>{errorMessage}</p>
+    </div>
+  );
+}
+
 export default LoadingError;

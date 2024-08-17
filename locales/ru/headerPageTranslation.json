@@ -1,13 +1,12 @@
 {
-    "navigation": {
-      "language": {
-        "russian": "Русский",
-        "english": "Английский"
-      }
-    },
-    "header": {
-      "title": "Сердце и Горизонт",
-      "subtitle": "- Исследуйте города России"
+  "navigation": {
+    "language": {
+      "russian": "Русский",
+      "english": "Английский"
     }
+  },
+  "header": {
+    "title": "Сердце и Горизонт",
+    "subtitle": "\u27A2 Исследуйте города России"
   }
-  
+}

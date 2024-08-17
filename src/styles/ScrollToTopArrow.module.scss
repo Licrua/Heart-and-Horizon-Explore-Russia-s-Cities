@@ -1,0 +1,11 @@
+.scroll_arrow {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 25px;
+  z-index: 1000;
+  line-height: 25px;
+}

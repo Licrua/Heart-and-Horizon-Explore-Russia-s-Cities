@@ -10,7 +10,7 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -20,15 +20,26 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    'indent': ['error', 2],
+    indent: [
+		'error',
+		2,
+		{
+		  SwitchCase: 1,
+		  ignoredNodes: ['ConditionalExpression']
+		},
+	  ],
     'linebreak-style': ['error', 'unix'],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
-    'quotes': ['error', 'single'],
-    'semi': ['error', 'always'],
+    'react/jsx-filename-extension': [
+      1,
+      { extensions: ['.js', '.jsx', '.tsx'] },
+    ],
+    quotes: ['error', 'single'],
+    semi: ['error', 'always'],
     'no-unused-vars': 'warn',
+    'react/require-default-props': 'off',
     'react/prop-types': 'off',
     'no-param-reassign': 'off',
-    'react/react-in-jsx-scope':'off',
+    'react/react-in-jsx-scope': 'off',
     'import/no-unresolved': 'error',
     'import/extensions': [
       'error',
@@ -40,7 +51,7 @@ module.exports = {
         jsx: 'never',
       },
     ],
-    'prettier/prettier': ['error']
+    'prettier/prettier': ['error'],
   },
   settings: {
     'import/resolver': {

@@ -15,7 +15,7 @@ function MainOpeningText({ t }: MainOpeningTextPropsType) {
       transition: { type: 'spring', stiffness: 70 },
     },
   };
-  // const { t } = useTranslation('mainPageTranslation');
+
   const introductoryTextTranslation = Object.values(
     t('introductoryText', { returnObjects: true })
   );

@@ -1,4 +1,3 @@
-import { TFunction } from 'i18next';
 import { Navbar, Row } from 'react-bootstrap';
 
 type FooterSocialNovbarType = {
@@ -13,7 +12,7 @@ type FooterSocialNovbarType = {
 function FooterSocialNovbar({ socialIcons }: FooterSocialNovbarType) {
   return (
     <Row>
-      <Navbar bg="light" expand="lg" className="d-flex justify-content-center">
+      <Navbar bg="light" expand="lg" className="d-flex  justify-content-center">
         {socialIcons.map((item) => (
           <Navbar.Brand key={item.id} href={item.href}>
             <img

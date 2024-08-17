@@ -40,9 +40,15 @@ function MainPage() {
     }
   }, [dispatch, citiesRuCollection, currentLanguage, citiesEnCollection]);
 
-  if (isLoadingCitiesRu) return <LoadingSpinner />;
+  if (isLoadingCitiesRu || isLoadingCitiesEn) return <LoadingSpinner />;
 
-  if (errorCitiesRu) return <LoadingError errorCitiesRu={errorCitiesRu} />;
+  if (errorCitiesRu || errorCitiesEn)
+    return (
+      <LoadingError
+        errorCitiesRu={errorCitiesRu}
+        errorCitiesEn={errorCitiesEn}
+      />
+    );
 
   return CurrentGreetingState === false ? (
     <WelcomePageMain />

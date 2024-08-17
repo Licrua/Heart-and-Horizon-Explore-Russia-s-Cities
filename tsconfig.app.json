@@ -17,6 +17,7 @@
     "jsx": "react-jsx",
     "baseUrl": "src",
     "paths": {
+      "@locales/*": ["../locales/*"],
       "@data/*": ["data/*"],
       "@slices/*": ["slices/*"],
       "@components/*": ["components/*"],
@@ -24,8 +25,7 @@
       "@styles/*": ["styles/*"],
       "@images/*": ["assets/images/*"],
       "@store/*": ["store/*"],
-      "@routes/*": ["components/routes/*"],
-
+      "@routes/*": ["components/routes/*"]
     },
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",

@@ -1,12 +1,12 @@
 {
-    "navigation": {
-      "language": {
-        "russian": "Russian",
-        "english": "English"
-      }
-    },
-    "header": {
-      "title": "Heart and Horizon",
-      "subtitle": "- Explore Russia's Cities"
+  "navigation": {
+    "language": {
+      "russian": "Russian",
+      "english": "English"
     }
+  },
+  "header": {
+    "title": "Heart and Horizon",
+    "subtitle": "\u27A2 Explore Russia's Cities"
   }
+}
