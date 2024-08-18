@@ -5,7 +5,6 @@ function ScrollToTopArrow() {
   const [showScroll, setShowScroll] = useState(false);
 
   const checkScrollTop = () => {
-    console.log('windowsscro', window.scrollY);
 
     if (window.scrollY > 650) {
       setShowScroll(true);

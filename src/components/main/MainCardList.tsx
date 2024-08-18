@@ -17,7 +17,8 @@ function MainCardList({ cityItem, t }: cityItemProp) {
   const cityRoute = cityItem.imgName.split('.')[0];
   const citiesPopulation = cityItem.population.toString();
   const citiesFoundatonDate = cityItem.foundation_date;
-  console.log('MainCardList', cityItem);
+
+  console.log('cityItemIMAGE', cityItem.imgName);
 
   return (
     <Card

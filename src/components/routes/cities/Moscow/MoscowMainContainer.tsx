@@ -15,7 +15,7 @@ function MoscowMainContainer() {
     >
       <MoscowDesc />
       <MoscowAttractionCarousel />
-      <MoscowAccordionInfo currentThemeCurrent={currentThemeCurrent} />
+      <MoscowAccordionInfo />
     </Container>
   );
 }

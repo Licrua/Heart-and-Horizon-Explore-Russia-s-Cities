@@ -8,6 +8,8 @@ import LoadingSpinner from '@components/loading | error/LoadingSpinner';
 import { selectAllCitites, setCities } from '@slices/cities';
 import { useAppSelector, useAppDispatch } from '@store/hooks';
 import MainContentCityList from '@components/main/MainCityList';
+import Header from '@components/header/HeaderMain';
+import FooterMain from '@components/footer/FooterMain';
 import i18n from '../../i18n';
 import WelcomePageMain from '../routes/welcomePage/WelcomePageMain';
 
@@ -16,6 +18,9 @@ function MainPage() {
   const CurrentGreetingState = useAppSelector(
     (state) => state.cities.isGreetingButtonPressed
   );
+
+  console.log('cityEntities', cityEntities);
+
   const {
     data: dataCitiesRu,
     error: errorCitiesRu,
@@ -53,7 +58,12 @@ function MainPage() {
   return CurrentGreetingState === false ? (
     <WelcomePageMain />
   ) : (
-    <MainContentCityList cityEntities={cityEntities} />
+    <>
+      <Header />
+      <MainContentCityList cityEntities={cityEntities} />
+      <FooterMain />
+    </>
   );
+  //   return <MainContentCityList cityEntities={cityEntities} />;
 }
 export default MainPage;

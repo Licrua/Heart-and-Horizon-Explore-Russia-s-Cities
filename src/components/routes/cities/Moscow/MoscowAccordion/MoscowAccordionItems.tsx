@@ -1,6 +1,6 @@
 import { Accordion } from 'react-bootstrap';
 import { useAppSelector } from '@store/hooks';
-import accordionData from '../../../../../data/MoscowAttrData/MoscowAccordionData';
+import accordionData from '@data/MoscowAttrData/MoscowAccordionData';
 
 function MoscowAccordionItems() {
   const currentTheme = useAppSelector((state) => state.cities.themeColor);

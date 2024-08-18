@@ -5,6 +5,7 @@ import {
   EntityAdapter,
   EntityState,
 } from '@reduxjs/toolkit';
+import { log } from 'console';
 
 export type City = {
   name: string;
@@ -67,6 +68,7 @@ const citiesSlice = createSlice({
     },
     setGreetingButtonPress: (state, { payload }: PayloadAction<boolean>) => {
       state.isGreetingButtonPressed = payload;
+      console.log('BUTTONGREETiNG', state.isGreetingButtonPressed);
     },
   },
 });

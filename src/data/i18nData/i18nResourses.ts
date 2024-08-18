@@ -10,6 +10,8 @@ import notifySuccessEn from '@locales/en/notifyTranslation.json';
 import notifySuccessRu from '@locales/ru/notifyTranslation.json';
 import validationTranslationEn from '@locales/en/validationTranslation.json';
 import validationTranslationRu from '@locales/ru/validationTranslation.json';
+import citiesTranslationEn from '@locales/en/citiesTranslation.json';
+import citiesTranslationRu from '@locales/ru/citiesTranslation.json';
 
 const resources = {
   en: {
@@ -19,6 +21,7 @@ const resources = {
     footerPageTranslation: footerPageTranslationEn,
     notifyTranslation: notifySuccessEn,
     validationTranslation: validationTranslationEn,
+    citiesTranslation: citiesTranslationEn,
   },
   ru: {
     welcomePageTranslation: welcomePageTranslationRu,
@@ -27,6 +30,7 @@ const resources = {
     footerPageTranslation: footerPageTranslationRu,
     notifyTranslation: notifySuccessRu,
     validationTranslation: validationTranslationRu,
+    citiesTranslation: citiesTranslationRu,
   },
 };
 
