@@ -1,5 +1,6 @@
 import { NavDropdown } from 'react-bootstrap';
 import { City } from '@slices/cities';
+import { Link } from 'react-router-dom';
 
 type CityRecord = Record<number, City>;
 
@@ -13,6 +14,8 @@ interface CityListProps {
 }
 
 function HeaderCitiesList({ cities, cityDropDownIcon }: CityListProps) {
+  console.log('cities', cities);
+
   return (
     <NavDropdown
       className="mx-5"
@@ -26,18 +29,18 @@ function HeaderCitiesList({ cities, cityDropDownIcon }: CityListProps) {
       }
       id="scroll-nav-dropdown"
     >
-      {Object.values(cities).map((item, index) => {
+      {Object.values(cities).map((item) => {
         const value = Object.values(cities);
         return item.id !== value.length - 1 ? (
           <span key={item.id}>
-            <NavDropdown.Item href={`#col/${index}`}>
+            <NavDropdown.Item as={Link} to={`/${item.imgName}`}>
               {item.name}
             </NavDropdown.Item>
             <NavDropdown.Divider />
           </span>
         ) : (
           <span key={item.id}>
-            <NavDropdown.Item href={`#col/${index}`}>
+            <NavDropdown.Item as={Link} to={`/${item.imgName}`}>
               {item.name}
             </NavDropdown.Item>
           </span>

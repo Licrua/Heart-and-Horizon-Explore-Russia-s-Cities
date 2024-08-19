@@ -1,6 +1,20 @@
-import MoscowDescriptionSection from '@data/MoscowAttrData/MoscowDescription';
+import { TFunction } from 'i18next';
 
-function MoscowDescTextSection() {
+type MoscowDescTextSectionProps = {
+  t: TFunction;
+};
+
+interface highlightType {
+  id: string;
+  text: string;
+  className?: string;
+}
+
+function MoscowDescTextSection({ t }: MoscowDescTextSectionProps) {
+  const MoscowDescriptionSection = Object.values(
+    t('MoscowTranslation.moscowDescriptionSection', { returnObjects: true })
+  );
+
   return (
     <>
       {MoscowDescriptionSection.map((section) => (
@@ -9,14 +23,14 @@ function MoscowDescTextSection() {
             {section.prefix}
           </span>
           {section.text}
-          {section.highlights.map((highlight) => (
+          {section.highlights.map((highlight: highlightType) => (
             <span key={highlight.id} className={highlight.className}>
               {highlight.text},
             </span>
           ))}
           {section.suffix}
           {section.moreHighlights &&
-            section.moreHighlights.map((highlight) => (
+            section.moreHighlights.map((highlight: highlightType) => (
               <span key={highlight.id} className={highlight.className}>
                 {highlight.text}
                 {highlight.text.endsWith('ина') ? '.' : ','}

@@ -1,11 +1,13 @@
 import { ReactNode } from 'react';
 import { motion } from 'framer-motion';
+import { TFunction } from 'i18next';
 
-type AccordionSectionType = {
+type AccordionSectionPropsType = {
   children: ReactNode;
+  t: TFunction;
 };
 
-function AccordionSection({ children }: AccordionSectionType) {
+function AccordionSection({ children, t }: AccordionSectionPropsType) {
   return (
     <section className="my-3 ">
       <motion.h2
@@ -15,7 +17,7 @@ function AccordionSection({ children }: AccordionSectionType) {
         whileHover={{ scale: 1.1, x: 100 }}
         className="mb-3"
       >
-        Дополнительная информация
+        {t('MoscowTranslation.headers.0.accordionHeader')}
       </motion.h2>
       {children}
     </section>

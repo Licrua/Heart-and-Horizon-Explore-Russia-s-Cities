@@ -5,7 +5,6 @@ import {
   EntityAdapter,
   EntityState,
 } from '@reduxjs/toolkit';
-import { log } from 'console';
 
 export type City = {
   name: string;
@@ -19,7 +18,7 @@ export type citiesState = EntityState<City, number> & {
   isSorted: boolean;
   isThemable: boolean;
   themeColor: string;
-  isGreetingButtonPressed: boolean;
+  //   isGreetingButtonPressed: boolean;
 };
 
 const citiesAdapter: EntityAdapter<City, number> = createEntityAdapter<City>();
@@ -29,7 +28,7 @@ const initialState: citiesState = citiesAdapter.getInitialState({
   isThemable: false,
   themeColor: 'white',
   isSorted: true,
-  isGreetingButtonPressed: false,
+  //   isGreetingButtonPressed: false,
 });
 const citiesSlice = createSlice({
   name: 'cities',
@@ -63,13 +62,12 @@ const citiesSlice = createSlice({
     changeThemeColor: (state) => {
       state.themeColor = state.themeColor === 'white' ? 'black' : 'white';
     },
-    changeThemableToggler: (state, { payload }: PayloadAction<boolean>) => {
+    toggleThemeSwitcher: (state, { payload }: PayloadAction<boolean>) => {
       state.isThemable = payload;
     },
-    setGreetingButtonPress: (state, { payload }: PayloadAction<boolean>) => {
-      state.isGreetingButtonPressed = payload;
-      console.log('BUTTONGREETiNG', state.isGreetingButtonPressed);
-    },
+    // setGreetingButtonPress: (state, { payload }: PayloadAction<boolean>) => {
+    //   state.isGreetingButtonPressed = payload;
+    // },
   },
 });
 
@@ -78,8 +76,8 @@ export const {
   // addCities,
   sortItems,
   changeThemeColor,
-  changeThemableToggler,
-  setGreetingButtonPress,
+  toggleThemeSwitcher,
+  //   setGreetingButtonPress,
   setCities,
 } = citiesSlice.actions;
 export const {

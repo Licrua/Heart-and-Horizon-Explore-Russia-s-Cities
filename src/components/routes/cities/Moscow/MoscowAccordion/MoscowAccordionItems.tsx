@@ -1,9 +1,21 @@
 import { Accordion } from 'react-bootstrap';
 import { useAppSelector } from '@store/hooks';
-import accordionData from '@data/MoscowAttrData/MoscowAccordionData';
+import { TFunction } from 'i18next';
 
-function MoscowAccordionItems() {
+type MoscowAccordionItemsProps = {
+  t: TFunction;
+};
+interface highLightType {
+  id: string;
+  text: string;
+  className: string;
+}
+
+function MoscowAccordionItems({ t }: MoscowAccordionItemsProps) {
   const currentTheme = useAppSelector((state) => state.cities.themeColor);
+  const accordionData = Object.values(
+    t('MoscowTranslation.accordion', { returnObjects: true })
+  );
 
   return (
     <>
@@ -16,7 +28,7 @@ function MoscowAccordionItems() {
             }
           >
             {item.text}
-            {item.highlights.map((highlight) => (
+            {item.highlights.map((highlight: highLightType) => (
               <span className={highlight.className}>{highlight.text}</span>
             ))}
             {item.suffix}

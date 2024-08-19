@@ -1,11 +1,10 @@
 {
 	"MoscowTranslation": {
-		"pavel": "жека",
 	  "headers" : [
 		{
-		 "accordionHeader": "Дополнительная информация",
-		"carouselHeader": "Достопримечательности",
-		"descriptionHeader": "Информация"
+		 	"accordionHeader": "Дополнительная информация",
+			"carouselHeader": "Достопримечательности",
+			"descriptionHeader": "Информация"
 	}
 	  ],
 	  "accordion": [

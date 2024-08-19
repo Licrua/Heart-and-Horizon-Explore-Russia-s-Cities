@@ -1,10 +1,12 @@
 import { Row, Col } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import MoscowDescHeader from './MoscowDescHeader';
 import MoscowSection from './MoscowDescSection';
 import MoscowDescContainer from './MoscowDescText';
 import MoscowTextSection from './MoscowDescTextSection';
 
 function MoscowDesc() {
+  const { t } = useTranslation('citiesTranslation');
   const sectionVariant = {
     hidden: { opacity: 0, scale: 0 },
     visible: {
@@ -18,9 +20,9 @@ function MoscowDesc() {
     <Row>
       <Col>
         <MoscowSection sectionVariant={sectionVariant}>
-          <MoscowDescHeader />
+          <MoscowDescHeader t={t} />
           <MoscowDescContainer>
-            <MoscowTextSection />
+            <MoscowTextSection t={t} />
           </MoscowDescContainer>
         </MoscowSection>
       </Col>

@@ -5,29 +5,14 @@ import AccordionSection from './AccordionSection';
 
 function MoscowAccordionMain() {
   const { t } = useTranslation('citiesTranslation');
-  console.log('t', t);
-
-  console.log('translation', t('MoscowTranslation.headers.1.accordionHeader'));
-  const data = {
-    headers: [
-      {
-        accordionHeader: 'Additional Information',
-        carouselHeader: 'Attractions',
-        descriptionHeader: 'Information',
-      },
-    ],
-  };
-  console.log(data.headers[0].accordionHeader);
 
   return (
     <Container>
       <Row>
         <Col>
-          <h2>{t('MoscowTranslation.headers.accordionHeader')}</h2>
-          <h2>{t('MoscowTranslation.pavel')}</h2>
-          <AccordionSection>
+          <AccordionSection t={t}>
             <Accordion defaultActiveKey="0">
-              <MoscowAccordionItems />
+              <MoscowAccordionItems t={t} />
             </Accordion>
           </AccordionSection>
         </Col>

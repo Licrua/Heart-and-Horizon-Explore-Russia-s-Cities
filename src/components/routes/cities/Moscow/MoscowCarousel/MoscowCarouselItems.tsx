@@ -1,10 +1,16 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import moscowAttractions from '@data/MoscowAttrData/MoscowPictures';
+// import moscowAttractions from '@data/MoscowAttrData/MoscowPictures';
 import { useState } from 'react';
+import { TFunction } from 'i18next';
+import imageMap from '@data/MoscowAttrData/MoscowPictures';
 import MoscowCarouselCaption from './MoscowCarouselCaption';
 
-function MoscowCarouselItems() {
+type MoscowCarouselItems = {
+  t: TFunction;
+};
+
+function MoscowCarouselItems({ t }: MoscowCarouselItems) {
   const [index, setIndex] = useState<number>(0);
   const handleSelect = (selectedIndex: number) => {
     setIndex(selectedIndex);
@@ -13,6 +19,13 @@ function MoscowCarouselItems() {
     hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0, transition: { duration: 1 } },
   };
+
+  const moscowAttractions = Object.values(
+    t('MoscowTranslation.moscowAttractions', { returnObjects: true })
+  ).map((attraction) => ({
+    ...attraction,
+    src: imageMap[attraction.src as keyof typeof imageMap],
+  }));
 
   return (
     <Row>

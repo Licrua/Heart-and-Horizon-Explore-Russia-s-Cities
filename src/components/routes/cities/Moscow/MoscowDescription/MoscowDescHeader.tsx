@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion';
+import { TFunction } from 'i18next';
 
-function MoscowDescHeader() {
+type MoscowDescHeaderTypes = {
+  t: TFunction;
+};
+function MoscowDescHeader({ t }: MoscowDescHeaderTypes) {
   return (
     <motion.h2
       initial={{ opacity: 0, y: 0, x: 0 }}
@@ -9,7 +13,7 @@ function MoscowDescHeader() {
       whileHover={{ scale: 1.1, x: 100 }}
       className="mb-3"
     >
-      Информация
+      {t('MoscowTranslation.headers.0.descriptionHeader')}
     </motion.h2>
   );
 }

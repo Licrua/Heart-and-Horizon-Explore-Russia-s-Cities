@@ -1,6 +1,8 @@
 {
 	"MoscowTranslation": {
-		"pavel": "jeka",
+		"pavel": [
+			{"chmo": "chmo"}
+		],
 	  "headers" : [
 		{
 			"accordionHeader": "Additional Information",
