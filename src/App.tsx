@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { toggleThemeSwitcher, setCities } from '@slices/cities';
 import ScrollToTopArrow from '@components/ScrollToTopArrow';
 import WelcomePageMain from '@components/routes/welcomePage/WelcomePageMain';
-import MainPage from '@components/main/MainPage';
+import MainPage from '@components/routes/MainPage';
 import NotFound from '@components/routes/NotFound';
 import {
   useGetCitiesDataEnQuery,

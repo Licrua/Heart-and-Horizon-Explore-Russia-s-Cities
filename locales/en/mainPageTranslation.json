@@ -26,5 +26,19 @@
     "Population": "Population - {{number}} people",
     "FoundationDate": "Foundation date - {{date}} year",
     "moreDetails": "Learn more about the city"
-  }
+  },
+  "additionalInfo": {
+    "partingWordsHeader": "Immerse yourself in the warm and comprehensive atmosphere of Russia",
+    "partingWordsDescription": {
+      "partOne": "Russia is known for its famous cities, each of which has a unique history and cultural heritage.",
+      "partTwo": "Discover the key cities that shape the cultural and economic heart of the country."
+    }
+  },
+  "mapInformation": {
+    "mapHeader": "Исследуйте сердце России",
+    "mapDescription": {
+        "partOne": "Путешествуйте по карте России и откройте для себя богатую историю и культуру её крупных городов.",
+        "partTwo": "Каждый маркер на карте представляет собой ключевой город, который играет важную роль в жизни страны."
+    }
+}
 }

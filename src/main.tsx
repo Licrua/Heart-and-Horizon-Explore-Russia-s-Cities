@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import store from '@store/store.ts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
+import 'leaflet/dist/leaflet.css';
 import '@styles/_global.scss';
 import './i18n';
 import { ToastContainer } from 'react-toastify';

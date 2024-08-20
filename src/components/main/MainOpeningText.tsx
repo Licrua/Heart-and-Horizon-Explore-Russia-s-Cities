@@ -1,6 +1,7 @@
 import styles from '@styles/MainComponent/MainText.module.scss';
 import { motion } from 'framer-motion';
 import { TFunction } from 'i18next';
+import { Badge } from 'react-bootstrap';
 
 type MainOpeningTextPropsType = {
   t: TFunction;
@@ -30,7 +31,9 @@ function MainOpeningText({ t }: MainOpeningTextPropsType) {
     >
       <div className={styles.background_image} />
       <div className={styles.content}>
-        <h1 className="mb-3 px-3 pt-2">{introductoryTitleTranslation}</h1>
+        <h1 className={styles.mainOpeningTextheader}>
+          {introductoryTitleTranslation}
+        </h1>
         {introductoryTextTranslation.map((paragraph) => (
           <p className="px-3" key={paragraph.id}>
             {paragraph.initial && (

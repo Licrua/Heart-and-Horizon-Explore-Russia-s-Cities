@@ -18,8 +18,6 @@ function MainCardList({ cityItem, t }: cityItemProp) {
   const citiesPopulation = cityItem.population.toString();
   const citiesFoundatonDate = cityItem.foundation_date;
 
-  console.log('cityItemIMAGE', cityItem.imgName);
-
   return (
     <Card
       as={motion.div}
