@@ -48,7 +48,7 @@ function MainCardList({ cityItem, t }: cityItemProp) {
         variant="top"
         width="300px"
         height="300px"
-        src={`/src/assets/images/citiesIMG/${cityItem.imgName}.jpeg`}
+        src={`/src/assets/images/citiesCardImages/${cityItem.imgName}.jpeg`}
       />
       <Card.Body>
         <Card.Title>{cityItem.name}</Card.Title>

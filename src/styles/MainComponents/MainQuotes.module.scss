@@ -1,0 +1,32 @@
+.quote {
+	position: relative;
+	padding: 1em 2em;
+	margin: 1em 0;
+	border-left: 4px solid #ddd;
+	font-style: italic;
+	color: #555;
+	background: #f9f9f9;
+	border-radius: 5px;
+	&::before {
+		content: '\201C'; 
+		font-family: 'Times New Roman', serif;
+		font-size: 4em;
+		position: absolute;
+		left: 1px;
+		top: 10px;
+		color: #999;
+	  }
+	  &::after {
+		content: '\201D';
+		font-family: 'Times New Roman', serif;
+		font-size: 4em;
+		position: absolute;
+		right: 1px;
+		bottom: 1px;
+		color: #999;
+	  }
+	  
+  }
+  
+
+  

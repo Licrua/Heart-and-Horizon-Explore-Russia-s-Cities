@@ -5,7 +5,9 @@ const namespaces: string[] = [
   'footerPageTranslation',
   'notifyTranslation',
   'validationTranslation',
-  'citiesTranslation',
+  'moscowTranslation',
+  'spbTranslation',
+  'quotesTranslation',
 ];
 
 export default namespaces;

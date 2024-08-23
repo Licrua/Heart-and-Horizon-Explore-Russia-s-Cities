@@ -40,7 +40,7 @@ function MoscowCarouselCaption({ item }: MoscowCarouselCaptionType) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
-        className="lh-3 f-bold"
+        className="f-bold small"
         style={{
           background:
             'linear-gradient(to bottom, rgba(0, 0, 1, 0.5), rgba(0, 0, 0, 0))',

@@ -10,8 +10,12 @@ import notifySuccessEn from '@locales/en/notifyTranslation.json';
 import notifySuccessRu from '@locales/ru/notifyTranslation.json';
 import validationTranslationEn from '@locales/en/validationTranslation.json';
 import validationTranslationRu from '@locales/ru/validationTranslation.json';
-import citiesTranslationEn from '@locales/en/citiesTranslation.json';
-import citiesTranslationRu from '@locales/ru/citiesTranslation.json';
+import moscowTranslationEn from '@locales/en/citiesTranslation/moscowTranslation.json';
+import moscowTranslationRu from '@locales/ru/citiesTranslation/moscowTranslation.json';
+import spbTranslationEn from '@locales/en/citiesTranslation/spbTranslation.json';
+import spbTranslationRu from '@locales/ru/citiesTranslation/spbTranslation.json';
+import quotesTranslationRu from '@locales/ru/quotesTranslation.json';
+import quotesTranslationEn from '@locales/en/quotesTranslation.json';
 
 const resources = {
   en: {
@@ -21,7 +25,9 @@ const resources = {
     footerPageTranslation: footerPageTranslationEn,
     notifyTranslation: notifySuccessEn,
     validationTranslation: validationTranslationEn,
-    citiesTranslation: citiesTranslationEn,
+    moscowTranslation: moscowTranslationEn,
+    spbTranslation: spbTranslationEn,
+    quotesTranslation: quotesTranslationEn,
   },
   ru: {
     welcomePageTranslation: welcomePageTranslationRu,
@@ -30,7 +36,9 @@ const resources = {
     footerPageTranslation: footerPageTranslationRu,
     notifyTranslation: notifySuccessRu,
     validationTranslation: validationTranslationRu,
-    citiesTranslation: citiesTranslationRu,
+    moscowTranslation: moscowTranslationRu,
+    spbTranslation: spbTranslationRu,
+    quotesTranslation: quotesTranslationRu,
   },
 };
 

@@ -4,7 +4,11 @@ import Header from '@components/header/HeaderMain';
 import FooterMain from '@components/footer/FooterMain';
 import { useAppDispatch } from '@store/hooks';
 import { useEffect } from 'react';
-import { toggleThemeSwitcher, setCities } from '@slices/cities';
+import {
+  toggleThemeSwitcher,
+  setCities,
+  toggleMapIconShown,
+} from '@slices/cities';
 import ScrollToTopArrow from '@components/ScrollToTopArrow';
 import WelcomePageMain from '@components/routes/welcomePage/WelcomePageMain';
 import MainPage from '@components/routes/MainPage';
@@ -35,17 +39,19 @@ function App() {
   const citiesRuCollection = dataCitiesRu?.record.cities;
   const citiesEnCollection = dataCitiesEn?.record.cities;
   const currentLanguage = i18n.language;
-
   const isWelcomePageLocation = location.pathname === '/';
+  const isMainPageLocation = location.pathname === '/main';
 
   useEffect(() => {
-    if (location.pathname !== '/' && location.pathname !== '/main') {
-      dispatch(toggleThemeSwitcher(true));
-      window.scrollTo(0, 0);
-    } else {
+    window.scrollTo(0, 0);
+    if (isMainPageLocation) {
       dispatch(toggleThemeSwitcher(false));
+      dispatch(toggleMapIconShown(true));
+    } else {
+      dispatch(toggleThemeSwitcher(true));
+      dispatch(toggleMapIconShown(false));
     }
-  }, [location.pathname, dispatch]);
+  }, [isMainPageLocation, isWelcomePageLocation, dispatch]);
 
   useEffect(() => {
     if (citiesRuCollection && currentLanguage === 'ru') {

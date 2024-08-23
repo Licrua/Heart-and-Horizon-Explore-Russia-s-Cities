@@ -6,7 +6,7 @@ import MoscowDescContainer from './MoscowDescText';
 import MoscowTextSection from './MoscowDescTextSection';
 
 function MoscowDesc() {
-  const { t } = useTranslation('citiesTranslation');
+  const { t } = useTranslation('moscowTranslation');
   const sectionVariant = {
     hidden: { opacity: 0, scale: 0 },
     visible: {

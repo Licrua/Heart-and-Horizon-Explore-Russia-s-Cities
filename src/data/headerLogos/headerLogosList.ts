@@ -3,8 +3,8 @@ import themeDarkLogo from '@images/navbar-logo/night-svgrepo-com.svg';
 import languageLogo from '@images/navbar-logo/language-svgrepo-com.svg';
 import cityDropDown from '@images/navbar-logo/city-svgrepo-com (1).svg';
 import themeLightLogo from '@images/navbar-logo/sun-2-svgrepo-com (1).svg';
+import mapIconLogo from '@images/navbar-logo/map.png';
 
-// Создание массива логотипов с правильными значениями
 const citiesLogo = [
   {
     alt: 'cityLogo',
@@ -30,6 +30,11 @@ const citiesLogo = [
     alt: 'themeLightLogo',
     id: 5,
     src: themeLightLogo,
+  },
+  {
+    alt: 'mapIconLogo',
+    id: 6,
+    src: mapIconLogo,
   },
 ];
 

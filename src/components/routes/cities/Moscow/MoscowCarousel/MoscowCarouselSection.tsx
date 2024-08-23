@@ -5,7 +5,7 @@ type MoscowCarouselSectionType = {
 };
 
 function MoscowCarouselSection({ children }: MoscowCarouselSectionType) {
-  return <section className="border-bottom border-3">{children}</section>;
+  return <section className="border-bottom border-2">{children}</section>;
 }
 
 export default MoscowCarouselSection;

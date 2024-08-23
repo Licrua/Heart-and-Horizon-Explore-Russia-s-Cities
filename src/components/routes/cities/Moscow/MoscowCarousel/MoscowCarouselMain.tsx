@@ -4,7 +4,7 @@ import MoscowCarouselItems from './MoscowCarouselItems';
 import MoscowCarouselSection from './MoscowCarouselSection';
 
 function MoscowAttractionCarousel() {
-  const { t } = useTranslation('citiesTranslation');
+  const { t } = useTranslation('moscowTranslation');
   return (
     <MoscowCarouselSection>
       <MoscowCarouselHeader t={t} />

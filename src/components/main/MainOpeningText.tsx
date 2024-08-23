@@ -1,7 +1,6 @@
-import styles from '@styles/MainComponent/MainText.module.scss';
+import styles from '@styles/MainComponents/MainText.module.scss';
 import { motion } from 'framer-motion';
 import { TFunction } from 'i18next';
-import { Badge } from 'react-bootstrap';
 
 type MainOpeningTextPropsType = {
   t: TFunction;

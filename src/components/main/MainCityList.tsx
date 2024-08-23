@@ -8,12 +8,13 @@ import MainContentFilterIcon from './MainFilterIcon';
 import MainCardList from './MainCardList';
 import MainOpeningText from './MainOpeningText';
 import MainCityMap from './MainCityMap';
+import MainQuotes from './MainQuotes';
 
 type MainContentListType = {
   cityEntities: City[];
 };
 function MainContentCityList({ cityEntities }: MainContentListType) {
-  const { t } = useTranslation('mainPageTranslation');
+  const { t } = useTranslation(['mainPageTranslation', 'quotesTranslation']);
   return (
     <Container>
       <Row>
@@ -21,19 +22,25 @@ function MainContentCityList({ cityEntities }: MainContentListType) {
           <MainOpeningText t={t} />
         </Col>
       </Row>
-      <h2 className="text-center position-relative">
-        <span className="me-2">◎</span>
-        {t('cardInformation.cardHeader')}
-        <span className="ms-2">◎</span>
-      </h2>
-      <p className="text-center font-italic">
-        <em>
-          {t('cardInformation.cardDescription.partOne')}
-          <br />
-          {t('cardInformation.cardDescription.partTwo')}
-        </em>
-      </p>
-      <MainContentFilterIcon t={t} filterIcon={filterIcon} />
+      <Row>
+        <Col>
+          <h2 className="text-center position-relative">
+            <span className="me-2">◎</span>
+            {t('additionalInfo.partingWordsHeader')}
+            <span className="ms-2">◎</span>
+          </h2>
+          <p
+            style={{ textWrap: 'balance' }}
+            className="text-center font-italic"
+          >
+            <em>
+              {t('additionalInfo.partingWordsDescription.partOne')}{' '}
+              {t('additionalInfo.partingWordsDescription.partTwo')}
+            </em>
+          </p>
+          <MainContentFilterIcon t={t} filterIcon={filterIcon} />
+        </Col>
+      </Row>
       <Row xs={1} md={2} className="g-4">
         {cityEntities.map((item) => (
           <Col id={`col/${item.id}`} key={item.id}>
@@ -48,14 +55,18 @@ function MainContentCityList({ cityEntities }: MainContentListType) {
             {t('mapInformation.mapHeader')}
             <span className="ms-2">◎</span>
           </h2>
-          <p className="text-center">
+          <p style={{ textWrap: 'balance' }} className="text-center">
             <em>
-              {t('mapInformation.mapDescription.partOne')}
-              <br />
+              {t('mapInformation.mapDescription.partOne')}{' '}
               {t('mapInformation.mapDescription.partTwo')}
             </em>
           </p>
           <MainCityMap />
+        </Col>
+      </Row>
+      <Row className="border-top border-dark">
+        <Col className="my-4">
+          <MainQuotes t={t} />
         </Col>
       </Row>
     </Container>

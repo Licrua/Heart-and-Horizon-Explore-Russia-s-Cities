@@ -14,11 +14,9 @@ interface CityListProps {
 }
 
 function HeaderCitiesList({ cities, cityDropDownIcon }: CityListProps) {
-  console.log('cities', cities);
-
   return (
     <NavDropdown
-      className="mx-5"
+      className="mx-3"
       title={
         <img
           width="30"

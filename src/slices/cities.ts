@@ -18,17 +18,16 @@ export type citiesState = EntityState<City, number> & {
   isSorted: boolean;
   isThemable: boolean;
   themeColor: string;
-  //   isGreetingButtonPressed: boolean;
+  isMapIconShown: boolean;
 };
 
 const citiesAdapter: EntityAdapter<City, number> = createEntityAdapter<City>();
 
-// Используем адаптер для получения начального состояния
 const initialState: citiesState = citiesAdapter.getInitialState({
   isThemable: false,
   themeColor: 'white',
   isSorted: true,
-  //   isGreetingButtonPressed: false,
+  isMapIconShown: false,
 });
 const citiesSlice = createSlice({
   name: 'cities',
@@ -37,9 +36,6 @@ const citiesSlice = createSlice({
     addCity: (state, action: PayloadAction<City>) => {
       citiesAdapter.addOne(state, action.payload);
     },
-    // addCities: (state, action: PayloadAction<Record<number, City>>) => {
-    //   citiesAdapter.addMany(state, action.payload);
-    // },
     setCities: (state, action: PayloadAction<Record<number, City>>) => {
       citiesAdapter.setAll(state, action.payload);
     },
@@ -65,20 +61,19 @@ const citiesSlice = createSlice({
     toggleThemeSwitcher: (state, { payload }: PayloadAction<boolean>) => {
       state.isThemable = payload;
     },
-    // setGreetingButtonPress: (state, { payload }: PayloadAction<boolean>) => {
-    //   state.isGreetingButtonPressed = payload;
-    // },
+    toggleMapIconShown: (state, { payload }: PayloadAction<boolean>) => {
+      state.isMapIconShown = payload;
+    },
   },
 });
 
 export const {
   addCity,
-  // addCities,
   sortItems,
   changeThemeColor,
   toggleThemeSwitcher,
-  //   setGreetingButtonPress,
   setCities,
+  toggleMapIconShown,
 } = citiesSlice.actions;
 export const {
   selectEntities,
@@ -88,5 +83,4 @@ export const {
   (state: { cities: ReturnType<typeof citiesSlice.reducer> }) => state.cities
 );
 
-// export { selectEntities };
 export default citiesSlice.reducer;

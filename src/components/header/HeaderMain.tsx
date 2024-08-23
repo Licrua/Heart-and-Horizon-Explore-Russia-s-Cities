@@ -7,11 +7,14 @@ import HeaderMainLogo from './HeaderMainLogo';
 import HeaderTheme from './HeaderThemeLogo';
 import HeaderLanguageLogo from './HeaderLanguageLogo';
 import HeaderCitiesList from './HeaderCitiesListNavigation';
+import HeaderMapLogo from './HeaderMapLogo';
 
 function Header() {
   const citiesEntites = useAppSelector((state) => selectEntities(state));
   const themeToggler = useAppSelector((state) => state.cities.isThemable);
+  const isMapIconShown = useAppSelector((state) => state.cities.isMapIconShown);
   const { t } = useTranslation('headerPageTranslation');
+  console.log('isMapIconShown', isMapIconShown);
 
   const [
     cityLogo,
@@ -19,6 +22,7 @@ function Header() {
     languageLogo,
     cityDropDownLogo,
     themeLightLogo,
+    mapIconLogo,
   ] = citiesLogo;
 
   return (
@@ -29,15 +33,15 @@ function Header() {
     >
       <Container
         fluid
-        className="d-flex justify-content-between align-items-center"
+        className="d-flex justify-content-between align-items-center "
       >
         <HeaderMainLogo cityLogo={cityLogo} t={t} />
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
           id="basic-navbar-nav"
-          className="justify-content-center"
+          className="justify-content-center "
         >
-          <Nav className="d-flex align-items-center">
+          <Nav className="d-flex align-items-center ">
             <HeaderCitiesList
               cities={citiesEntites}
               cityDropDownIcon={cityDropDownLogo}
@@ -49,6 +53,7 @@ function Header() {
                 themeLightLogo={themeLightLogo}
               />
             )}
+            {isMapIconShown && <HeaderMapLogo mapIconLogo={mapIconLogo} />}
           </Nav>
         </Navbar.Collapse>
       </Container>

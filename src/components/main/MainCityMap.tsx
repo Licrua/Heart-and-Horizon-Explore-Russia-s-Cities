@@ -4,6 +4,7 @@ import markers from '@data/mainData/mainMapMarkers';
 function MapComponent() {
   return (
     <MapContainer
+      id="map"
       center={[55.7558, 37.6176]}
       zoom={4}
       style={{ height: '80vh', width: '100%' }}

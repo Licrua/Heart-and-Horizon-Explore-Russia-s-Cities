@@ -1,9 +1,8 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-// import moscowAttractions from '@data/MoscowAttrData/MoscowPictures';
 import { useState } from 'react';
 import { TFunction } from 'i18next';
-import imageMap from '@data/MoscowAttrData/MoscowPictures';
+import moscowImagesMap from '@data/citiesPictures/moscowPictures';
 import MoscowCarouselCaption from './MoscowCarouselCaption';
 
 type MoscowCarouselItems = {
@@ -24,7 +23,7 @@ function MoscowCarouselItems({ t }: MoscowCarouselItems) {
     t('MoscowTranslation.moscowAttractions', { returnObjects: true })
   ).map((attraction) => ({
     ...attraction,
-    src: imageMap[attraction.src as keyof typeof imageMap],
+    src: moscowImagesMap[attraction.src as keyof typeof moscowImagesMap],
   }));
 
   return (
@@ -49,8 +48,13 @@ function MoscowCarouselItems({ t }: MoscowCarouselItems) {
               key={item.id}
             >
               <img
-                style={{ height: '500px', objectPosition: 'center' }}
-                className="d-block w-100 object-fit-cover"
+                style={{
+                  objectPosition: 'center ',
+                  objectFit: 'cover',
+                  width: '100%',
+                  height: '500px',
+                }}
+                className="border border-3"
                 src={item.src}
                 alt={item.name}
               />

@@ -1,4 +1,4 @@
-import styles from '@styles/MainComponent/MainPageGreeting.module.scss';
+import styles from '@styles/MainComponents/MainPageGreeting.module.scss';
 import WelcomePageText from './WelcomePageText';
 import WelcomePageVideo from './WelcomePageVideo';
 

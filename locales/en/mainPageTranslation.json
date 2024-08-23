@@ -35,10 +35,15 @@
     }
   },
   "mapInformation": {
-    "mapHeader": "Исследуйте сердце России",
+    "mapHeader": "Explore the Heart of Russia",
     "mapDescription": {
-        "partOne": "Путешествуйте по карте России и откройте для себя богатую историю и культуру её крупных городов.",
-        "partTwo": "Каждый маркер на карте представляет собой ключевой город, который играет важную роль в жизни страны."
+      "partOne": "Travel across the map of Russia and discover the rich history and culture of its major cities.",
+      "partTwo": "Each marker on the map represents a key city that plays an important role in the country's life."
     }
-}
+  },
+	"quotesSection": {
+	  "description": "Inspiring words from famous authors about Russia and its culture.",
+	  "subtitle": "These quotes come from authors who have traveled extensively and experienced the world in profound ways. Their observations reflect a deep understanding and appreciation of diverse cultures and landscapes."
+	}
+  
 }
