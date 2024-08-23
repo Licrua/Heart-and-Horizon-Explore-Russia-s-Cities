@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-interface SpbSectionType {
+interface NovosibirskSectionType {
   children: React.ReactNode;
   sectionVariant: {
     hidden: object;
@@ -8,7 +8,10 @@ interface SpbSectionType {
   };
 }
 
-function SpbDescSection({ children, sectionVariant }: SpbSectionType) {
+function NovosibirskDescSection({
+  children,
+  sectionVariant,
+}: NovosibirskSectionType) {
   return (
     <motion.section
       initial="hidden"
@@ -21,4 +24,4 @@ function SpbDescSection({ children, sectionVariant }: SpbSectionType) {
   );
 }
 
-export default SpbDescSection;
+export default NovosibirskDescSection;

@@ -2,7 +2,7 @@ import { Accordion } from 'react-bootstrap';
 import { useAppSelector } from '@store/hooks';
 import { TFunction } from 'i18next';
 
-type SpbAccordionItemsProps = {
+type NovosibirskAccordionItemsProps = {
   t: TFunction;
 };
 interface highLightType {
@@ -11,10 +11,10 @@ interface highLightType {
   className: string;
 }
 
-function SpbAccordionItems({ t }: SpbAccordionItemsProps) {
+function NovosibirskAccordionItems({ t }: NovosibirskAccordionItemsProps) {
   const currentTheme = useAppSelector((state) => state.cities.themeColor);
   const accordionData = Object.values(
-    t('spbTranslation.accordion', { returnObjects: true })
+    t('NovosibirskTranslation.accordion', { returnObjects: true })
   );
 
   return (
@@ -39,4 +39,4 @@ function SpbAccordionItems({ t }: SpbAccordionItemsProps) {
   );
 }
 
-export default SpbAccordionItems;
+export default NovosibirskAccordionItems;

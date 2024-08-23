@@ -1,6 +1,6 @@
 import { TFunction } from 'i18next';
 
-type SpbDescTextSectionProps = {
+type NovosibirskDescTextSectionProps = {
   t: TFunction;
 };
 
@@ -10,16 +10,18 @@ interface highlightType {
   className?: string;
 }
 
-function SpbDescTextSection({ t }: SpbDescTextSectionProps) {
-  const SpbDescriptionSection = Object.values(
-    t('spbTranslation.spbDescriptionSection', { returnObjects: true })
+function NovosibirskDescTextSection({ t }: NovosibirskDescTextSectionProps) {
+  const NovosibirskDescriptionSection = Object.values(
+    t('NovosibirskTranslation.NovosibirskDescriptionSection', {
+      returnObjects: true,
+    })
   );
 
-  console.log('spbDescriptionSection', SpbDescTextSection);
+  console.log('NovosibirskDescriptionSection', NovosibirskDescTextSection);
 
   return (
     <>
-      {SpbDescriptionSection.map((section) => (
+      {NovosibirskDescriptionSection.map((section) => (
         <p key={section.id}>
           <span className="float-start lh-1 fw-bold fs-1 me-1">
             {section.prefix}
@@ -44,4 +46,4 @@ function SpbDescTextSection({ t }: SpbDescTextSectionProps) {
   );
 }
 
-export default SpbDescTextSection;
+export default NovosibirskDescTextSection;

@@ -1,10 +1,10 @@
 import { Accordion, Container, Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import SpbAccordionItems from './SpbAccordionItems';
-import AccordionSection from './SpbAccordionSection';
+import NovosibirskAccordionItems from './NovosibirskAccordionItems';
+import AccordionSection from './NovosibirskAccordionSection';
 
-function SpbAccordionMain() {
-  const { t } = useTranslation('spbTranslation');
+function NovosibirskAccordionMain() {
+  const { t } = useTranslation('novosibirskTranslation');
 
   return (
     <Container>
@@ -12,7 +12,7 @@ function SpbAccordionMain() {
         <Col>
           <AccordionSection t={t}>
             <Accordion defaultActiveKey="0">
-              <SpbAccordionItems t={t} />
+              <NovosibirskAccordionItems t={t} />
             </Accordion>
           </AccordionSection>
         </Col>
@@ -21,4 +21,4 @@ function SpbAccordionMain() {
   );
 }
 
-export default SpbAccordionMain;
+export default NovosibirskAccordionMain;

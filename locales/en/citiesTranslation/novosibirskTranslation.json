@@ -1,0 +1,157 @@
+{
+	"NovosibirskTranslation": {
+	  "headers": [
+		{
+		  "accordionHeader": "Additional Information",
+		  "carouselHeader": "Attractions",
+		  "descriptionHeader": "Information"
+		}
+	  ],
+	  "accordion": [
+		{
+		  "eventKey": "0",
+		  "title": "What Novosibirsk Is Like",
+		  "text": "Novosibirsk is the largest city in Siberia, serving as the economic and cultural center of the region. The city is known for its scientific achievements and cultural institutions, such as ",
+		  "highlights": [
+			{
+			  "id": "highlight1",
+			  "text": "Novosibirsk State University,",
+			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+			},
+			{
+			  "id": "highlight2",
+			  "text": "Akademgorodok,",
+			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			}
+		  ],
+		  "suffix": " as well as its Opera and Ballet Theatre, which is one of the largest in Russia."
+		},
+		{
+		  "eventKey": "1",
+		  "title": "Best Season to Visit",
+		  "text": "The summer season, from June to August, is considered the most pleasant time to visit Novosibirsk. During this period, the days are warm and long. Autumn and spring are also good for visiting when the weather is comfortable, and there is no large influx of tourists. Winter in Novosibirsk can be cold, but the city is beautifully decorated with holiday lights and Christmas markets.",
+		  "highlights": [],
+		  "suffix": ""
+		},
+		{
+		  "eventKey": "2",
+		  "title": "What to Pay Attention to",
+		  "text": "When visiting Novosibirsk, be sure to pay attention to attractions such as ",
+		  "highlights": [
+			{
+			  "id": "highlight3",
+			  "text": "Novosibirsk Zoo,",
+			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+			},
+			{
+			  "id": "highlight4",
+			  "text": "Krasny Prospekt,",
+			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			},
+			{
+			  "id": "highlight5",
+			  "text": "Akademgorodok",
+			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			}
+		  ],
+		  "suffix": ". Also, visit the Science Museum to learn more about the region's scientific achievements."
+		}
+	  ],
+	  "NovosibirskDescriptionSection": [
+		{
+		  "id": "section1",
+		  "prefix": "N",
+		  "text": "ovosibirsk is a dynamic city, founded in 1893. It quickly became the industrial and scientific hub of Siberia. The city is famous for its scientific institutions like ",
+		  "highlights": [
+			{
+			  "id": "highlight1",
+			  "text": "Novosibirsk State University",
+			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+			},
+			{
+			  "id": "highlight2",
+			  "text": "and Akademgorodok",
+			  "className": "bg-body-secondary text-black fst-italic px-1 me-2"
+			}
+		  ],
+		  "suffix": " — centers of research and education. Novosibirsk is also known for its cultural landmarks, such as ",
+		  "moreHighlights": [
+			{
+			  "id": "moreHighlight1",
+			  "text": "the Opera and Ballet Theatre,",
+			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			},
+			{
+			  "id": "moreHighlight2",
+			  "text": "and the Novosibirsk Zoo.",
+			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			}
+		  ]
+		},
+		{
+		  "id": "section2",
+		  "prefix": "T",
+		  "text": "he city is impressive with its wide avenues and modern infrastructure. Here you can find both historical buildings and cutting-edge architectural solutions. Parks such as ",
+		  "highlights": [
+			{
+			  "id": "highlight3",
+			  "text": "Central Park",
+			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			},
+			{
+			  "id": "highlight4",
+			  "text": "and Zaeltsovsky Park",
+			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			}
+		  ],
+		  "suffix": " offer many opportunities for relaxation and recreation. Novosibirsk is especially beautiful in the evenings, when the city's lights create a unique atmosphere."
+		},
+		{
+		  "id": "section3",
+		  "prefix": "T",
+		  "text": "he city's transportation system is also noteworthy, including the famous ",
+		  "highlights": [
+			{
+			  "id": "highlight5",
+			  "text": "Novosibirsk Metro,",
+			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			}
+		  ],
+		  "suffix": " known for its elegant stations designed with Siberian motifs. Novosibirsk is a city that combines modern development with rich traditions."
+		}
+	  ],
+	  "NovosibirskAttractions": [
+		{
+		  "name": "Akademgorodok",
+		  "id": 0,
+		  "src": "akademgorodok",
+		  "description": "Akademgorodok is a scientific center of Novosibirsk, known for its research institutes and universities. It is a place where science meets nature, offering a peaceful environment for education and research."
+		},
+		{
+		  "name": "Novosibirsk Zoo",
+		  "id": 1,
+		  "src": "novosibirskZoo",
+		  "description": "Novosibirsk Zoo is one of the largest zoos in Russia, home to many rare and endangered species. It is a favorite destination for both locals and tourists."
+		},
+		{
+		  "name": "Krasny Prospekt",
+		  "id": 2,
+		  "src": "krasnyProspekt",
+		  "description": "Krasny Prospekt is the main street of Novosibirsk, known for its shops, restaurants, and historical buildings. It is a vibrant area where the city's life is in full swing."
+		},
+		{
+		  "name": "Novosibirsk State University",
+		  "id": 3,
+		  "src": "novosibirskStateUniversity",
+		  "description": "Novosibirsk State University is one of the leading universities in Russia, located in the heart of Akademgorodok. It is known for its high educational standards and research achievements."
+		},
+		{
+		  "name": "Opera and Ballet Theatre",
+		  "id": 4,
+		  "src": "operaAndBalletTheatre",
+		  "description": "The Opera and Ballet Theatre is a cultural landmark of Novosibirsk, famous for its grand performances and impressive architecture. It is one of the largest and most prestigious theatres in Russia."
+		}
+	  ]
+	}
+  }
+  

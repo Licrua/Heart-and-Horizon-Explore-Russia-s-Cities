@@ -16,6 +16,8 @@ import spbTranslationEn from '@locales/en/citiesTranslation/spbTranslation.json'
 import spbTranslationRu from '@locales/ru/citiesTranslation/spbTranslation.json';
 import quotesTranslationRu from '@locales/ru/quotesTranslation.json';
 import quotesTranslationEn from '@locales/en/quotesTranslation.json';
+import nskTranslationEn from '@locales/en/citiesTranslation/novosibirskTranslation.json';
+import nskTranslationRu from '@locales/ru/citiesTranslation/novosibirskTranslation.json';
 
 const resources = {
   en: {
@@ -28,6 +30,7 @@ const resources = {
     moscowTranslation: moscowTranslationEn,
     spbTranslation: spbTranslationEn,
     quotesTranslation: quotesTranslationEn,
+    novosibirskTranslation: nskTranslationEn,
   },
   ru: {
     welcomePageTranslation: welcomePageTranslationRu,
@@ -39,6 +42,7 @@ const resources = {
     moscowTranslation: moscowTranslationRu,
     spbTranslation: spbTranslationRu,
     quotesTranslation: quotesTranslationRu,
+    novosibirskTranslation: nskTranslationRu,
   },
 };
 

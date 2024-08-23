@@ -17,7 +17,7 @@ function AccordionSection({ children, t }: AccordionSectionPropsType) {
         whileHover={{ scale: 1.1, x: 100 }}
         className="mb-3"
       >
-        {t('spbTranslation.headers.0.accordionHeader')}
+        {t('NovosibirskTranslation.headers.0.accordionHeader')}
       </motion.h2>
       {children}
     </section>

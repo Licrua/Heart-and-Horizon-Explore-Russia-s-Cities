@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { TFunction } from 'i18next';
 
-type SpbDescHeaderTypes = {
+type NovosibirskDescHeaderTypes = {
   t: TFunction;
 };
-function SpbDescHeader({ t }: SpbDescHeaderTypes) {
+function NovosibirskDescHeader({ t }: NovosibirskDescHeaderTypes) {
   return (
     <motion.h2
       initial={{ opacity: 0, y: 0, x: 0 }}
@@ -13,9 +13,9 @@ function SpbDescHeader({ t }: SpbDescHeaderTypes) {
       whileHover={{ scale: 1.1, x: 100 }}
       className="mb-3"
     >
-      {t('spbTranslation.headers.0.descriptionHeader')}
+      {t('NovosibirskTranslation.headers.0.descriptionHeader')}
     </motion.h2>
   );
 }
 
-export default SpbDescHeader;
+export default NovosibirskDescHeader;

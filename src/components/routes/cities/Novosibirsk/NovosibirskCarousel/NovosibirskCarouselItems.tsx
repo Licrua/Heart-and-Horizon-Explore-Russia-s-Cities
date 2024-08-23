@@ -1,18 +1,18 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-// import spbAttractions from '@data/SpbAttrData/SpbPictures';
+// import NovosibirskAttractions from '@data/NovosibirskAttrData/NovosibirskPictures';
 import { useState } from 'react';
 import { TFunction } from 'i18next';
-import spbImagesMap from '@data/citiesPictures/spbPictures';
-import SpbCarouselCaption from './SpbCarouselCaption';
+import NovosibirskImagesMap from '@data/citiesPictures/novosibirskPictures';
+import NovosibirskCarouselCaption from './NovosibirskCarouselCaption';
 
-console.log('spbImagesMap', spbImagesMap);
+console.log('NovosibirskImagesMap', NovosibirskImagesMap);
 
-type SpbCarouselItems = {
+type NovosibirskCarouselItems = {
   t: TFunction;
 };
 
-function SpbCarouselItems({ t }: SpbCarouselItems) {
+function NovosibirskCarouselItems({ t }: NovosibirskCarouselItems) {
   const [index, setIndex] = useState<number>(0);
   const handleSelect = (selectedIndex: number) => {
     setIndex(selectedIndex);
@@ -22,13 +22,15 @@ function SpbCarouselItems({ t }: SpbCarouselItems) {
     visible: { opacity: 1, x: 0, transition: { duration: 1 } },
   };
 
-  const spbAttractions = Object.values(
-    t('spbTranslation.spbAttractions', { returnObjects: true })
+  const NovosibirskAttractions = Object.values(
+    t('NovosibirskTranslation.NovosibirskAttractions', { returnObjects: true })
   ).map((attraction) => ({
     ...attraction,
-    src: spbImagesMap[attraction.src as keyof typeof spbImagesMap],
+    src: NovosibirskImagesMap[
+      attraction.src as keyof typeof NovosibirskImagesMap
+    ],
   }));
-  console.log('spbAttractions', spbAttractions);
+  console.log('NovosibirskAttractions', NovosibirskAttractions);
 
   return (
     <Row>
@@ -43,7 +45,7 @@ function SpbCarouselItems({ t }: SpbCarouselItems) {
           activeIndex={index}
           onSelect={handleSelect}
         >
-          {spbAttractions.map((item) => (
+          {NovosibirskAttractions.map((item) => (
             <Carousel.Item
               as={motion.div}
               initial={{ opacity: 0 }}
@@ -62,7 +64,7 @@ function SpbCarouselItems({ t }: SpbCarouselItems) {
                 src={item.src}
                 alt={item.name}
               />
-              <SpbCarouselCaption item={item} />
+              <NovosibirskCarouselCaption item={item} />
             </Carousel.Item>
           ))}
         </Carousel>
@@ -71,4 +73,4 @@ function SpbCarouselItems({ t }: SpbCarouselItems) {
   );
 }
 
-export default SpbCarouselItems;
+export default NovosibirskCarouselItems;

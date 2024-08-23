@@ -1,7 +1,7 @@
 import { Carousel } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 
-type SpbCarouselCaptionType = {
+type NovosibirskCarouselCaptionType = {
   item: {
     name: string;
     description: string;
@@ -10,7 +10,7 @@ type SpbCarouselCaptionType = {
   };
 };
 
-function SpbCarouselCaption({ item }: SpbCarouselCaptionType) {
+function NovosibirskCarouselCaption({ item }: NovosibirskCarouselCaptionType) {
   const captionVariants = {
     hidden: { opacity: 0, scale: 0, y: 20, x: 20 },
     visible: {
@@ -52,4 +52,4 @@ function SpbCarouselCaption({ item }: SpbCarouselCaptionType) {
   );
 }
 
-export default SpbCarouselCaption;
+export default NovosibirskCarouselCaption;

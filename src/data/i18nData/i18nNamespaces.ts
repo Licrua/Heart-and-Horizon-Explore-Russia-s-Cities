@@ -8,6 +8,7 @@ const namespaces: string[] = [
   'moscowTranslation',
   'spbTranslation',
   'quotesTranslation',
+  'nskTranslation',
 ];
 
 export default namespaces;
