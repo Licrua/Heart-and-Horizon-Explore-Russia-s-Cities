@@ -22,15 +22,22 @@ function HeaderMainLogo({ cityLogo, t }: headerLogoProps) {
   return (
     <Navbar.Brand href="#home" onClick={handlerOnButton}>
       <motion.img
+        className="rounded-circle"
         style={{ float: 'left' }}
         initial={{ scale: 0 }}
+        whileHover={{
+          scale: 1.1,
+          border: '1px solid black',
+          boxShadow:
+            '-10px 0 10px -5px rgba(0, 0, 0, 0.5), 10px 0 10px -5px rgba(0, 0, 0, 0.5)',
+        }}
         animate={{
           scale: 1,
           rotate: [60, 120, 180, 240, 300, 360],
           borderRadius: ['20%', '20%', '50%', '50%', '20%'],
         }}
         transition={{
-          type: 'just',
+          type: 'linear',
           duration: 1,
         }}
         width="50"
@@ -38,12 +45,12 @@ function HeaderMainLogo({ cityLogo, t }: headerLogoProps) {
         src={cityLogo.src}
         alt={cityLogo.alt}
       />
-      <span className="ms-2 fw-italic" style={{ letterSpacing: '2px' }}>
+      <motion.span className="ms-2 fw-italic" style={{ letterSpacing: '2px' }}>
         {t('header.title')}
         <em>
           <div style={{ fontSize: '0.6em' }}>{t('header.subtitle')}</div>
         </em>
-      </span>
+      </motion.span>
     </Navbar.Brand>
   );
 }

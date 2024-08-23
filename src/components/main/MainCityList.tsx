@@ -15,6 +15,8 @@ type MainContentListType = {
 };
 function MainContentCityList({ cityEntities }: MainContentListType) {
   const { t } = useTranslation(['mainPageTranslation', 'quotesTranslation']);
+  console.log('cityEntitiesSSSSS', cityEntities);
+
   return (
     <Container>
       <Row>

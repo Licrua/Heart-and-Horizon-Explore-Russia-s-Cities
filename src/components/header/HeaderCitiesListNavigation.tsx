@@ -1,6 +1,7 @@
 import { NavDropdown } from 'react-bootstrap';
 import { City } from '@slices/cities';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 type CityRecord = Record<number, City>;
 
@@ -18,7 +19,9 @@ function HeaderCitiesList({ cities, cityDropDownIcon }: CityListProps) {
     <NavDropdown
       className="mx-3"
       title={
-        <img
+        <motion.img
+          initial={{ scale: 1 }}
+          whileHover={{ scale: 1.2 }}
           width="30"
           height="30"
           src={cityDropDownIcon.src}

@@ -18,6 +18,8 @@ import quotesTranslationRu from '@locales/ru/quotesTranslation.json';
 import quotesTranslationEn from '@locales/en/quotesTranslation.json';
 import nskTranslationEn from '@locales/en/citiesTranslation/novosibirskTranslation.json';
 import nskTranslationRu from '@locales/ru/citiesTranslation/novosibirskTranslation.json';
+import nizhnyNovgorodTranslationRu from '@locales/ru/citiesTranslation/nizhnyNovgorodTranslation.json';
+import nizhnyNovgorodTranslationEn from '@locales/en/citiesTranslation/nizhnyNovgorodTranslation.json';
 
 const resources = {
   en: {
@@ -31,6 +33,7 @@ const resources = {
     spbTranslation: spbTranslationEn,
     quotesTranslation: quotesTranslationEn,
     novosibirskTranslation: nskTranslationEn,
+    nizhnyNovgorodTranslation: nizhnyNovgorodTranslationEn,
   },
   ru: {
     welcomePageTranslation: welcomePageTranslationRu,
@@ -43,6 +46,7 @@ const resources = {
     spbTranslation: spbTranslationRu,
     quotesTranslation: quotesTranslationRu,
     novosibirskTranslation: nskTranslationRu,
+    nizhnyNovgorodTranslation: nizhnyNovgorodTranslationRu,
   },
 };
 

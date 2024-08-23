@@ -1,6 +1,7 @@
 import { NavDropdown } from 'react-bootstrap';
 import setLanguage from '@utils/setLanguage';
 import { TFunction } from 'i18next';
+import { motion } from 'framer-motion';
 
 type languageLogoProp = {
   languageLogo: {
@@ -17,7 +18,9 @@ function HeaderLanguageLogo({ languageLogo, t }: languageLogoProp) {
       align="end"
       className="mx-5"
       title={
-        <img
+        <motion.img
+          initial={{ scale: 1 }}
+          whileHover={{ scale: 1.2 }}
           width="30"
           height="30"
           src={languageLogo.src}

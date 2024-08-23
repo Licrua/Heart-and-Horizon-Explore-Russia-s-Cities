@@ -1,4 +1,5 @@
 import { NavbarBrand } from 'react-bootstrap';
+import { motion } from 'framer-motion';
 
 type HeaderMapLogo = {
   mapIconLogo: {
@@ -11,7 +12,9 @@ type HeaderMapLogo = {
 function HeaderMapLogo({ mapIconLogo }: HeaderMapLogo) {
   return (
     <NavbarBrand href="#map" className="ms-2">
-      <img
+      <motion.img
+        initial={{ scale: 1 }}
+        whileHover={{ scale: 1.2 }}
         src={mapIconLogo.src}
         width="30"
         height="30"
