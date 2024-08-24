@@ -1,6 +1,7 @@
 import { TFunction } from 'i18next';
-import { Card, Image } from 'react-bootstrap';
+import { Card, Image, Button } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 type MainQuotesPropType = {
   t: TFunction;
@@ -8,7 +9,7 @@ type MainQuotesPropType = {
 
 function MainQuotes({ t }: MainQuotesPropType) {
   const quotes = Object.values(
-    t('quotes', { returnObjects: true, ns: 'quotesTranslation' })
+    t('quotes.authors', { returnObjects: true, ns: 'quotesTranslation' })
   );
 
   return (
@@ -48,10 +49,22 @@ function MainQuotes({ t }: MainQuotesPropType) {
                   {item.text}
                   <span>”</span>
                 </p>
+
                 <footer className="blockquote-footer">
                   {item.author}
                   <cite title="Source Title"> {item.source}</cite>
                 </footer>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  to={`https://ru.wikipedia.org/wiki/${item.author?.slice(0, -1)}`}
+                >
+                  <Button className="btn btn-primary" type="button">
+                    {t('quotes.aboutAthor', {
+                      ns: 'quotesTranslation',
+                    })}
+                  </Button>
+                </Link>
               </blockquote>
             </Card.Body>
           </Card>

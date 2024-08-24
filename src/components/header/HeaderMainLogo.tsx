@@ -20,7 +20,7 @@ function HeaderMainLogo({ cityLogo, t }: headerLogoProps) {
     }
   };
   return (
-    <Navbar.Brand href="#home" onClick={handlerOnButton}>
+    <Navbar.Brand onClick={handlerOnButton}>
       <motion.img
         className="rounded-circle"
         style={{ float: 'left' }}

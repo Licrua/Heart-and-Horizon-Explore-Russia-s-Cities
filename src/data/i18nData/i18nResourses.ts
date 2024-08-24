@@ -20,6 +20,10 @@ import nskTranslationEn from '@locales/en/citiesTranslation/novosibirskTranslati
 import nskTranslationRu from '@locales/ru/citiesTranslation/novosibirskTranslation.json';
 import nizhnyNovgorodTranslationRu from '@locales/ru/citiesTranslation/nizhnyNovgorodTranslation.json';
 import nizhnyNovgorodTranslationEn from '@locales/en/citiesTranslation/nizhnyNovgorodTranslation.json';
+import KazanTranslationRu from '@locales/ru/citiesTranslation/kazanTranslation.json';
+import KazanTranslationEn from '@locales/en/citiesTranslation/kazanTranslation.json';
+import notFoundRu from '@locales/ru/notFoundTranslation.json';
+import notFoundEn from '@locales/en/notFoundTranslation.json';
 
 const resources = {
   en: {
@@ -34,6 +38,8 @@ const resources = {
     quotesTranslation: quotesTranslationEn,
     novosibirskTranslation: nskTranslationEn,
     nizhnyNovgorodTranslation: nizhnyNovgorodTranslationEn,
+    kazanTranslation: KazanTranslationEn,
+    notFoundTranslation: notFoundEn,
   },
   ru: {
     welcomePageTranslation: welcomePageTranslationRu,
@@ -47,6 +53,8 @@ const resources = {
     quotesTranslation: quotesTranslationRu,
     novosibirskTranslation: nskTranslationRu,
     nizhnyNovgorodTranslation: nizhnyNovgorodTranslationRu,
+    KazanTranslation: KazanTranslationRu,
+    notFoundTranslation: notFoundRu,
   },
 };
 

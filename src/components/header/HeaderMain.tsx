@@ -9,7 +9,7 @@ import HeaderLanguageLogo from './HeaderLanguageLogo';
 import HeaderCitiesList from './HeaderCitiesListNavigation';
 import HeaderMapLogo from './HeaderMapLogo';
 
-function Header() {
+function HeaderMain() {
   const citiesEntites = useAppSelector((state) => selectEntities(state));
   const themeToggler = useAppSelector((state) => state.cities.isThemable);
   const isMapIconShown = useAppSelector((state) => state.cities.isMapIconShown);
@@ -60,4 +60,4 @@ function Header() {
     </Navbar>
   );
 }
-export default Header;
+export default HeaderMain;

@@ -1,0 +1,145 @@
+{
+	"KazanTranslation": {
+	  "headers": [
+		{
+		  "accordionHeader": "Additional Information",
+		  "carouselHeader": "Attractions",
+		  "descriptionHeader": "Information"
+		}
+	  ],
+	  "accordion": [
+		{
+		  "eventKey": "0",
+		  "title": "What Kazan Is Like",
+		  "text": "Kazan is the capital of Tatarstan, a city where East meets West, blending Russian and Tatar cultures. The city is renowned for its historical sites and vibrant cultural life, including ",
+		  "highlights": [
+			{
+			  "id": "highlight1",
+			  "text": "the Kazan Kremlin,",
+			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+			},
+			{
+			  "id": "highlight2",
+			  "text": "Kul Sharif Mosque,",
+			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			}
+		  ],
+		  "suffix": " and the beautiful Baumana Street, known for its shops and cafes."
+		},
+		{
+		  "eventKey": "1",
+		  "title": "Best Season to Visit",
+		  "text": "Summer, from June to August, is the best time to visit Kazan. During this period, the city hosts various festivals, and the weather is warm and pleasant. Spring and autumn are also good options when the weather is mild. Winter in Kazan is cold, but the snow-covered cityscape creates a magical atmosphere.",
+		  "highlights": [],
+		  "suffix": ""
+		},
+		{
+		  "eventKey": "2",
+		  "title": "What to Pay Attention to",
+		  "text": "When visiting Kazan, be sure to explore attractions like ",
+		  "highlights": [
+			{
+			  "id": "highlight3",
+			  "text": "the Temple of All Religions,",
+			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+			},
+			{
+			  "id": "highlight4",
+			  "text": "the Kazan Family Center,",
+			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			},
+			{
+			  "id": "highlight5",
+			  "text": "and Suyumbike Tower",
+			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			}
+		  ],
+		  "suffix": ". Don’t miss a visit to the National Museum of the Republic of Tatarstan to learn more about the region's history."
+		}
+	  ],
+	  "KazanDescriptionSection": [
+		{
+		  "id": "section1",
+		  "prefix": "K",
+		  "text": "azan is one of Russia's oldest cities, founded in 1005. It has a unique blend of Russian and Tatar cultures, making it a truly multicultural city. Kazan is known for its ",
+		  "highlights": [
+			{
+			  "id": "highlight1",
+			  "text": "Kremlin,",
+			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+			},
+			{
+			  "id": "highlight2",
+			  "text": "Kul Sharif Mosque,",
+			  "className": "bg-body-secondary text-black fst-italic px-1 me-2"
+			}
+		  ],
+		  "suffix": " and other historical sites. The city is also a major sports hub, having hosted international events such as the Universiade and the World Cup."
+		},
+		{
+		  "id": "section2",
+		  "prefix": "T",
+		  "text": "he cityscape of Kazan is a mix of modern architecture and ancient buildings. Landmarks like ",
+		  "highlights": [
+			{
+			  "id": "highlight3",
+			  "text": "Baumana Street",
+			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			},
+			{
+			  "id": "highlight4",
+			  "text": "and the Kazan Riviera",
+			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			}
+		  ],
+		  "suffix": " are popular spots for both locals and tourists. Kazan is particularly beautiful at night, with its illuminated streets and buildings creating a mesmerizing view."
+		},
+		{
+		  "id": "section3",
+		  "prefix": "T",
+		  "text": "he city's transportation system is well-developed, including the modern ",
+		  "highlights": [
+			{
+			  "id": "highlight5",
+			  "text": "Kazan Metro,",
+			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			}
+		  ],
+		  "suffix": " which efficiently connects different parts of the city. Kazan is a city where history and modernity coexist in harmony."
+		}
+	  ],
+	  "KazanAttractions": [
+		{
+		  "name": "Kazan Kremlin",
+		  "id": 0,
+		  "src": "kazanKremlin",
+		  "description": "The Kazan Kremlin is a UNESCO World Heritage site and the historical heart of Kazan. It is home to several important buildings, including the Kul Sharif Mosque and the Suyumbike Tower."
+		},
+		{
+		  "name": "Kul Sharif Mosque",
+		  "id": 1,
+		  "src": "kulSharifMosque",
+		  "description": "Kul Sharif Mosque is one of the largest mosques in Russia, located within the Kazan Kremlin. It is a symbol of Tatar culture and religious harmony in the region."
+		},
+		{
+		  "name": "Baumana Street",
+		  "id": 2,
+		  "src": "baumanaStreet",
+		  "description": "Baumana Street is Kazan’s main pedestrian street, lined with shops, cafes, and historical buildings. It is a vibrant area, especially popular with tourists."
+		},
+		{
+		  "name": "Temple of All Religions",
+		  "id": 3,
+		  "src": "templeOfAllReligions",
+		  "description": "The Temple of All Religions is a unique architectural complex that combines elements of different religious traditions. It is a symbol of peace and unity."
+		},
+		{
+		  "name": "Kazan Family Center",
+		  "id": 4,
+		  "src": "kazanFamilyCenter",
+		  "description": "The Kazan Family Center is an architectural landmark in the shape of a large cauldron, symbolizing the city’s hospitality. It is also a popular spot for wedding ceremonies."
+		}
+	  ]
+	}
+  }
+  

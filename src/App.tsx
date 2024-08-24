@@ -1,7 +1,5 @@
 import routes from '@data/routesData';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import Header from '@components/header/HeaderMain';
-import FooterMain from '@components/footer/FooterMain';
 import { useAppDispatch } from '@store/hooks';
 import { useEffect } from 'react';
 import {
@@ -19,7 +17,9 @@ import {
 } from '@store/rtkQuery';
 import LoadingError from '@components/loading | error/LoadingError';
 import LoadingSpinner from '@components/loading | error/LoadingSpinner';
+import SimpleLayout from '@components/SimpleLayout';
 import i18n from './i18n';
+import CompleteLayout from './components/CompleteLayout';
 
 function App() {
   const location = useLocation();
@@ -44,6 +44,7 @@ function App() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+
     if (isMainPageLocation) {
       dispatch(toggleThemeSwitcher(false));
       dispatch(toggleMapIconShown(true));
@@ -71,20 +72,23 @@ function App() {
       />
     );
   }
+  console.log('routes', routes);
 
   return (
     <>
-      {!isWelcomePageLocation && <Header />}
       <ScrollToTopArrow />
       <Routes>
-        <Route path="/" element={<WelcomePageMain />} />
-        <Route path="/main" element={<MainPage />} />
-        {routes.map((item) => (
-          <Route key={item.id} path={item.path} element={<item.element />} />
-        ))}
-        <Route path="*" element={<NotFound />} />
+        <Route element={<CompleteLayout />}>
+          <Route path="/main" element={<MainPage />} />
+          {routes.map((item) => (
+            <Route key={item.id} path={item.path} element={<item.element />} />
+          ))}
+        </Route>
+        <Route path="/" element={<SimpleLayout />}>
+          <Route index element={<WelcomePageMain />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
       </Routes>
-      {!isWelcomePageLocation && <FooterMain />}
     </>
   );
 }

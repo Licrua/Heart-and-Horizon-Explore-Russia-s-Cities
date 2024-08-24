@@ -9,14 +9,12 @@ import FooterPopUpReccomendation from './FooterPopUpReccomendation';
 function FooterMain() {
   const { t } = useTranslation('footerPageTranslation');
   return (
-    <footer className="bg-light border mt-3 border-1 p-2 d-flex justify-content-center">
-      <Container fluid>
-        <FooterCopyright t={t} />
-        <FooterSocialNovbar socialIcons={SocialMediaIcons} />
-        <FooterPopUpReccomendation t={t} />
-        <FooterForm t={t} />
-      </Container>
-    </footer>
+    <Container fluid>
+      <FooterCopyright t={t} />
+      <FooterSocialNovbar socialIcons={SocialMediaIcons} />
+      <FooterPopUpReccomendation t={t} />
+      <FooterForm t={t} />
+    </Container>
   );
 }
 

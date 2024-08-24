@@ -1,12 +1,15 @@
 @import '/src/styles/variables';
 @import '/src/styles/mixins';
 
+
+
 body {
   width: $maxWidth;
   height: $maxHeight;
-  margin: 0;
-  padding: 0;
+  margin: $zeroValues;
+  padding: $zeroValues;
   cursor: default;
   @include font-settings();
   @include gradient-background();
+  background-repeat: no-repeat;
 }

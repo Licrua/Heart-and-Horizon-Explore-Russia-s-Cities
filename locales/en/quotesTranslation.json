@@ -1,33 +1,36 @@
 {
 	"quotes": {
-	  "dickens": {
-		"id": "0",
-		"text": "Russia is a country with vast expanses and an enigmatic soul.",
-		"author": "Charles Dickens.",
-		"source": "Article 'Sketches of Russia', 1860.",
-		"imageName":"Dickens"
-	  },
-	  "dietrich": {
-		"id": "1",
-		"text": "I am in love with Russia and its people. They are incredibly patient and strong.",
-		"author": "Marlene Dietrich.",
-		"source": "From personal diaries, 1936.",
-		"imageName":"Dietrich"
-	  },
-	  "sartre": {
-		"id": "2",
-		"text": "Russia is a country where every person feels their connection to history and culture.",
-		"author": "Jean-Paul Sartre.",
-		"source": "Article 'Letters to a Friend', 1954.",
-		"imageName":"Sartre"
-	  },
-	  "frost": {
-		"id": "3",
-		"text": "Russia is a vast country with an incredible soul, difficult to understand but impossible not to admire.",
-		"author": "Robert Frost.",
-		"source": "Interview in 'New York Times', 1947.",
-		"imageName":"Frost"
-	  }
+		"authors": {
+			"dickens": {
+				"id": "0",
+				"text": "Russia is a country with vast expanses and an enigmatic soul.",
+				"author": "Charles Dickens.",
+				"source": "Article 'Sketches of Russia', 1860.",
+				"imageName":"Dickens"
+			},
+			"dietrich": {
+				"id": "1",
+				"text": "I am in love with Russia and its people. They are incredibly patient and strong.",
+				"author": "Marlene Dietrich.",
+				"source": "From personal diaries, 1936.",
+				"imageName":"Dietrich"
+			},
+			"sartre": {
+				"id": "2",
+				"text": "Russia is a country where every person feels their connection to history and culture.",
+				"author": "Jean-Paul Sartre.",
+				"source": "Article 'Letters to a Friend', 1954.",
+				"imageName":"Sartre"
+			},
+			"frost": {
+				"id": "3",
+				"text": "Russia is a vast country with an incredible soul, difficult to understand but impossible not to admire.",
+				"author": "Robert Frost.",
+				"source": "Interview in 'New York Times', 1947.",
+				"imageName":"Frost"
+			}
+		},
+	  "aboutAthor": "About Author"
 	}
   }
   
