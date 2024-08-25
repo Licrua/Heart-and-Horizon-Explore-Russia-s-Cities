@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { TFunction } from 'i18next';
 
-type KazanDescHeaderTypes = {
+type EkbDescHeaderTypes = {
   t: TFunction;
 };
-function KazanDescHeader({ t }: KazanDescHeaderTypes) {
+function EkbDescHeader({ t }: EkbDescHeaderTypes) {
   return (
     <motion.h2
       initial={{ opacity: 0, y: 0, x: 0 }}
@@ -13,9 +13,9 @@ function KazanDescHeader({ t }: KazanDescHeaderTypes) {
       whileHover={{ scale: 1.1, x: 100 }}
       className="mb-3"
     >
-      {t('KazanTranslation.headers.0.descriptionHeader')}
+      {t('EkbTranslation.headers.0.descriptionHeader')}
     </motion.h2>
   );
 }
 
-export default KazanDescHeader;
+export default EkbDescHeader;

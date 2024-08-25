@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-interface KazanSectionType {
+interface EkbSectionType {
   children: React.ReactNode;
   sectionVariant: {
     hidden: object;
@@ -8,7 +8,7 @@ interface KazanSectionType {
   };
 }
 
-function KazanDescSection({ children, sectionVariant }: KazanSectionType) {
+function EkbDescSection({ children, sectionVariant }: EkbSectionType) {
   return (
     <motion.section
       initial="hidden"
@@ -21,4 +21,4 @@ function KazanDescSection({ children, sectionVariant }: KazanSectionType) {
   );
 }
 
-export default KazanDescSection;
+export default EkbDescSection;

@@ -1,11 +1,11 @@
 import { ReactNode } from 'react';
 
-type KazanDescContainerType = {
+type EkbDescContainerType = {
   children: ReactNode;
 };
 
-function KazanDescContainer({ children }: KazanDescContainerType) {
+function EkbDescContainer({ children }: EkbDescContainerType) {
   return <div className=" px-3 py-2">{children}</div>;
 }
 
-export default KazanDescContainer;
+export default EkbDescContainer;

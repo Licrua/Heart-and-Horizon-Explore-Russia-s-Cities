@@ -1,7 +1,7 @@
 import { Carousel } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 
-type KazanCarouselCaptionType = {
+type EkbCarouselCaptionType = {
   item: {
     name: string;
     description: string;
@@ -10,7 +10,7 @@ type KazanCarouselCaptionType = {
   };
 };
 
-function KazanCarouselCaption({ item }: KazanCarouselCaptionType) {
+function EkbCarouselCaption({ item }: EkbCarouselCaptionType) {
   const captionVariants = {
     hidden: { opacity: 0, scale: 0, y: 20, x: 20 },
     visible: {
@@ -52,4 +52,4 @@ function KazanCarouselCaption({ item }: KazanCarouselCaptionType) {
   );
 }
 
-export default KazanCarouselCaption;
+export default EkbCarouselCaption;

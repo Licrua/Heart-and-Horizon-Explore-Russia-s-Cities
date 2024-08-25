@@ -2,11 +2,11 @@ import { Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { TFunction } from 'i18next';
 
-type KazanCarouselHeaderProps = {
+type EkbCarouselHeaderProps = {
   t: TFunction;
 };
 
-function KazanCarouselHeader({ t }: KazanCarouselHeaderProps) {
+function EkbCarouselHeader({ t }: EkbCarouselHeaderProps) {
   return (
     <Row>
       <Col className="my-2" md={6}>
@@ -16,11 +16,11 @@ function KazanCarouselHeader({ t }: KazanCarouselHeaderProps) {
           transition={{ duration: 0.5 }}
           whileHover={{ scale: 1.1, x: 100 }}
         >
-          {t('KazanTranslation.headers.0.carouselHeader')}
+          {t('EkbTranslation.headers.0.carouselHeader')}
         </motion.h2>
       </Col>
     </Row>
   );
 }
 
-export default KazanCarouselHeader;
+export default EkbCarouselHeader;

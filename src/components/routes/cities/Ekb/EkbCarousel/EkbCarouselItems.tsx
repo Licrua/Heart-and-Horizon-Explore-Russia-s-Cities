@@ -1,16 +1,16 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-// import KazanAttractions from '@data/KazanAttrData/KazanPictures';
+// import EkbAttractions from '@data/EkbAttrData/EkbPictures';
 import { useState } from 'react';
 import { TFunction } from 'i18next';
-import KazanImagesMap from '@data/citiesPictures/kazanPictures';
-import KazanCarouselCaption from './KazanCarouselCaption';
+import EkbImagesMap from '@data/citiesPictures/ekbPictures';
+import EkbCarouselCaption from './EkbCarouselCaption';
 
-type KazanCarouselItems = {
+type EkbCarouselItems = {
   t: TFunction;
 };
 
-function KazanCarouselItems({ t }: KazanCarouselItems) {
+function EkbCarouselItems({ t }: EkbCarouselItems) {
   const [index, setIndex] = useState<number>(0);
   const handleSelect = (selectedIndex: number) => {
     setIndex(selectedIndex);
@@ -20,15 +20,15 @@ function KazanCarouselItems({ t }: KazanCarouselItems) {
     visible: { opacity: 1, x: 0, transition: { duration: 1 } },
   };
 
-  const KazanAttractions = Object.values(
-    t('KazanTranslation.KazanAttractions', {
+  const EkbAttractions = Object.values(
+    t('EkbTranslation.EkbAttractions', {
       returnObjects: true,
     })
   ).map((attraction) => ({
     ...attraction,
-    src: KazanImagesMap[attraction.src as keyof typeof KazanImagesMap],
+    src: EkbImagesMap[attraction.src as keyof typeof EkbImagesMap],
   }));
-  console.log('KazanAttractions', KazanAttractions);
+  console.log('EkbAttractions', EkbAttractions);
 
   return (
     <Row>
@@ -43,7 +43,7 @@ function KazanCarouselItems({ t }: KazanCarouselItems) {
           activeIndex={index}
           onSelect={handleSelect}
         >
-          {KazanAttractions.map((item) => (
+          {EkbAttractions.map((item) => (
             <Carousel.Item
               as={motion.div}
               initial={{ opacity: 0 }}
@@ -62,7 +62,7 @@ function KazanCarouselItems({ t }: KazanCarouselItems) {
                 src={item.src}
                 alt={item.name}
               />
-              <KazanCarouselCaption item={item} />
+              <EkbCarouselCaption item={item} />
             </Carousel.Item>
           ))}
         </Carousel>
@@ -71,4 +71,4 @@ function KazanCarouselItems({ t }: KazanCarouselItems) {
   );
 }
 
-export default KazanCarouselItems;
+export default EkbCarouselItems;

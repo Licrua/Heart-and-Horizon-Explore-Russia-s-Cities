@@ -1,12 +1,12 @@
 import { Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import KazanDescHeader from './KazanDescHeader';
-import KazanSection from './KazanDescSection';
-import KazanDescContainer from './KazanDescText';
-import KazanTextSection from './KazanDescTextSection';
+import EkbDescHeader from './EkbDescHeader';
+import EkbSection from './EkbDescSection';
+import EkbDescContainer from './EkbDescText';
+import EkbTextSection from './EkbDescTextSection';
 
-function KazanDesc() {
-  const { t } = useTranslation('kazanTranslation');
+function EkbDesc() {
+  const { t } = useTranslation('ekbTranslation');
   const sectionVariant = {
     hidden: { opacity: 0, scale: 0 },
     visible: {
@@ -19,15 +19,15 @@ function KazanDesc() {
   return (
     <Row>
       <Col>
-        <KazanSection sectionVariant={sectionVariant}>
-          <KazanDescHeader t={t} />
-          <KazanDescContainer>
-            <KazanTextSection t={t} />
-          </KazanDescContainer>
-        </KazanSection>
+        <EkbSection sectionVariant={sectionVariant}>
+          <EkbDescHeader t={t} />
+          <EkbDescContainer>
+            <EkbTextSection t={t} />
+          </EkbDescContainer>
+        </EkbSection>
       </Col>
     </Row>
   );
 }
 
-export default KazanDesc;
+export default EkbDesc;

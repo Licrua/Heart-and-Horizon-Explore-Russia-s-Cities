@@ -2,6 +2,7 @@ import { TFunction } from 'i18next';
 import { Card, Image, Button } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import styles from '@styles/MainComponents/MainQuotes.module.scss';
 
 type MainQuotesPropType = {
   t: TFunction;
@@ -14,8 +15,12 @@ function MainQuotes({ t }: MainQuotesPropType) {
 
   return (
     <>
-      <div className="text-center">
-        <h2>{t('quotesSection.description', { ns: 'mainPageTranslation' })}</h2>
+      <div className={styles.quote_description}>
+        <h2>
+          <span className="me-2">◎</span>
+          {t('quotesSection.description', { ns: 'mainPageTranslation' })}
+          <span className="me-2">◎</span>
+        </h2>
         <p style={{ textWrap: 'balance' }}>
           {t('quotesSection.subtitle', { ns: 'mainPageTranslation' })}
         </p>

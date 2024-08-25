@@ -2,7 +2,7 @@ import { Accordion } from 'react-bootstrap';
 import { useAppSelector } from '@store/hooks';
 import { TFunction } from 'i18next';
 
-type KazanAccordionItemsProps = {
+type EkbAccordionItemsProps = {
   t: TFunction;
 };
 interface highLightType {
@@ -11,11 +11,12 @@ interface highLightType {
   className: string;
 }
 
-function KazanAccordionItems({ t }: KazanAccordionItemsProps) {
+function EkbAccordionItems({ t }: EkbAccordionItemsProps) {
   const currentTheme = useAppSelector((state) => state.cities.themeColor);
   const accordionData = Object.values(
-    t('KazanTranslation.accordion', { returnObjects: true })
+    t('EkbTranslation.accordion', { returnObjects: true })
   );
+  console.log('accordionData', accordionData);
 
   return (
     <>
@@ -39,4 +40,4 @@ function KazanAccordionItems({ t }: KazanAccordionItemsProps) {
   );
 }
 
-export default KazanAccordionItems;
+export default EkbAccordionItems;

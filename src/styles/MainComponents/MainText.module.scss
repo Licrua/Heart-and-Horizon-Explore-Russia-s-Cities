@@ -3,8 +3,8 @@
 
 .mainOpeningTextheader {
     position: relative;
-    font-weight: bold;
     text-align: center;
+	@include custom_shadow_frame;
 	padding: 5px;
 	&::before {
 		content: "╚»";
@@ -21,6 +21,7 @@
 	text-align: center;
 	margin-bottom: 5px;
 
+
 	&::before {
 		content: '◎';
 		margin-left: 8px;
@@ -36,6 +37,9 @@
   position: relative;
   @include full-size;
   overflow: hidden;
+// @include custom_shadow_title_second;
+
+  
 
   .background_image {
     position: absolute;
@@ -68,4 +72,15 @@
     z-index: 1;
     color: $text-color;
   }
+}
+
+.custom_shadow_title {
+ @include custom_shadow_frame
+  }
+
+
+
+  
+.headers {
+	@include custom_shadow_frame
 }

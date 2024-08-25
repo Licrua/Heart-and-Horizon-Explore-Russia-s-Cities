@@ -1,10 +1,10 @@
 import { Container } from 'react-bootstrap';
 import { useAppSelector } from '@store/hooks';
-import KazanAttractionCarousel from './KazanCarousel/KazanCarouselMain';
-import KazanAccordionInfo from './KazanAccordion/KazanAccordionMain';
-import KazanDesc from './KazanDescription/KazanDescMain';
+import EkbAttractionCarousel from './EkbCarousel/EkbCarouselMain';
+import EkbAccordionInfo from './EkbAccordion/EkbAccordionMain';
+import EkbDesc from './EkbDescription/EkbDescMain';
 
-function KazanMainContainer() {
+function EkbMainContainer() {
   const currentThemeCurrent = useAppSelector(
     (state) => state.cities.themeColor
   );
@@ -13,10 +13,10 @@ function KazanMainContainer() {
     <Container
       className={currentThemeCurrent === 'black' ? 'text-white bg-black' : ''}
     >
-      <KazanDesc />
-      <KazanAttractionCarousel />
-      <KazanAccordionInfo />
+      <EkbDesc />
+      <EkbAttractionCarousel />
+      <EkbAccordionInfo />
     </Container>
   );
 }
-export default KazanMainContainer;
+export default EkbMainContainer;

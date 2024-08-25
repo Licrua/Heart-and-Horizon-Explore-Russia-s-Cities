@@ -22,6 +22,8 @@ import nizhnyNovgorodTranslationRu from '@locales/ru/citiesTranslation/nizhnyNov
 import nizhnyNovgorodTranslationEn from '@locales/en/citiesTranslation/nizhnyNovgorodTranslation.json';
 import KazanTranslationRu from '@locales/ru/citiesTranslation/kazanTranslation.json';
 import KazanTranslationEn from '@locales/en/citiesTranslation/kazanTranslation.json';
+import ekbTranslationRu from '@locales/ru/citiesTranslation/ekbTranslation.json';
+import ekbTranslationEn from '@locales/en/citiesTranslation/ekbTranslation.json';
 import notFoundRu from '@locales/ru/notFoundTranslation.json';
 import notFoundEn from '@locales/en/notFoundTranslation.json';
 
@@ -40,6 +42,7 @@ const resources = {
     nizhnyNovgorodTranslation: nizhnyNovgorodTranslationEn,
     kazanTranslation: KazanTranslationEn,
     notFoundTranslation: notFoundEn,
+    ekbTranslation: ekbTranslationEn,
   },
   ru: {
     welcomePageTranslation: welcomePageTranslationRu,
@@ -55,6 +58,7 @@ const resources = {
     nizhnyNovgorodTranslation: nizhnyNovgorodTranslationRu,
     KazanTranslation: KazanTranslationRu,
     notFoundTranslation: notFoundRu,
+    ekbTranslation: ekbTranslationRu,
   },
 };
 

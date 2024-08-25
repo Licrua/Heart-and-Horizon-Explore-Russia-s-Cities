@@ -1,10 +1,10 @@
 import { Accordion, Container, Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import KazanAccordionItems from './KazanAccordionItems';
-import AccordionSection from './KazanAccordionSection';
+import EkbAccordionItems from './EkbAccordionItems';
+import AccordionSection from './EkbAccordionSection';
 
-function KazanAccordionMain() {
-  const { t } = useTranslation('kazanTranslation');
+function EkbAccordionMain() {
+  const { t } = useTranslation('ekbTranslation');
 
   return (
     <Container>
@@ -12,7 +12,7 @@ function KazanAccordionMain() {
         <Col>
           <AccordionSection t={t}>
             <Accordion defaultActiveKey="0">
-              <KazanAccordionItems t={t} />
+              <EkbAccordionItems t={t} />
             </Accordion>
           </AccordionSection>
         </Col>
@@ -21,4 +21,4 @@ function KazanAccordionMain() {
   );
 }
 
-export default KazanAccordionMain;
+export default EkbAccordionMain;

@@ -72,7 +72,6 @@ function App() {
       />
     );
   }
-  console.log('routes', routes);
 
   return (
     <>

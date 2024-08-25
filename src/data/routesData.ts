@@ -1,7 +1,7 @@
 import Moscow from '@routes/cities/Moscow/MoscowMainContainer';
 import Spb from '@routes/cities/Spb/SpbMainContainer';
 import Omsk from '@routes/cities/Omsk/OmskMainContainer';
-// import Ekaterinburg from '@routes/cities/Ekb/EkaterinburgMainContainer';
+import Ekaterinburg from '@routes/cities/Ekb/EkbMainContainer';
 import Kazan from '@routes/cities/Kazan/KazanMainContainer';
 import Novosibirsk from '@routes/cities/Novosibirsk/NovosibirskMainContainer';
 import NizhnyNovgorod from '@routes/cities/NijniyNovgorod/NizhnyNovgorodMainContainer';
@@ -11,7 +11,7 @@ const routes = [
   { name: 'Moscow', id: 1, path: '/moscow', element: Moscow },
   { name: 'Spb', id: 2, path: '/spb', element: Spb },
   { name: 'Omsk', id: 3, path: '/omsk', element: Omsk },
-  //   { name: 'Ekaterinburg', id: 4, path: '/ekb', element: Ekaterinburg },
+  { name: 'Ekaterinburg', id: 4, path: '/ekb', element: Ekaterinburg },
   { name: 'Kazan', id: 5, path: '/kazan', element: Kazan },
   {
     name: 'Nizhny Novgorod',

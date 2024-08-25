@@ -1,16 +1,16 @@
 import { useTranslation } from 'react-i18next';
-import KazanCarouselHeader from './KazanCarouselHeader';
-import KazanCarouselItems from './KazanCarouselItems';
-import KazanCarouselSection from './KazanCarouselSection';
+import EkbCarouselHeader from './EkbCarouselHeader';
+import EkbCarouselItems from './EkbCarouselItems';
+import EkbCarouselSection from './EkbCarouselSection';
 
-function KazanAttractionCarousel() {
-  const { t } = useTranslation('kazanTranslation');
+function EkbAttractionCarousel() {
+  const { t } = useTranslation('ekbTranslation');
   return (
-    <KazanCarouselSection>
-      <KazanCarouselHeader t={t} />
-      <KazanCarouselItems t={t} />
-    </KazanCarouselSection>
+    <EkbCarouselSection>
+      <EkbCarouselHeader t={t} />
+      <EkbCarouselItems t={t} />
+    </EkbCarouselSection>
   );
 }
 
-export default KazanAttractionCarousel;
+export default EkbAttractionCarousel;

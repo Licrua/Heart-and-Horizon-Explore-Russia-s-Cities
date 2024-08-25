@@ -1,11 +1,11 @@
 import { ReactNode } from 'react';
 
-type KazanCarouselSectionType = {
+type EkbCarouselSectionType = {
   children: ReactNode;
 };
 
-function KazanCarouselSection({ children }: KazanCarouselSectionType) {
+function EkbCarouselSection({ children }: EkbCarouselSectionType) {
   return <section className="border-bottom border-3">{children}</section>;
 }
 
-export default KazanCarouselSection;
+export default EkbCarouselSection;
