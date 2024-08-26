@@ -15,8 +15,6 @@ function SpbDescTextSection({ t }: SpbDescTextSectionProps) {
     t('spbTranslation.spbDescriptionSection', { returnObjects: true })
   );
 
-  console.log('spbDescriptionSection', SpbDescTextSection);
-
   return (
     <>
       {SpbDescriptionSection.map((section) => (

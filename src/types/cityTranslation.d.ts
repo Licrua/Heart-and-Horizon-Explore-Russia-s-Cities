@@ -1,3 +1,9 @@
+interface Header {
+  accordionHeader: string;
+  carouselHeader: string;
+  descriptionHeader: string;
+}
+
 interface Highlight {
   id: string;
   text: string;
@@ -12,11 +18,12 @@ interface AccordionItem {
   suffix: string;
 }
 
-interface SectionDescription {
+interface DescriptionSection {
   id: string;
   prefix: string;
   text: string;
   highlights?: Highlight[];
+  moreHighlights?: Highlight[];
   suffix: string;
 }
 
@@ -28,12 +35,8 @@ interface Attraction {
 }
 
 interface CityTranslation {
-  headers: {
-    accordionHeader: string;
-    carouselHeader: string;
-    descriptionHeader: string;
-  }[];
+  headers: Header[];
   accordion: AccordionItem[];
-  descriptionSection: SectionDescription[];
+  descriptionSection: DescriptionSection[];
   attractions: Attraction[];
 }

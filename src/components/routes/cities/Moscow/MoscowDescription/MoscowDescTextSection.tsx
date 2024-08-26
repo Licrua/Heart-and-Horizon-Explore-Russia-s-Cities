@@ -15,8 +15,6 @@ function MoscowDescTextSection({ t }: MoscowDescTextSectionProps) {
     t('MoscowTranslation.moscowDescriptionSection', { returnObjects: true })
   );
 
-  console.log('Moscowdsadasdasdastranslation', MoscowDescriptionSection);
-
   return (
     <>
       {MoscowDescriptionSection.map((section) => (
