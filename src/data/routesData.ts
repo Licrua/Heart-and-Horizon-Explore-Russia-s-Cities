@@ -5,7 +5,7 @@ import Ekaterinburg from '@routes/cities/Ekb/EkbMainContainer';
 import Kazan from '@routes/cities/Kazan/KazanMainContainer';
 import Novosibirsk from '@routes/cities/Novosibirsk/NovosibirskMainContainer';
 import NizhnyNovgorod from '@routes/cities/NijniyNovgorod/NizhnyNovgorodMainContainer';
-// import Chelyabinsk from '@routes/cities/Chelybinsk/ChelybinskMainContainer';
+import Chelyabinsk from '@routes/cities/Chelyabinsk/ChelyabinskMainContainer';
 
 const routes = [
   { name: 'Moscow', id: 1, path: '/moscow', element: Moscow },
@@ -20,12 +20,12 @@ const routes = [
     element: NizhnyNovgorod,
   },
   { name: 'Novosibirsk', id: 6, path: '/novosibirsk', element: Novosibirsk },
-  //   {
-  //     name: 'Chelyabinsk',
-  //     id: 8,
-  //     path: '/chelyabinsk',
-  //     element: Chelyabinsk,
-  //   },
+  {
+    name: 'Chelyabinsk',
+    id: 8,
+    path: '/chelyabinsk',
+    element: Chelyabinsk,
+  },
 ];
 
 export default routes;

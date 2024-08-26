@@ -15,7 +15,6 @@ i18n
     defaultNS: 'welcomePageTranslation',
     interpolation: {
       escapeValue: false,
-      debug: true,
     },
   });
 

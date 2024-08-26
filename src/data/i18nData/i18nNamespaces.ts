@@ -12,6 +12,8 @@ const namespaces: string[] = [
   'nizhnyNovgorodTranslation',
   'kazanTranslation',
   'ekbTranslation',
+  'chelyabinskTranslation',
+  'omskTranslation',
   'notFoundTranslation',
 ];
 

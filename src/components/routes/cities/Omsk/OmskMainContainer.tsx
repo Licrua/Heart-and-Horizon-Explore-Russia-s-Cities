@@ -1,14 +1,22 @@
-import { useTranslation } from 'react-i18next';
+import { Container } from 'react-bootstrap';
+import { useAppSelector } from '@store/hooks';
+import OmskAttractionCarousel from './OmskCarousel/OmskCarouselMain';
+import OmskAccordionInfo from './OmskAccordion/OmskAccordionMain';
+import OmskDesc from './OmskDescription/OmskDescMain';
 
 function OmskMainContainer() {
-  const { t } = useTranslation('ekbTranslation');
+  const currentThemeCurrent = useAppSelector(
+    (state) => state.cities.themeColor
+  );
+
   return (
-    <div>
-      <h1>Omsk</h1>
-      <h1>{t('nizhnyNovgorodTranslation.headers.0.descriptionHeader')}</h1>
-      <h1>{t('EkbTranslation.headers.0.descriptionHeader')}</h1>
-    </div>
+    <Container
+      className={currentThemeCurrent === 'black' ? 'text-white bg-black' : ''}
+    >
+      <OmskDesc />
+      <OmskAttractionCarousel />
+      <OmskAccordionInfo />
+    </Container>
   );
 }
-
 export default OmskMainContainer;
