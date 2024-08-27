@@ -33,7 +33,7 @@ function NizhnyNovgorodDescTextSection({
           {section.text}
           {section.highlights.map((highlight: highlightType) => (
             <span key={highlight.id} className={highlight.className}>
-              {highlight.text},
+              {highlight.text}
             </span>
           ))}
           {section.suffix}
@@ -41,7 +41,6 @@ function NizhnyNovgorodDescTextSection({
             section.moreHighlights.map((highlight: highlightType) => (
               <span key={highlight.id} className={highlight.className}>
                 {highlight.text}
-                {highlight.text.endsWith('ина') ? '.' : ','}
               </span>
             ))}
         </p>

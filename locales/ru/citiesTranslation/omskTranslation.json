@@ -65,7 +65,7 @@
 		  "highlights": [
 			{
 			  "id": "highlight1",
-			  "text": "Омская крепость",
+			  "text": "Омская крепость, Омский театр драмы,",
 			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
 			},
 			{
@@ -78,17 +78,17 @@
 		  "moreHighlights": [
 			{
 			  "id": "moreHighlight1",
-			  "text": "Омский театр драмы",
+			  "text": "Омский театр драмы,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
 			  "id": "moreHighlight2",
-			  "text": "Музей имени Врубеля",
+			  "text": "Музей имени Врубеля,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
 			  "id": "moreHighlight3",
-			  "text": "Любинский проспект",
+			  "text": "Любинский проспект.",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ]
@@ -100,7 +100,7 @@
 		  "highlights": [
 			{
 			  "id": "highlight3",
-			  "text": "Проспект Карла Маркса",
+			  "text": "Проспект Карла Маркса,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
@@ -109,7 +109,7 @@
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],
-		  "suffix": ". Эти районы города полны жизни и предлагают множество кафе, магазинов и культурных заведений."
+		  "suffix": ".Эти районы города полны жизни и предлагают множество кафе, магазинов и культурных заведений."
 		},
 		{
 		  "id": "section3",

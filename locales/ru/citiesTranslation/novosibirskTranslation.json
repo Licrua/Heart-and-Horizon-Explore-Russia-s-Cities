@@ -65,12 +65,12 @@
 		  "highlights": [
 			{
 			  "id": "highlight1",
-			  "text": "Академгородок",
+			  "text": "Академгородок,",
 			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
 			},
 			{
 			  "id": "highlight2",
-			  "text": "Новосибирский государственный университет",
+			  "text": "Новосибирский государственный университет.",
 			  "className": "bg-body-secondary text-black fst-italic px-1 me-2"
 			}
 		  ],
@@ -78,17 +78,17 @@
 		  "moreHighlights": [
 			{
 			  "id": "moreHighlight1",
-			  "text": "Новосибирский театр оперы и балета",
+			  "text": "Новосибирский театр оперы и балета,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
 			  "id": "moreHighlight2",
-			  "text": "Новосибирский зоопарк",
+			  "text": "Новосибирский зоопарк,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
 			  "id": "moreHighlight3",
-			  "text": "Площадь Ленина",
+			  "text": "Площадь Ленина.",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ]
@@ -100,7 +100,7 @@
 		  "highlights": [
 			{
 			  "id": "highlight3",
-			  "text": "Академгородок",
+			  "text": "Академгородок,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
@@ -151,7 +151,7 @@
     "description": "Новосибирский государственный университет — один из ведущих университетов России, расположенный в самом сердце Академгородка. Известен своими высокими образовательными стандартами и научными достижениями."
   },
   {
-    "name": "Театр оперы и балета",
+    "name": "Театр оперы и балета,",
     "id": 4,
     "src": "operaAndBalletTheatre",
     "description": "Театр оперы и балета — это культурная достопримечательность Новосибирска, знаменитый своими грандиозными выступлениями и впечатляющей архитектурой. Это один из крупнейших и самых престижных театров в России."

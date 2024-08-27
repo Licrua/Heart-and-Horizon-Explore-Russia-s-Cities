@@ -29,7 +29,7 @@ function NovosibirskDescTextSection({ t }: NovosibirskDescTextSectionProps) {
           {section.text}
           {section.highlights.map((highlight: highlightType) => (
             <span key={highlight.id} className={highlight.className}>
-              {highlight.text},
+              {highlight.text}
             </span>
           ))}
           {section.suffix}
@@ -37,7 +37,6 @@ function NovosibirskDescTextSection({ t }: NovosibirskDescTextSectionProps) {
             section.moreHighlights.map((highlight: highlightType) => (
               <span key={highlight.id} className={highlight.className}>
                 {highlight.text}
-                {highlight.text.endsWith('ина') ? '.' : ','}
               </span>
             ))}
         </p>

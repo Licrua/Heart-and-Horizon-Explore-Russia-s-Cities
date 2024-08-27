@@ -65,12 +65,12 @@
 		  "highlights": [
 			{
 			  "id": "highlight1",
-			  "text": "the Kremlin",
+			  "text": "the Kremlin,",
 			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
 			},
 			{
 			  "id": "highlight2",
-			  "text": "Red Square",
+			  "text": "Red Square.",
 			  "className": "bg-body-secondary text-black fst-italic px-1 me-2"
 			}
 		  ],
@@ -78,17 +78,17 @@
 		  "moreHighlights": [
 			{
 			  "id": "moreHighlight1",
-			  "text": "the Bolshoi Theatre",
+			  "text": "the Bolshoi Theatre,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
 			  "id": "moreHighlight2",
-			  "text": "the Tretyakov Gallery",
+			  "text": "the Tretyakov Gallery,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
 			  "id": "moreHighlight3",
-			  "text": "the Pushkin State Museum of Fine Arts",
+			  "text": "the Pushkin State Museum of Fine Arts.",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ]
@@ -100,7 +100,7 @@
 		  "highlights": [
 			{
 			  "id": "highlight3",
-			  "text": "Gorky Park",
+			  "text": "Gorky Park,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
@@ -122,7 +122,7 @@
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],
-		  "suffix": " with its magnificent stations resembling underground palaces. Moscow is a city of contrasts, dynamic and multifaceted, where everyone can find something for themselves."
+		  "suffix": "with its magnificent stations resembling underground palaces. Moscow is a city of contrasts, dynamic and multifaceted, where everyone can find something for themselves."
 		}
 	  ],
 	  "moscowAttractions": [

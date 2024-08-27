@@ -20,7 +20,7 @@
 			},
 			{
 			  "id": "highlight2",
-			  "text": "Kul Sharif Mosque,",
+			  "text": "Kul Sharif Mosque",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],
@@ -54,7 +54,7 @@
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],
-		  "suffix": ". Don’t miss a visit to the National Museum of the Republic of Tatarstan to learn more about the region's history."
+		  "suffix": ".Don’t miss a visit to the National Museum of the Republic of Tatarstan to learn more about the region's history."
 		}
 	  ],
 	  "KazanDescriptionSection": [
@@ -83,7 +83,7 @@
 		  "highlights": [
 			{
 			  "id": "highlight3",
-			  "text": "Baumana Street",
+			  "text": "Baumana Street,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
@@ -92,7 +92,7 @@
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],
-		  "suffix": " are popular spots for both locals and tourists. Kazan is particularly beautiful at night, with its illuminated streets and buildings creating a mesmerizing view."
+		  "suffix": "are popular spots for both locals and tourists. Kazan is particularly beautiful at night, with its illuminated streets and buildings creating a mesmerizing view."
 		},
 		{
 		  "id": "section3",

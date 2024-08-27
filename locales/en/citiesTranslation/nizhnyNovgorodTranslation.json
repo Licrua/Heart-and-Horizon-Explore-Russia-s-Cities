@@ -65,7 +65,7 @@
         "highlights": [
           {
             "id": "highlight1",
-            "text": "Nizhny Novgorod Kremlin",
+            "text": "Nizhny Novgorod Kremlin,",
             "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
           },
           {
@@ -78,17 +78,17 @@
         "moreHighlights": [
           {
             "id": "moreHighlight1",
-            "text": "Nizhny Novgorod State Art Museum",
+            "text": "Nizhny Novgorod State Art Museum,",
             "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
           },
           {
             "id": "moreHighlight2",
-            "text": "Nizhny Novgorod Drama Theater",
+            "text": "Nizhny Novgorod Drama Theater,",
             "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
           },
           {
             "id": "moreHighlight3",
-            "text": "Verkhnevolzhskaya Embankment",
+            "text": "Verkhnevolzhskaya Embankment.",
             "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
           }
         ]
@@ -100,7 +100,7 @@
         "highlights": [
           {
             "id": "highlight3",
-            "text": "Swiss Valley Park",
+            "text": "Swiss Valley Park,",
             "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
           },
           {
@@ -127,7 +127,7 @@
     ],
     "NizhnyNovgorodAttractions": [
       {
-        "name": "Nizhny Novgorod Kremlin",
+        "name": "Nizhny Novgorod Kremlin,",
         "id": 0,
         "src": "nizhnyNovgorodKremlin",
         "description": "The Nizhny Novgorod Kremlin is a magnificent fortress with a rich history, offering stunning views of the city and the Volga River. Its impressive walls and towers are a must-see for any visitor."
@@ -145,13 +145,13 @@
         "description": "Bolshaya Pokrovskaya Street is the main pedestrian street in Nizhny Novgorod, lined with shops, restaurants, and historic buildings. It is the heart of the city's cultural and social life."
       },
       {
-        "name": "Nizhny Novgorod State Art Museum",
+        "name": "Nizhny Novgorod State Art Museum,",
         "id": 3,
         "src": "nizhnyNovgorodArtMuseum",
         "description": "The Nizhny Novgorod State Art Museum houses a vast collection of Russian and European art. It is one of the most important cultural institutions in the city."
       },
       {
-        "name": "Verkhnevolzhskaya Embankment",
+        "name": "Verkhnevolzhskaya Embankment.",
         "id": 4,
         "src": "verkhnevolzhskayaEmbankment",
         "description": "Verkhnevolzhskaya Embankment offers breathtaking views of the Volga River and the city. It is a popular place for walks, with historical landmarks and beautiful scenery."

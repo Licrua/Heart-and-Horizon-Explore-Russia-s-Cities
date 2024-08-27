@@ -28,7 +28,7 @@ function KazanDescTextSection({ t }: KazanDescTextSectionProps) {
           {section.text}
           {section.highlights.map((highlight: highlightType) => (
             <span key={highlight.id} className={highlight.className}>
-              {highlight.text},
+              {highlight.text}
             </span>
           ))}
           {section.suffix}
@@ -36,7 +36,6 @@ function KazanDescTextSection({ t }: KazanDescTextSectionProps) {
             section.moreHighlights.map((highlight: highlightType) => (
               <span key={highlight.id} className={highlight.className}>
                 {highlight.text}
-                {highlight.text.endsWith('ина') ? '.' : ','}
               </span>
             ))}
         </p>

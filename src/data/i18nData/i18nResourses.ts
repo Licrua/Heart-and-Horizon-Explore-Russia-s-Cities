@@ -20,14 +20,16 @@ import nskTranslationEn from '@locales/en/citiesTranslation/novosibirskTranslati
 import nskTranslationRu from '@locales/ru/citiesTranslation/novosibirskTranslation.json';
 import nizhnyNovgorodTranslationRu from '@locales/ru/citiesTranslation/nizhnyNovgorodTranslation.json';
 import nizhnyNovgorodTranslationEn from '@locales/en/citiesTranslation/nizhnyNovgorodTranslation.json';
-import KazanTranslationRu from '@locales/ru/citiesTranslation/kazanTranslation.json';
-import KazanTranslationEn from '@locales/en/citiesTranslation/kazanTranslation.json';
+import kazanTranslationRu from '@locales/ru/citiesTranslation/kazanTranslation.json';
+import kazanTranslationEn from '@locales/en/citiesTranslation/kazanTranslation.json';
 import ekbTranslationRu from '@locales/ru/citiesTranslation/ekbTranslation.json';
 import ekbTranslationEn from '@locales/en/citiesTranslation/ekbTranslation.json';
 import chelyabinskTranslationEn from '@locales/en/citiesTranslation/chelyabinskTranslation.json';
 import chelyabinskTranslationRu from '@locales/ru/citiesTranslation/chelyabinskTranslation.json';
 import omskTranslationEn from '@locales/en/citiesTranslation/omskTranslation.json';
 import omskTranslationRu from '@locales/ru/citiesTranslation/omskTranslation.json';
+import generalCityTranslationEn from '@locales/en/citiesTranslation/generalCityInfoTranslation.json';
+import generalCityTranslationRu from '@locales/ru/citiesTranslation/generalCityInfoTranslation.json';
 import notFoundRu from '@locales/ru/notFoundTranslation.json';
 import notFoundEn from '@locales/en/notFoundTranslation.json';
 import { LocalesTranslation } from '../../types/locales';
@@ -45,11 +47,12 @@ const resources: { [lang: string]: LocalesTranslation } = {
     quotesTranslation: quotesTranslationEn,
     novosibirskTranslation: nskTranslationEn,
     nizhnyNovgorodTranslation: nizhnyNovgorodTranslationEn,
-    kazanTranslation: KazanTranslationEn,
+    kazanTranslation: kazanTranslationEn,
     notFoundTranslation: notFoundEn,
     ekbTranslation: ekbTranslationEn,
-    ChelyabinskTranslation: chelyabinskTranslationEn,
+    chelyabinskTranslation: chelyabinskTranslationEn,
     omskTranslation: omskTranslationEn,
+    generalCityTranslation: generalCityTranslationEn,
   },
   ru: {
     welcomePageTranslation: welcomePageTranslationRu,
@@ -63,11 +66,12 @@ const resources: { [lang: string]: LocalesTranslation } = {
     quotesTranslation: quotesTranslationRu,
     novosibirskTranslation: nskTranslationRu,
     nizhnyNovgorodTranslation: nizhnyNovgorodTranslationRu,
-    KazanTranslation: KazanTranslationRu,
+    kazanTranslation: kazanTranslationRu,
     notFoundTranslation: notFoundRu,
     ekbTranslation: ekbTranslationRu,
     chelyabinskTranslation: chelyabinskTranslationRu,
     omskTranslation: omskTranslationRu,
+    generalCityTranslation: generalCityTranslationRu,
   },
 };
 

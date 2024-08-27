@@ -15,6 +15,7 @@ const namespaces: string[] = [
   'chelyabinskTranslation',
   'omskTranslation',
   'notFoundTranslation',
+  'generalCityTranslation',
 ];
 
 export default namespaces;

@@ -20,7 +20,7 @@
 			},
 			{
 			  "id": "highlight2",
-			  "text": "Челябинский государственный академический театр оперы и балета,",
+			  "text": "Челябинский государственный академический театр оперы и балета",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],
@@ -70,7 +70,7 @@
 			},
 			{
 			  "id": "highlight2",
-			  "text": "театр оперы и балета,",
+			  "text": "театр оперы и балета",
 			  "className": "bg-body-secondary text-black fst-italic px-1 me-2"
 			}
 		  ],

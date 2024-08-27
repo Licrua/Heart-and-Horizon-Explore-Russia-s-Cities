@@ -30,7 +30,7 @@ function EkbDescTextSection({ t }: EkbDescTextSectionProps) {
             {section.text}
             {section.highlights.map((highlight: highlightType) => (
               <span key={highlight.id} className={highlight.className}>
-                {highlight.text},
+                {highlight.text}
               </span>
             ))}
             {section.suffix}
@@ -38,7 +38,6 @@ function EkbDescTextSection({ t }: EkbDescTextSectionProps) {
               section.moreHighlights.map((highlight: highlightType) => (
                 <span key={highlight.id} className={highlight.className}>
                   {highlight.text}
-                  {highlight.text.endsWith('ина') ? '.' : ','}
                 </span>
               ))}
           </p>

@@ -65,7 +65,7 @@
 		  "highlights": [
 			{
 			  "id": "highlight1",
-			  "text": "Кремль",
+			  "text": "Кремль,",
 			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
 			},
 			{
@@ -78,17 +78,17 @@
 		  "moreHighlights": [
 			{
 			  "id": "moreHighlight1",
-			  "text": "Большой театр",
+			  "text": "Большой театр,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
 			  "id": "moreHighlight2",
-			  "text": "Третьяковская галерея",
+			  "text": "Третьяковская галерея,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
 			  "id": "moreHighlight3",
-			  "text": "Музей изобразительных искусств имени Пушкина",
+			  "text": "Музей изобразительных искусств имени Пушкина.",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ]
@@ -100,7 +100,7 @@
 		  "highlights": [
 			{
 			  "id": "highlight3",
-			  "text": "Парк Горького",
+			  "text": "Парк Горького,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{

@@ -20,7 +20,7 @@
 			},
 			{
 			  "id": "highlight2",
-			  "text": "Екатеринбургский театр оперы и балета,",
+			  "text": "Екатеринбургский театр оперы и балета",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],
@@ -45,12 +45,12 @@
 			},
 			{
 			  "id": "highlight4",
-			  "text": "памятник клавиатуре,",
+			  "text": "Памятник клавиатуре,",
 			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
 			},
 			{
 			  "id": "highlight5",
-			  "text": "и монастырь Ганина Яма,",
+			  "text": "Монастырь Ганина Яма - ",
 			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
 			}
 		  ],
@@ -70,7 +70,7 @@
 			},
 			{
 			  "id": "highlight2",
-			  "text": "Театром оперы и балета,",
+			  "text": "Театром оперы и балета",
 			  "className": "bg-body-secondary text-black fst-italic px-1 me-2"
 			}
 		  ],
@@ -83,12 +83,12 @@
 		  "highlights": [
 			{
 			  "id": "highlight3",
-			  "text": "башня Высоцкий",
+			  "text": "Башня Высоцкий,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
 			  "id": "highlight4",
-			  "text": "и набережная реки Исеть,",
+			  "text": "Набережная реки Исеть,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],

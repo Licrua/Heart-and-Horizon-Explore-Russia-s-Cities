@@ -54,7 +54,7 @@
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],
-		  "suffix": ". Also, visit the Science Museum to learn more about the region's scientific achievements."
+		  "suffix": ". Also,visit the Science Museum to learn more about the region's scientific achievements."
 		}
 	  ],
 	  "NovosibirskDescriptionSection": [
@@ -65,12 +65,12 @@
 		  "highlights": [
 			{
 			  "id": "highlight1",
-			  "text": "Novosibirsk State University",
+			  "text": "Novosibirsk State University,",
 			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
 			},
 			{
 			  "id": "highlight2",
-			  "text": "and Akademgorodok",
+			  "text": "Akademgorodok",
 			  "className": "bg-body-secondary text-black fst-italic px-1 me-2"
 			}
 		  ],
@@ -95,12 +95,12 @@
 		  "highlights": [
 			{
 			  "id": "highlight3",
-			  "text": "Central Park",
+			  "text": "Central Park,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
 			  "id": "highlight4",
-			  "text": "and Zaeltsovsky Park",
+			  "text": "Zaeltsovsky Park",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],
@@ -140,7 +140,7 @@
 		  "description": "Krasny Prospekt is the main street of Novosibirsk, known for its shops, restaurants, and historical buildings. It is a vibrant area where the city's life is in full swing."
 		},
 		{
-		  "name": "Novosibirsk State University",
+		  "name": "Novosibirsk State University,",
 		  "id": 3,
 		  "src": "novosibirskStateUniversity",
 		  "description": "Novosibirsk State University is one of the leading universities in Russia, located in the heart of Akademgorodok. It is known for its high educational standards and research achievements."

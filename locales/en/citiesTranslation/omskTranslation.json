@@ -65,7 +65,7 @@
 		  "highlights": [
 			{
 			  "id": "highlight1",
-			  "text": "Omsk Fortress",
+			  "text": "Omsk Fortress,",
 			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
 			},
 			{
@@ -74,21 +74,21 @@
 			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
 			}
 		  ],
-		  "suffix": ". The city is also known for its cultural institutions such as ",
+		  "suffix": ".The city is also known for its cultural institutions such as ",
 		  "moreHighlights": [
 			{
 			  "id": "moreHighlight1",
-			  "text": "Omsk Drama Theater",
+			  "text": "Omsk Drama Theater,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
 			  "id": "moreHighlight2",
-			  "text": "Vrubel Museum",
+			  "text": "Vrubel Museum,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
 			  "id": "moreHighlight3",
-			  "text": "Lyubinsky Prospekt",
+			  "text": "Lyubinsky Prospekt.",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ]
@@ -100,7 +100,7 @@
 		  "highlights": [
 			{
 			  "id": "highlight3",
-			  "text": "Karl Marx Prospekt",
+			  "text": "Karl Marx Prospekt,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
@@ -109,7 +109,7 @@
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],
-		  "suffix": ". These areas of the city are full of life and offer many cafes, shops, and cultural venues."
+		  "suffix": ".These areas of the city are full of life and offer many cafes, shops, and cultural venues."
 		},
 		{
 		  "id": "section3",

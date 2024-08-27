@@ -20,7 +20,7 @@
 			},
 			{
 			  "id": "highlight2",
-			  "text": "the Ekaterinburg Opera and Ballet Theatre,",
+			  "text": "the Ekaterinburg Opera and Ballet Theatre",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],
@@ -50,11 +50,11 @@
 			},
 			{
 			  "id": "highlight5",
-			  "text": "and the Ganina Yama Monastery,",
+			  "text": "the Ganina Yama Monastery",
 			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
 			}
 		  ],
-		  "suffix": " a spiritual and historical site just outside the city."
+		  "suffix": " - spiritual and historical site just outside the city."
 		}
 	  ],
 	  "EkbDescriptionSection": [
@@ -70,7 +70,7 @@
 			},
 			{
 			  "id": "highlight2",
-			  "text": "Opera and Ballet Theatre,",
+			  "text": "Opera and Ballet Theatre",
 			  "className": "bg-body-secondary text-black fst-italic px-1 me-2"
 			}
 		  ],
@@ -83,12 +83,12 @@
 		  "highlights": [
 			{
 			  "id": "highlight3",
-			  "text": "Vysotsky Tower",
+			  "text": "Vysotsky Tower,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
 			  "id": "highlight4",
-			  "text": "and the Iset River Embankment,",
+			  "text": "the Iset River Embankment",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],
