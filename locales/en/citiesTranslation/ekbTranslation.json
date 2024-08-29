@@ -1,5 +1,6 @@
 {
 	"EkbTranslation": {
+		"title": "Ekaterinburg",
 	  "headers": [
 		{
 		  "accordionHeader": "Additional Information",
@@ -95,11 +96,13 @@
 		  "suffix": " are popular spots for both locals and tourists. Ekaterinburg is particularly beautiful at night, with its illuminated streets and landmarks creating a stunning view."
 		},
 		{
-		  "id": "section3",
-		  "prefix": "T",
-		  "text": "he city's transportation system is well-developed, with efficient trams and buses connecting different parts of Ekaterinburg. The city is a blend of history and modernity, offering something for everyone.",
-		  "highlights": []
-		}
+			"id": "section3",
+			"prefix": "Y",
+			"text": "ekaterinburg captivates with its unique architecture and cultural heritage, blending historical landmarks with modern buildings. The city is known for its vibrant cultural events and lively urban atmosphere.",
+			"highlights": [],
+			"suffix": " The city's transportation network also plays a crucial role, providing convenient movement across different districts. Modern trams and buses connect key points, helping both residents and tourists navigate Yekaterinburg with ease."
+		  }
+		  
 	  ],
 	  "EkbAttractions": [
 		{

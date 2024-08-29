@@ -26,15 +26,16 @@ function MainOpeningText({ t }: MainOpeningTextPropsType) {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className={styles.background_container}
+      //   className={styles.background_container}
     >
-      <div className={styles.background_image} />
-      <div className={styles.content}>
-        <h1 className={styles.mainOpeningTextheader}>
-          {introductoryTitleTranslation}
-        </h1>
+      {/* <div className={styles.background_image} /> */}
+      {/* <div className={styles.content}> */}
+      <h1 className={styles.main_opening_text_header}>
+        {introductoryTitleTranslation}
+      </h1>
+      <div className={styles.text_opening_container}>
         {introductoryTextTranslation.map((paragraph) => (
-          <p className="px-3" key={paragraph.id}>
+          <p key={paragraph.id}>
             {paragraph.initial && (
               <span className="float-start lh-1 fw-bold fs-1 me-1">
                 {paragraph.initial}
@@ -44,6 +45,7 @@ function MainOpeningText({ t }: MainOpeningTextPropsType) {
           </p>
         ))}
       </div>
+      {/* </div> */}
     </motion.div>
   );
 }

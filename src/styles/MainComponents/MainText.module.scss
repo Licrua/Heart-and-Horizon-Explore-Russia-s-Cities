@@ -1,22 +1,24 @@
 @import '/src/styles/mixins';
 @import '/src/styles/variables';
 
-.mainOpeningTextheader {
+
+
+.main_opening_text_header {
     position: relative;
     text-align: center;
 	@include custom_shadow_frame;
-	padding: 5px;
+	padding: 10px;
 	&::before {
 		content: "╚»";
 		margin-right: $arrowMargin;
 	}
 	&::after {
 		content: "«╝";
-    margin-left: $arrowMargin
-	}
+    margin-left: $arrowMargin;
+	}	
 }
 
-.mainCityListHeader {
+.main_city_title {
 	position: relative;
 	text-align: center;
 	margin-bottom: 5px;
@@ -33,54 +35,55 @@
 }
 
 
-.background_container {
-  position: relative;
-  @include full-size;
-  overflow: hidden;
+// .background_container {
+//   position: relative;
+//   @include full-size;
+//   overflow: hidden;
+// }
+
 // @include custom_shadow_title_second;
 
-  
+//   .background_image {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     @include full-size;
+//     background: linear-gradient(
+//       to bottom,
+//       white 33.3%,
+//       blue 33.3%,
+//       blue 66.6%,
+//       red 66.6%
+//     );
+//     margin: 150px;
 
-  .background_image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    @include full-size;
-    background: linear-gradient(
-      to bottom,
-      white 33.3%,
-      blue 33.3%,
-      blue 66.6%,
-      red 66.6%
-    );
-    filter: blur(5px);
-    margin-top: 20px;
+//     &::after {
+//       content: '';
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       @include full-size;
+//       background-color: $overlay-color;
+//       pointer-events: none;
+//     }
+//   }
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      @include full-size;
-      background-color: $overlay-color;
-      pointer-events: none;
-    }
-  }
-
-  .content {
-    position: relative;
-    z-index: 1;
-    color: $text-color;
-  }
-}
+//   .content {
+//     position: relative;
+//     z-index: 1;
+//     color: $text-color;
+//   }
 
 .custom_shadow_title {
  @include custom_shadow_frame
   }
 
+  
 
+.text_opening_container {
+		@include custom_shadow_frame($text-align: left);
+  }
+	
 
   
-.headers {
-	@include custom_shadow_frame
-}
+

@@ -45,7 +45,22 @@ function HeaderMainLogo({ cityLogo, t }: headerLogoProps) {
         src={cityLogo.src}
         alt={cityLogo.alt}
       />
-      <motion.span className="ms-2 fw-italic" style={{ letterSpacing: '2px' }}>
+      <motion.span
+        animate={{
+          color: ['#ffffff', '#0000ff', '#ff0000', '#ffffff'],
+          WebkitTextStroke: '1px #000000',
+          textShadow:
+            '-1px -1px 0 #00000000, 1px -1px 0 #00000000, -1px 1px 0 #00000000, 1px 1px 0 #0000002a',
+          fontWeight: 'bold',
+        }}
+        transition={{
+          duration: 5,
+          ease: 'linear',
+          repeat: Infinity,
+        }}
+        className="ms-2 fw-italic"
+        style={{ letterSpacing: '2px' }}
+      >
         {t('header.title')}
         <em>
           <div style={{ fontSize: '0.6em' }}>{t('header.subtitle')}</div>

@@ -67,7 +67,7 @@ function MainContentCityList({ cityEntities }: MainContentListType) {
       </Row>
       <Row>
         <Col className="border-top border-dark p-3">
-          <div className={styles.headers}>
+          <div className={styles.custom_shadow_title}>
             <h2 className="text-center text-light">
               <span className="me-2">◎</span>
               {t('mapInformation.mapHeader')}

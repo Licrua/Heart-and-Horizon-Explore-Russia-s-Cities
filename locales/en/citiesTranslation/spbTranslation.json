@@ -1,5 +1,6 @@
 {
 	"spbTranslation": {
+		"title": "Saint Petersburg",
 	  "headers": [
 		{
 		  "accordionHeader": "Additional Information",
@@ -100,7 +101,7 @@
 		  "highlights": [
 			{
 			  "id": "highlight3",
-			  "text": "The Summer Garden",
+			  "text": "The Summer Garden,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{

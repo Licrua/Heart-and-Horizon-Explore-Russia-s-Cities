@@ -1,5 +1,6 @@
 {
 	"NovosibirskTranslation": {
+		"title": "Novosibirsk",
 	  "headers": [
 		{
 		  "accordionHeader": "Additional Information",
@@ -83,7 +84,7 @@
 			},
 			{
 			  "id": "moreHighlight2",
-			  "text": "and the Novosibirsk Zoo.",
+			  "text": "the Novosibirsk Zoo.",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ]
@@ -107,18 +108,12 @@
 		  "suffix": " offer many opportunities for relaxation and recreation. Novosibirsk is especially beautiful in the evenings, when the city's lights create a unique atmosphere."
 		},
 		{
-		  "id": "section3",
-		  "prefix": "T",
-		  "text": "he city's transportation system is also noteworthy, including the famous ",
-		  "highlights": [
-			{
-			  "id": "highlight5",
-			  "text": "Novosibirsk Metro,",
-			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
-			}
-		  ],
-		  "suffix": " known for its elegant stations designed with Siberian motifs. Novosibirsk is a city that combines modern development with rich traditions."
-		}
+			"id": "section3",
+			"prefix": "T",
+			"text": "The city also has a well-developed network of transportation routes that facilitates access to these cultural and recreational areas.",
+			"highlights": [],
+			"suffix": " The public transportation system makes it easy to reach various wonderful places, providing convenience for both residents and visitors."
+		  }
 	  ],
 	  "NovosibirskAttractions": [
 		{

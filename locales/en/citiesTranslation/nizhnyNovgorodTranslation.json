@@ -1,5 +1,6 @@
 {
   "NizhnyNovgorodTranslation": {
+	"title": "NizhnyNovgorod",
     "headers": [
       {
         "accordionHeader": "Additional Information",
@@ -74,7 +75,7 @@
             "className": "bg-body-secondary text-black fst-italic px-1 me-2"
           }
         ],
-        "suffix": " — a UNESCO World Heritage site. Nizhny Novgorod is also known for its cultural institutions, such as ",
+        "suffix": "and so on. Nizhny Novgorod is also known for its cultural institutions, such as ",
         "moreHighlights": [
           {
             "id": "moreHighlight1",
@@ -111,19 +112,13 @@
         ],
         "suffix": " offer numerous opportunities for relaxation and walking. Nizhny Novgorod is especially beautiful at night, with illuminated bridges and buildings creating a magical atmosphere."
       },
-      {
-        "id": "section3",
-        "prefix": "T",
-        "text": "he city's transportation system is also noteworthy, including the famous ",
-        "highlights": [
-          {
-            "id": "highlight5",
-            "text": "Nizhny Novgorod Metro",
-            "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
-          }
-        ],
-        "suffix": " with its stunning stations designed in a palace-like style. Nizhny Novgorod is a city that combines historical beauty and modern dynamics."
-      }
+	  {
+		"id": "section3",
+		"prefix": "T",
+		"text": "he public transportation infrastructure of Novosibirsk is well-developed and provides convenient movement around the city. In addition to the metro, which effectively connects the main districts of the city, Novosibirsk is known for its bus and trolleybus routes.",
+		"highlights": [],
+		"suffix": " An important element of the city's infrastructure is also the road network, which ensures comfortable travel within the city and its surroundings."
+	  }
     ],
     "NizhnyNovgorodAttractions": [
       {

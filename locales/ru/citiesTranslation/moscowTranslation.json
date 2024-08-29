@@ -1,5 +1,6 @@
 {
 	"MoscowTranslation": {
+		"title": "Москва",
 	  "headers" : [
 		{
 		 	"accordionHeader": "Дополнительная информация",
@@ -79,7 +80,7 @@
 			{
 			  "id": "moreHighlight1",
 			  "text": "Большой театр,",
-			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			  "className": "bg-body-secondary fst-italic text-dark px-1 "
 			},
 			{
 			  "id": "moreHighlight2",

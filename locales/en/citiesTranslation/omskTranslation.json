@@ -1,5 +1,6 @@
 {
 	"OmskTranslation": {
+		"title": "Omsk",
 	  "headers": [
 		{
 		  "accordionHeader": "Additional Information",
@@ -112,18 +113,23 @@
 		  "suffix": ".These areas of the city are full of life and offer many cafes, shops, and cultural venues."
 		},
 		{
-		  "id": "section3",
-		  "prefix": "T",
-		  "text": "he transport system in Omsk provides convenient movement around the city, including ",
-		  "highlights": [
-			{
-			  "id": "highlight5",
-			  "text": "Omsk trolleybuses and route taxis",
-			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
-			}
-		  ],
-		  "suffix": ", which make it easy to reach all the main attractions and areas of the city."
-		}
+			"id": "section3",
+			"prefix": "T",
+			"text": "he transportation system of Omsk ensures convenient movement around the city. Special attention is drawn to transportation landmarks such as ",
+			"highlights": [
+			  {
+				"id": "highlight5",
+				"text": "the Omsk Metro Museum",
+				"className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			  },
+			  {
+				"id": "highlight6",
+				"text": "the Left Bank Transport Hub,",
+				"className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			  }
+			],
+			"suffix": "which highlight the importance and development of the city's transportation infrastructure and make it easy to reach all the major districts of Omsk."
+		  }
 	  ],
 	  "OmskAttractions": [
 		{

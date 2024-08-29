@@ -1,5 +1,6 @@
 {
 	"ChelyabinskTranslation": {
+		"title": "Chelyabinsk",
 	  "headers": [
 		{
 		  "accordionHeader": "Additional Information",
@@ -50,11 +51,11 @@
 			},
 			{
 			  "id": "highlight5",
-			  "text": "and the Chelyabinsk Museum of Local Lore,",
+			  "text": "the Chelyabinsk Museum of Local Lore,",
 			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
 			}
 		  ],
-		  "suffix": " which provides deep insights into the city's history and culture."
+		  "suffix": " are provides deep insights into the city's history and culture."
 		}
 	  ],
 	  "ChelyabinskDescriptionSection": [
@@ -83,7 +84,7 @@
 		  "highlights": [
 			{
 			  "id": "highlight3",
-			  "text": "the Alyosha Monument",
+			  "text": "the Alyosha Monument,",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			},
 			{
@@ -92,14 +93,14 @@
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],
-		  "suffix": " are popular spots for both locals and visitors. The city's unique charm comes to life in its public spaces and vibrant community life."
+		  "suffix": " and others attractions are popular spots for both locals and visitors. The city's unique charm comes to life in its public spaces and vibrant community life."
 		},
 		{
-		  "id": "section3",
-		  "prefix": "T",
-		  "text": "he city's transportation system is efficient and well-developed, making it easy to navigate Chelyabinsk. Whether you're exploring historical landmarks or modern attractions, the city offers a seamless blend of past and present.",
-		  "highlights": []
-		}
+			"id": "section3",
+			"prefix": "С",
+			"text": "helyabinsk's urban transportation system is a model of efficiency and comfort. It provides reliable and convenient movement around the city, connecting both historical landmarks and modern attractions. With well-organized bus and tram routes, you can easily explore both the cultural and contemporary aspects of the city.",
+			"highlights": []
+		  }
 	  ],
 	  "ChelyabinskAttractions": [
 		{

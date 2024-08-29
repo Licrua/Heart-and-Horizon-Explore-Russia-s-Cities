@@ -28,8 +28,6 @@ import chelyabinskTranslationEn from '@locales/en/citiesTranslation/chelyabinskT
 import chelyabinskTranslationRu from '@locales/ru/citiesTranslation/chelyabinskTranslation.json';
 import omskTranslationEn from '@locales/en/citiesTranslation/omskTranslation.json';
 import omskTranslationRu from '@locales/ru/citiesTranslation/omskTranslation.json';
-import generalCityTranslationEn from '@locales/en/citiesTranslation/generalCityInfoTranslation.json';
-import generalCityTranslationRu from '@locales/ru/citiesTranslation/generalCityInfoTranslation.json';
 import notFoundRu from '@locales/ru/notFoundTranslation.json';
 import notFoundEn from '@locales/en/notFoundTranslation.json';
 import { LocalesTranslation } from '../../types/locales';
@@ -52,7 +50,6 @@ const resources: { [lang: string]: LocalesTranslation } = {
     ekbTranslation: ekbTranslationEn,
     chelyabinskTranslation: chelyabinskTranslationEn,
     omskTranslation: omskTranslationEn,
-    generalCityTranslation: generalCityTranslationEn,
   },
   ru: {
     welcomePageTranslation: welcomePageTranslationRu,
@@ -71,7 +68,6 @@ const resources: { [lang: string]: LocalesTranslation } = {
     ekbTranslation: ekbTranslationRu,
     chelyabinskTranslation: chelyabinskTranslationRu,
     omskTranslation: omskTranslationRu,
-    generalCityTranslation: generalCityTranslationRu,
   },
 };
 

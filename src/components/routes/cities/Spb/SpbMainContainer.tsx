@@ -11,7 +11,9 @@ function SpbMainContainer() {
 
   return (
     <Container
-      className={currentThemeCurrent === 'black' ? 'text-white bg-black' : ''}
+      className={
+        currentThemeCurrent === 'black' ? ' bg-dark text-white' : 'text-black'
+      }
     >
       <SpbDesc />
       <SpbAttractionCarousel />

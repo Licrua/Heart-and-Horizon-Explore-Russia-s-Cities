@@ -4,9 +4,6 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  server: {
-    hmr: false, // отключает Hot Module Replacement
-  },
   resolve: {
     alias: {
       '@locales': path.resolve(__dirname, './locales'),

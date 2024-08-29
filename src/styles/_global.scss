@@ -13,3 +13,37 @@ body {
   @include gradient-background();
   background-repeat: no-repeat;
 }
+
+.cities_title {
+	@include gradient-background;
+	@include custom_shadow_frame
+  }
+
+
+.cities_subtitle {
+	@include gradient-background;
+	@include custom_shadow_frame
+  }
+
+
+
+//   .cities_subtitle_white_theme {
+// 	@include gradient-background;
+// 	@include custom_cities_layout($text-align: left);
+//   }
+//   .cities_subtitle_dark_theme {
+// 	@include gradient-background;
+// 	@include custom_cities_layout($text-align: left, $shadow_color: #f4eeee);
+//   }
+
+
+// .cities_text_white_theme {
+// 	@include custom_cities_layout($text-align: left);
+// 	letter-spacing: 1px;
+// }
+
+
+// .cities_text_dark_theme {
+// 	@include custom_cities_layout_dark($text-align: left);
+// 	letter-spacing: 1px;
+// }

@@ -1,5 +1,6 @@
 {
 	"KazanTranslation": {
+		"title": "Kazan",
 	  "headers": [
 		{
 		  "accordionHeader": "Additional Information",
@@ -50,11 +51,11 @@
 			},
 			{
 			  "id": "highlight5",
-			  "text": "and Suyumbike Tower",
+			  "text": "Suyumbike Tower",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],
-		  "suffix": ".Don’t miss a visit to the National Museum of the Republic of Tatarstan to learn more about the region's history."
+		  "suffix": " .Don’t miss a visit to the National Museum of the Republic of Tatarstan to learn more about the region's history."
 		}
 	  ],
 	  "KazanDescriptionSection": [
@@ -88,25 +89,19 @@
 			},
 			{
 			  "id": "highlight4",
-			  "text": "and the Kazan Riviera",
+			  "text": "the Kazan Riviera",
 			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
 			}
 		  ],
 		  "suffix": "are popular spots for both locals and tourists. Kazan is particularly beautiful at night, with its illuminated streets and buildings creating a mesmerizing view."
 		},
 		{
-		  "id": "section3",
-		  "prefix": "T",
-		  "text": "he city's transportation system is well-developed, including the modern ",
-		  "highlights": [
-			{
-			  "id": "highlight5",
-			  "text": "Kazan Metro,",
-			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
-			}
-		  ],
-		  "suffix": " which efficiently connects different parts of the city. Kazan is a city where history and modernity coexist in harmony."
-		}
+			"id": "section3",
+			"prefix": "K",
+			"text": "Kazan's public transportation system is characterized by high efficiency and convenience.",
+			"highlights": [],
+			"suffix": " The modern metro connects key areas, offering fast and comfortable travel throughout the city. Bus and tram routes provide easy access to the more remote corners of Kazan, creating a seamless network for the convenience of both residents and visitors. Additionally, an extensive network of bike lanes and pedestrian zones makes getting around the city easy and enjoyable, highlighting its unique blend of historical and contemporary dynamics."
+		  }
 	  ],
 	  "KazanAttractions": [
 		{

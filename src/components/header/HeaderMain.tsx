@@ -8,13 +8,13 @@ import HeaderTheme from './HeaderThemeLogo';
 import HeaderLanguageLogo from './HeaderLanguageLogo';
 import HeaderCitiesList from './HeaderCitiesListNavigation';
 import HeaderMapLogo from './HeaderMapLogo';
+import MistHeader from './Mist';
 
 function HeaderMain() {
   const citiesEntites = useAppSelector((state) => selectEntities(state));
   const themeToggler = useAppSelector((state) => state.cities.isThemable);
   const isMapIconShown = useAppSelector((state) => state.cities.isMapIconShown);
   const { t } = useTranslation('headerPageTranslation');
-  console.log('isMapIconShown', isMapIconShown);
 
   const [
     cityLogo,
