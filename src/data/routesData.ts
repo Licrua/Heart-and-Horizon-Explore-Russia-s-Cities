@@ -8,24 +8,24 @@ import NizhnyNovgorod from '@routes/cities/NijniyNovgorod/NizhnyNovgorodMainCont
 import Chelyabinsk from '@routes/cities/Chelyabinsk/ChelyabinskMainContainer';
 
 const routes = [
-  { name: 'Moscow', id: 1, path: '/moscow', element: Moscow },
-  { name: 'Spb', id: 2, path: '/spb', element: Spb },
-  { name: 'Omsk', id: 3, path: '/omsk', element: Omsk },
-  { name: 'Ekaterinburg', id: 4, path: '/ekb', element: Ekaterinburg },
-  { name: 'Kazan', id: 5, path: '/kazan', element: Kazan },
+  { name: 'Spb', id: 1, path: '/spb', element: Spb },
+  { name: 'Moscow', id: 2, path: '/moscow', element: Moscow },
+  { name: 'Novosibirsk', id: 3, path: '/novosibirsk', element: Novosibirsk },
   {
     name: 'Nizhny Novgorod',
     id: 4,
     path: '/nizhnyNovgorod',
     element: NizhnyNovgorod,
   },
-  { name: 'Novosibirsk', id: 6, path: '/novosibirsk', element: Novosibirsk },
+  { name: 'Ekaterinburg', id: 5, path: '/ekb', element: Ekaterinburg },
+  { name: 'Kazan', id: 6, path: '/kazan', element: Kazan },
   {
     name: 'Chelyabinsk',
-    id: 8,
+    id: 7,
     path: '/chelyabinsk',
     element: Chelyabinsk,
   },
+  { name: 'Omsk', id: 8, path: '/omsk', element: Omsk },
 ];
 
 export default routes;

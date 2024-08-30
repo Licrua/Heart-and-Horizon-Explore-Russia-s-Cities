@@ -15,7 +15,7 @@ function AccordionSection({ children, t }: AccordionSectionPropsType) {
         animate={{ opacity: 1, y: 5, x: 5 }}
         transition={{ duration: 0.5 }}
         whileHover={{ scale: 1.1, x: 100 }}
-        className="mb-3 cities_subtitle"
+        className="mb-3"
       >
         {t('spbTranslation.headers.0.accordionHeader')}
       </motion.h2>

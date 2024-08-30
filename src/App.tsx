@@ -44,7 +44,6 @@ function App() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-
     if (isMainPageLocation) {
       dispatch(toggleThemeSwitcher(false));
       dispatch(toggleMapIconShown(true));

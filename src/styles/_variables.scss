@@ -36,3 +36,12 @@ $gradient-bg-text: linear-gradient(
   rgba(255, 0, 25, 0.6) 100%
 );
 
+$gradient-bg-card: linear-gradient(
+  60deg,
+  rgb(255, 255, 255, 0.9) 33.3%,
+  rgba(4, 12, 255, 0.6) 33.3%,
+  rgba(4, 12, 255, 0.6) 66.6%,
+  rgba(255, 0, 25, 0.6) 66.6%,
+  rgba(255, 0, 25, 0.6) 100%
+);
+

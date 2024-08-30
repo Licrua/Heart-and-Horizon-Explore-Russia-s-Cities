@@ -49,7 +49,7 @@ function MainQuotes({ t }: MainQuotesPropType) {
                   src={`/src/assets/images/quotesImages/${item.imageName}.png`}
                   roundedCircle
                 />
-                <p className="pb-2">
+                <p className={styles.quote_description}>
                   <span>“</span>
                   {item.text}
                   <span>”</span>

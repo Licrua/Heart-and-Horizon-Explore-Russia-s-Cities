@@ -30,6 +30,9 @@ import omskTranslationEn from '@locales/en/citiesTranslation/omskTranslation.jso
 import omskTranslationRu from '@locales/ru/citiesTranslation/omskTranslation.json';
 import notFoundRu from '@locales/ru/notFoundTranslation.json';
 import notFoundEn from '@locales/en/notFoundTranslation.json';
+import navigationButtonsTranslationRu from '@locales/ru/navigationButtonsTranslation.json';
+import navigationButtonsTranslationEn from '@locales/en/navigationButtonsTranslation.json';
+
 import { LocalesTranslation } from '../../types/locales';
 
 const resources: { [lang: string]: LocalesTranslation } = {
@@ -50,6 +53,7 @@ const resources: { [lang: string]: LocalesTranslation } = {
     ekbTranslation: ekbTranslationEn,
     chelyabinskTranslation: chelyabinskTranslationEn,
     omskTranslation: omskTranslationEn,
+    navigationButtonsTranslation: navigationButtonsTranslationEn,
   },
   ru: {
     welcomePageTranslation: welcomePageTranslationRu,
@@ -68,6 +72,7 @@ const resources: { [lang: string]: LocalesTranslation } = {
     ekbTranslation: ekbTranslationRu,
     chelyabinskTranslation: chelyabinskTranslationRu,
     omskTranslation: omskTranslationRu,
+    navigationButtonsTranslation: navigationButtonsTranslationRu,
   },
 };
 

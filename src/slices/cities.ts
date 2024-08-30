@@ -28,6 +28,7 @@ const initialState: citiesState = citiesAdapter.getInitialState({
   themeColor: 'white',
   isSorted: true,
   isMapIconShown: false,
+  currentCityIndex: 0,
 });
 const citiesSlice = createSlice({
   name: 'cities',

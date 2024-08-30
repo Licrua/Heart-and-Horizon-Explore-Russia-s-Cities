@@ -16,7 +16,7 @@ function HeaderMainLogo({ cityLogo, t }: headerLogoProps) {
   const navigate = useNavigate();
   const handlerOnButton = () => {
     if (location.pathname !== '/') {
-      navigate('/');
+      navigate('/main');
     }
   };
   return (

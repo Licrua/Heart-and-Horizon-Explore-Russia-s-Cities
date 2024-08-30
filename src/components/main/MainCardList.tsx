@@ -3,6 +3,7 @@ import { City } from '@slices/cities';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { TFunction } from 'i18next';
+import styles from '@styles/MainComponents/MainText.module.scss';
 
 type cityItemProp = {
   cityItem: City;
@@ -44,7 +45,8 @@ function MainCardList({ cityItem, t }: cityItemProp) {
         },
       }}
       viewport={{ once: true }}
-      className="p-3 mb-5 bg-body rounded"
+      className="p-3 mb-3 bg-body rounded"
+      style={{ height: '600px' }}
     >
       <Card.Img
         variant="top"
@@ -52,19 +54,20 @@ function MainCardList({ cityItem, t }: cityItemProp) {
         height="300px"
         src={`/src/assets/images/citiesCardImages/${cityItem.imgName}.jpeg`}
       />
-      <Card.Body>
+      <Card.Body className={styles.card_description}>
         <Card.Title>{cityItem.name}</Card.Title>
         <Card.Text>{cityItem.description}</Card.Text>
       </Card.Body>
       <ListGroup className="list-group-flush">
-        <ListGroup.Item>
+        {/* className={`list-group-flush ${styles.card_description}` */}
+        <ListGroup.Item className={styles.card_description}>
           {t('cityInfo.Population', { number: citiesPopulation })}
         </ListGroup.Item>
-        <ListGroup.Item>
+        <ListGroup.Item className={styles.card_description}>
           {t('cityInfo.FoundationDate', { date: citiesFoundatonDate })}
         </ListGroup.Item>
       </ListGroup>
-      <Card.Body className="d-flex justify-content-center">
+      <Card.Body className="d-flex  justify-content-center">
         <motion.button
           onClick={() => handleClick(cityRoute)}
           whileHover={{ scale: 1.1 }}
