@@ -5,7 +5,6 @@ import { TFunction } from 'i18next';
 import spbImagesMap from '@data/citiesPictures/spbPictures';
 import SpbCarouselCaption from './SpbCarouselCaption';
 
-
 type SpbCarouselItems = {
   t: TFunction;
 };
@@ -26,7 +25,6 @@ function SpbCarouselItems({ t }: SpbCarouselItems) {
     ...attraction,
     src: spbImagesMap[attraction.src as keyof typeof spbImagesMap],
   }));
-  console.log('spbAttractions', spbAttractions);
 
   return (
     <Row>

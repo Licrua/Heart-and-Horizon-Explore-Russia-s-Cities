@@ -16,7 +16,6 @@ function ChelyabinskAccordionItems({ t }: ChelyabinskAccordionItemsProps) {
   const accordionData = Object.values(
     t('ChelyabinskTranslation.accordion', { returnObjects: true })
   );
-  console.log('accordionData', accordionData);
 
   return (
     <>

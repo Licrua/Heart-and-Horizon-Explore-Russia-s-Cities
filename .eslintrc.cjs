@@ -36,7 +36,6 @@ module.exports = {
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
     'no-unused-vars': 'warn',
-	'no-unused-imports': 'warn',
     'react/require-default-props': 'off',
     'react/prop-types': 'off',
     'no-param-reassign': 'off',

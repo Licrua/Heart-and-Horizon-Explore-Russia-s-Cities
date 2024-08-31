@@ -18,10 +18,6 @@ function NizhnyNovgorodDescTextSection({
       returnObjects: true,
     })
   );
-  console.log(
-    'NizhnyNovgorodDescriptionSection',
-    NizhnyNovgorodDescriptionSection
-  );
 
   return (
     <>

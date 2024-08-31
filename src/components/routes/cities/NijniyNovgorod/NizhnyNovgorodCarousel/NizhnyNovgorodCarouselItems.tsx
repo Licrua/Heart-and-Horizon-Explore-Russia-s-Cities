@@ -5,7 +5,6 @@ import { TFunction } from 'i18next';
 import NizhnyNovgorodImagesMap from '@data/citiesPictures/nizhnyNovgorod';
 import NizhnyNovgorodCarouselCaption from './NizhnyNovgorodCarouselCaption';
 
-
 type NizhnyNovgorodCarouselItems = {
   t: TFunction;
 };
@@ -30,7 +29,6 @@ function NizhnyNovgorodCarouselItems({ t }: NizhnyNovgorodCarouselItems) {
       attraction.src as keyof typeof NizhnyNovgorodImagesMap
     ],
   }));
-  console.log('NizhnyNovgorodAttractions', NizhnyNovgorodAttractions);
 
   return (
     <Row>

@@ -27,7 +27,6 @@ function KazanCarouselItems({ t }: KazanCarouselItems) {
     ...attraction,
     src: KazanImagesMap[attraction.src as keyof typeof KazanImagesMap],
   }));
-  console.log('KazanAttractions', KazanAttractions);
 
   return (
     <Row>

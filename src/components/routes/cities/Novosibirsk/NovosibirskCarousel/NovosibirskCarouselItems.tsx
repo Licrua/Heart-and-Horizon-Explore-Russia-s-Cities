@@ -5,8 +5,6 @@ import { TFunction } from 'i18next';
 import NovosibirskImagesMap from '@data/citiesPictures/novosibirskPictures';
 import NovosibirskCarouselCaption from './NovosibirskCarouselCaption';
 
-console.log('NovosibirskImagesMap', NovosibirskImagesMap);
-
 type NovosibirskCarouselItems = {
   t: TFunction;
 };
@@ -29,7 +27,6 @@ function NovosibirskCarouselItems({ t }: NovosibirskCarouselItems) {
       attraction.src as keyof typeof NovosibirskImagesMap
     ],
   }));
-  console.log('NovosibirskAttractions', NovosibirskAttractions);
 
   return (
     <Row>

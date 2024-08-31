@@ -20,7 +20,7 @@ export function HeaderThemeToggler() {
     <div
       aria-label="togglerSwitcher"
       className={styles.themeSwitcher}
-      data-colorTheme={currentColor}
+      data-colortheme={currentColor}
       role="button"
       tabIndex={0}
       onClick={onClickSwitchToggler}

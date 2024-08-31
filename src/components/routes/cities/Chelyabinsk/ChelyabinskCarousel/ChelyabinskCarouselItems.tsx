@@ -29,7 +29,6 @@ function ChelyabinskCarouselItems({ t }: ChelyabinskCarouselItems) {
       attraction.src as keyof typeof ChelyabinskImagesMap
     ],
   }));
-  console.log('ChelyabinskAttractions', ChelyabinskAttractions);
 
   return (
     <Row>

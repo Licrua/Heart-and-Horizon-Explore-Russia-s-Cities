@@ -27,7 +27,6 @@ function OmskCarouselItems({ t }: OmskCarouselItems) {
     ...attraction,
     src: OmskImagesMap[attraction.src as keyof typeof OmskImagesMap],
   }));
-  console.log('OmskAttractions', OmskAttractions);
 
   return (
     <Row>

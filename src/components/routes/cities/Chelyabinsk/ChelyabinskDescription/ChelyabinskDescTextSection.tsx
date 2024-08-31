@@ -16,10 +16,6 @@ function ChelyabinskDescTextSection({ t }: ChelyabinskDescTextSectionProps) {
       returnObjects: true,
     })
   );
-  console.log(
-    'ChelyabinskDescriptionSectionвфырвфырвшф',
-    ChelyabinskDescriptionSection
-  );
 
   return (
     <>

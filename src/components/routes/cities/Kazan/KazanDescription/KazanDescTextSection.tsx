@@ -16,7 +16,6 @@ function KazanDescTextSection({ t }: KazanDescTextSectionProps) {
       returnObjects: true,
     })
   );
-  console.log('KazanDescriptionSection', KazanDescriptionSection);
 
   return (
     <>

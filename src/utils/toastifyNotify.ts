@@ -39,7 +39,17 @@ const notify = (type: NotificationType): void => {
       break;
 
     default:
-      console.warn('Invalid notification type');
+      toast.warning('Something wents wrong!', {
+        position: 'top-center',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'dark',
+        transition: Bounce,
+      });
   }
 };
 

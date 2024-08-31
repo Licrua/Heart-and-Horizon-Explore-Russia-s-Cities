@@ -16,7 +16,6 @@ function OmskAccordionItems({ t }: OmskAccordionItemsProps) {
   const accordionData = Object.values(
     t('OmskTranslation.accordion', { returnObjects: true })
   );
-  console.log('accordionData', accordionData);
 
   return (
     <>

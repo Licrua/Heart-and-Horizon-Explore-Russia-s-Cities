@@ -16,7 +16,6 @@ function EkbDescTextSection({ t }: EkbDescTextSectionProps) {
       returnObjects: true,
     })
   );
-  console.log('EkbDescriptionSectionвфырвфырвшф', EkbDescriptionSection);
 
   return (
     <>

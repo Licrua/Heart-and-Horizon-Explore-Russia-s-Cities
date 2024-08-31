@@ -5,7 +5,6 @@ import OmskCarouselSection from './OmskCarouselSection';
 
 function OmskAttractionCarousel() {
   const { t } = useTranslation('omskTranslation');
-  console.log('translation', t('OmskTranslation.headers.0.carouselHeader'));
 
   return (
     <OmskCarouselSection>

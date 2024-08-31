@@ -16,7 +16,6 @@ function EkbAccordionItems({ t }: EkbAccordionItemsProps) {
   const accordionData = Object.values(
     t('EkbTranslation.accordion', { returnObjects: true })
   );
-  console.log('accordionData', accordionData);
 
   return (
     <>

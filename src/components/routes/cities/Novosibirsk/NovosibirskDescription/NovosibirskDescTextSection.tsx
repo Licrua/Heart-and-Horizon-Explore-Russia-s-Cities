@@ -17,8 +17,6 @@ function NovosibirskDescTextSection({ t }: NovosibirskDescTextSectionProps) {
     })
   );
 
-  console.log('NovosibirskDescriptionSection', NovosibirskDescTextSection);
-
   return (
     <>
       {NovosibirskDescriptionSection.map((section) => (

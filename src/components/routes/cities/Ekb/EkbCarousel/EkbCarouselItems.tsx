@@ -27,7 +27,6 @@ function EkbCarouselItems({ t }: EkbCarouselItems) {
     ...attraction,
     src: EkbImagesMap[attraction.src as keyof typeof EkbImagesMap],
   }));
-  console.log('EkbAttractions', EkbAttractions);
 
   return (
     <Row>
