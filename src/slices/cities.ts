@@ -19,6 +19,7 @@ export type citiesState = EntityState<City, number> & {
   isThemable: boolean;
   themeColor: string;
   isMapIconShown: boolean;
+  currentCityIndex: number;
 };
 
 const citiesAdapter: EntityAdapter<City, number> = createEntityAdapter<City>();
@@ -34,9 +35,6 @@ const citiesSlice = createSlice({
   name: 'cities',
   initialState,
   reducers: {
-    addCity: (state, action: PayloadAction<City>) => {
-      citiesAdapter.addOne(state, action.payload);
-    },
     setCities: (state, action: PayloadAction<Record<number, City>>) => {
       citiesAdapter.setAll(state, action.payload);
     },
@@ -54,7 +52,7 @@ const citiesSlice = createSlice({
         return (a.foundation_date - b.foundation_date) * sortOrder;
       });
       citiesAdapter.setAll(state, sortedEntities);
-      state.isSorted = !state.isSorted; // инвертируем флаг сортировки
+      state.isSorted = !state.isSorted;
     },
     changeThemeColor: (state) => {
       state.themeColor = state.themeColor === 'white' ? 'black' : 'white';
@@ -65,16 +63,19 @@ const citiesSlice = createSlice({
     toggleMapIconShown: (state, { payload }: PayloadAction<boolean>) => {
       state.isMapIconShown = payload;
     },
+    setCurrentCityIndex: (state, action) => {
+      state.currentCityIndex = action.payload;
+    },
   },
 });
 
 export const {
-  addCity,
   sortItems,
   changeThemeColor,
   toggleThemeSwitcher,
   setCities,
   toggleMapIconShown,
+  setCurrentCityIndex,
 } = citiesSlice.actions;
 export const {
   selectEntities,

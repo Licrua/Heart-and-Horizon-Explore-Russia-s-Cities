@@ -1,6 +1,5 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-// import NovosibirskAttractions from '@data/NovosibirskAttrData/NovosibirskPictures';
 import { useState } from 'react';
 import { TFunction } from 'i18next';
 import NovosibirskImagesMap from '@data/citiesPictures/novosibirskPictures';

@@ -1,6 +1,5 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-// import ChelyabinskAttractions from '@data/ChelyabinskAttrData/ChelyabinskPictures';
 import { useState } from 'react';
 import { TFunction } from 'i18next';
 import ChelyabinskImagesMap from '@data/citiesPictures/chelyabinskPuctures';

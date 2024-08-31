@@ -18,13 +18,15 @@ function FooterFormField({
     <div>
       <BootstrapForm.Label className="me-3" htmlFor={name}>
         <BootstrapForm.Control
+          autoComplete={name}
+          id={name}
           placeholder={placeholder}
           as={Field}
           name={name}
-          className={error && touched ? ' border-2 border-danger' : ''}
+          className={error && touched ? ' border-2 border-danger m-1' : ''}
         />
       </BootstrapForm.Label>
-      <ErrorMessage name={name} component="span" className="text-danger " />
+      <ErrorMessage name={name} component="div" className="text-danger " />
     </div>
   );
 }

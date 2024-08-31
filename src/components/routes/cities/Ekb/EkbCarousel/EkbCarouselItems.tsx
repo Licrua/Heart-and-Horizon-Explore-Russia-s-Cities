@@ -1,6 +1,5 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-// import EkbAttractions from '@data/EkbAttrData/EkbPictures';
 import { useState } from 'react';
 import { TFunction } from 'i18next';
 import EkbImagesMap from '@data/citiesPictures/ekbPictures';

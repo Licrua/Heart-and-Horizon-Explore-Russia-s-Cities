@@ -51,7 +51,6 @@ function HeaderMainLogo({ cityLogo, t }: headerLogoProps) {
           WebkitTextStroke: '1px #000000',
           textShadow:
             '-1px -1px 0 #00000000, 1px -1px 0 #00000000, -1px 1px 0 #00000000, 1px 1px 0 #0000002a',
-          fontWeight: 'bold',
         }}
         transition={{
           duration: 5,

@@ -1,12 +1,10 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-// import NizhnyNovgorodAttractions from '@data/NizhnyNovgorodAttrData/NizhnyNovgorodPictures';
 import { useState } from 'react';
 import { TFunction } from 'i18next';
 import NizhnyNovgorodImagesMap from '@data/citiesPictures/nizhnyNovgorod';
 import NizhnyNovgorodCarouselCaption from './NizhnyNovgorodCarouselCaption';
 
-console.log('NizhnyNovgorodImagesMap', NizhnyNovgorodImagesMap);
 
 type NizhnyNovgorodCarouselItems = {
   t: TFunction;

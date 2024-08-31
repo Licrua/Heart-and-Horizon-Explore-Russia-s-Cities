@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { TFunction } from 'i18next';
-// import { useAppSelector } from '@store/hooks';
 
 type SpbDescHeaderTypes = {
   t: TFunction;

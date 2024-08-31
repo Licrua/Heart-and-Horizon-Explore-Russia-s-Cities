@@ -8,25 +8,25 @@ const SocialMediaIcons = [
     id: 1,
     src: vkIcon,
     alt: 'VK Icon',
-    href: '#vk',
+    href: 'https://vk.com/hgn41',
   },
   {
     id: 2,
     src: discordIcon,
     alt: 'Discord Icon',
-    href: '#discord',
+    href: 'https://discord.gg/6jRnUACx',
   },
   {
     id: 3,
     src: gmailIcon,
     alt: 'Gmail Icon',
-    href: '#gmail',
+    href: 'mailto:ilay1275@mail.ru',
   },
   {
     id: 4,
     src: telegramIcon,
     alt: 'Telegram Icon',
-    href: '#telegram',
+    href: 'https://t.me/Ilya01034',
   },
 ];
 

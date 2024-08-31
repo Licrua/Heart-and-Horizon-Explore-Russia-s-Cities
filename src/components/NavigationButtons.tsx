@@ -1,28 +1,36 @@
-import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import routes from '@data/routesData';
 import { Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import { setCurrentCityIndex } from '@slices/cities';
+import { useAppDispatch, useAppSelector } from '@store/hooks';
 
 function NavigationButtons() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const { t } = useTranslation('navigationButtonsTranslation');
+  const dispatch = useAppDispatch();
   const navigate = useNavigate();
+  const location = useLocation();
+  const { t } = useTranslation('navigationButtonsTranslation');
+  const currentCityIndex = useAppSelector(
+    (state) => state.cities.currentCityIndex
+  );
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+    const index = routes.findIndex((route) => route.path === location.pathname);
+    if (index !== -1) {
+      dispatch(setCurrentCityIndex(index));
+    }
+  }, [location.pathname, dispatch]);
 
   const goToPrevious = () => {
-    const previousIndex = (currentIndex - 1 + routes.length) % routes.length;
-    setCurrentIndex(previousIndex);
-    navigate(routes[previousIndex].path);
+    const updatedIndex = (currentCityIndex - 1 + routes.length) % routes.length;
+    navigate(routes[updatedIndex].path);
   };
 
   const goToNext = () => {
-    const nextIndex = (currentIndex + 1) % routes.length;
-    setCurrentIndex(nextIndex);
-    navigate(routes[nextIndex].path);
+    const updatedIndex = (currentCityIndex + 1) % routes.length;
+    navigate(routes[updatedIndex].path);
   };
 
   return (

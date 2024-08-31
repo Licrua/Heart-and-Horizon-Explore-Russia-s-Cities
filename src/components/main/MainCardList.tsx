@@ -58,7 +58,7 @@ function MainCardList({ cityItem, t }: cityItemProp) {
         <Card.Title>{cityItem.name}</Card.Title>
         <Card.Text>{cityItem.description}</Card.Text>
       </Card.Body>
-      <ListGroup className="list-group-flush">
+      <ListGroup className="list-group-flush ">
         {/* className={`list-group-flush ${styles.card_description}` */}
         <ListGroup.Item className={styles.card_description}>
           {t('cityInfo.Population', { number: citiesPopulation })}

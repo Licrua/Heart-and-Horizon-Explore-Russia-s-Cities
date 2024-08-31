@@ -10,6 +10,7 @@ import '@styles/_global.scss';
 import './i18n';
 import { ToastContainer } from 'react-toastify';
 import App from './App';
+import './utils/sentry';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

@@ -22,14 +22,7 @@ function MainOpeningText({ t }: MainOpeningTextPropsType) {
   const introductoryTitleTranslation = t('introductoryTitle');
 
   return (
-    <motion.div
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-      //   className={styles.background_container}
-    >
-      {/* <div className={styles.background_image} /> */}
-      {/* <div className={styles.content}> */}
+    <motion.div variants={containerVariants} initial="hidden" animate="visible">
       <h1 className={styles.main_opening_text_header}>
         {introductoryTitleTranslation}
       </h1>

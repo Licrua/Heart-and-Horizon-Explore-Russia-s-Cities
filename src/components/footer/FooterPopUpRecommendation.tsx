@@ -7,8 +7,9 @@ import { motion } from 'framer-motion';
 import { TFunction } from 'i18next';
 import { Formik, Field, Form as FormikForm, ErrorMessage } from 'formik';
 import notify from '@utils/toastifyNotify';
-import validationSchema from '@utils/YupValidationFooter';
+import validationSchemaPopUp from '@utils/YupValidationPopUp';
 import curseFilter from '@utils/curseFilter';
+import onMailSend from '@utils/emailJsService';
 
 type FooterPopUpReccomendationProps = {
   t: TFunction;
@@ -22,24 +23,19 @@ function FooterPopUpReccomendation({ t }: FooterPopUpReccomendationProps) {
 
   const initialValues = { email: '', description: '' };
 
-  const onSubmit = (
-    values: typeof initialValues,
-    { setSubmitting }: (isSubmitting: boolean) => void
-  ) => {
-    if (values) {
-      notify('formSuccess');
+  const onSubmit = async (values: typeof initialValues) => {
+    try {
       curseFilter(values);
-      setSubmitting(false);
+      await onMailSend(values);
       handleClose();
-      console.log('setSubmitting', setSubmitting);
-    } else {
+    } catch (error) {
       notify('error');
     }
   };
 
   return (
     <Row>
-      <Col className="d-flex justify-content-center mb-2 ">
+      <Col className="d-flex justify-content-center mb-2">
         <span className="me-3">
           <strong>{t('footer.suggestionTitle')}</strong>
         </span>
@@ -58,7 +54,7 @@ function FooterPopUpReccomendation({ t }: FooterPopUpReccomendationProps) {
           <Modal.Body>
             <Formik
               initialValues={initialValues}
-              validationSchema={validationSchema}
+              validationSchema={validationSchemaPopUp}
               onSubmit={onSubmit}
             >
               {({ isSubmitting }) => (
@@ -94,7 +90,7 @@ function FooterPopUpReccomendation({ t }: FooterPopUpReccomendationProps) {
                     />
                   </Form.Group>
                   <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button onClick={handleClose} variant="secondary">
                       {t('footer.closeButton')}
                     </Button>
                     <Button

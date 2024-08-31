@@ -14,7 +14,7 @@ function FooterSocialNovbar({ socialIcons }: FooterSocialNovbarType) {
     <Row>
       <Navbar bg="light" expand="lg" className="d-flex  justify-content-center">
         {socialIcons.map((item) => (
-          <Navbar.Brand key={item.id} href={item.href}>
+          <Navbar.Brand target="_blank" key={item.id} href={item.href}>
             <img
               src={item.src}
               alt={item.alt}

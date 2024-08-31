@@ -21,7 +21,6 @@ function EkbDescTextSection({ t }: EkbDescTextSectionProps) {
   return (
     <>
       {EkbDescriptionSection.map((section) => {
-        console.log('section', section); // Выводит объект section в консоль
         return (
           <p key={section.id}>
             <span className="float-start lh-1 fw-bold fs-1 me-1">

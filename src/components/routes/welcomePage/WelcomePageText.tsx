@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-// import { setGreetingButtonPress } from '@slices/cities';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import WelcomePageLanguageSelector from './WelcomePageLanguageSelector';
@@ -10,10 +9,8 @@ type MainGreetingTextType = {
 
 function WelcomePageText({ styles }: MainGreetingTextType) {
   const { t } = useTranslation('welcomePageTranslation');
-  //   const dispatch = useAppDispatch();
   const navigator = useNavigate();
   const onGrettingTogglerHandler = () => {
-    // dispatch(setGreetingButtonPress(true));
     navigator('/main');
   };
 

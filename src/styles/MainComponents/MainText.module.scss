@@ -35,44 +35,6 @@
 }
 
 
-// .background_container {
-//   position: relative;
-//   @include full-size;
-//   overflow: hidden;
-// }
-
-// @include custom_shadow_title_second;
-
-//   .background_image {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     @include full-size;
-//     background: linear-gradient(
-//       to bottom,
-//       white 33.3%,
-//       blue 33.3%,
-//       blue 66.6%,
-//       red 66.6%
-//     );
-//     margin: 150px;
-
-//     &::after {
-//       content: '';
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       @include full-size;
-//       background-color: $overlay-color;
-//       pointer-events: none;
-//     }
-//   }
-
-//   .content {
-//     position: relative;
-//     z-index: 1;
-//     color: $text-color;
-//   }
 
 .custom_shadow_title {
  @include custom_shadow_frame
@@ -94,19 +56,3 @@
 	-webkit-text-stroke: 0.9px #000;
   }
 
-//   .text_gradient {
-// 	font-size: 2rem; /* Размер шрифта можно настроить */
-// 	font-weight: bold;
-// 	background: linear-gradient(
-// 	  to bottom,
-// 	  white 33.3%,
-// 	  blue 33.3%,
-// 	  blue 66.6%,
-// 	  red 66.6%
-// 	);
-// 	-webkit-background-clip: text;
-// 	-webkit-text-fill-color: transparent;
-// 	background-clip: text;
-// 	color: transparent;
-//   }
-  

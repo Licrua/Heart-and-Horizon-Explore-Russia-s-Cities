@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import FooterCopyright from './FooterCopyright';
 import FooterSocialNovbar from './FooterSocialNovbar';
 import FooterForm from './FooterFormMain';
-import FooterPopUpReccomendation from './FooterPopUpReccomendation';
+import FooterPopUpReccomendation from './FooterPopUpRecommendation';
 
 function FooterMain() {
   const { t } = useTranslation('footerPageTranslation');

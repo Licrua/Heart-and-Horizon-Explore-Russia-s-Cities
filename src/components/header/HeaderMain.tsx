@@ -8,7 +8,6 @@ import HeaderTheme from './HeaderThemeLogo';
 import HeaderLanguageLogo from './HeaderLanguageLogo';
 import HeaderCitiesList from './HeaderCitiesListNavigation';
 import HeaderMapLogo from './HeaderMapLogo';
-import MistHeader from './Mist';
 
 function HeaderMain() {
   const citiesEntites = useAppSelector((state) => selectEntities(state));

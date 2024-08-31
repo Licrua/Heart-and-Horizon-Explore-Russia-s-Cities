@@ -10,6 +10,10 @@ i18n
   .init({
     resources,
     lng: 'ru',
+    backend: {
+      loadPath: '/locales/{{lng}}/{{ns}}.json',
+      cache: true,
+    },
     fallbackLng: 'en',
     ns: namespaces,
     defaultNS: 'welcomePageTranslation',

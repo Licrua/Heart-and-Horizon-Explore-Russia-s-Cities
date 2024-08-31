@@ -11,6 +11,8 @@
     "emailPlaceholderExample": "Name",
     "descriptionLabel": "Suggestion Description",
     "closeButton": "Close",
-    "saveButton": "Save and Send"
+    "saveButton": "Save and Send",
+	"successNotify": "Form has been sent successfully. Have a nice time!",
+	"errorNotify": "Opps! Something wents wrong. Try again later."
   }
 }

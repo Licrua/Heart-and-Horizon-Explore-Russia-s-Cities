@@ -63,7 +63,7 @@
 
 
 @mixin custom_card_layout {
-	-webkit-text-stroke: 0.9px #000;
+	-webkit-text-stroke: 1px #000;
 	background: $gradient-bg-card;
 	text-shadow:
 	-1px -1px 0 #00000000,  
@@ -79,43 +79,3 @@
 }
 
 
-
-// @mixin custom_cities_layout($text-align: center, $shadow_color: #00000012) {
-// 	-webkit-text-stroke: 0.8px #000;
-// 	@include gradient-background_text;
-// 	margin-bottom: 3px;
-// 	text-shadow:
-// 	-1px -1px 0 #00000000,  
-//     1px -1px 0 #00000000,
-//     -1px 1px 0 #00000000,
-//      1px 1px 0 $shadow_color;
-// 	 font-weight: bold;
-// 	  background-clip: text;
-// 	  color: transparent;
-// 	-webkit-background-clip: text;
-// 	margin-bottom: 10px;
-// 	text-align: $text-align;
-// 	color: transparent;
-// 	-webkit-text-fill-color: transparent;
-// 	background-size: 100%;
-// }
-
-
-// @mixin custom_cities_layout_dark($text-align: center) {
-// 	-webkit-text-stroke: 0.7px #fefefe;
-// 	margin: 20px;
-// 	@include gradient-background_text;
-// 	text-shadow:
-// 	-1px -1px 0 #00000000,  
-//     1px -1px 0 #00000000,
-//     -1px 1px 0 #00000000,
-//      1px 1px 0 #0000001b;
-// 	 font-weight: bold;
-// 	  background-clip: text;
-// 	  color: transparent;
-// 	-webkit-background-clip: text;
-// 	text-align: $text-align;
-// 	color: transparent;
-// 	-webkit-text-fill-color: transparent;
-// 	background-size: 100%;
-// }

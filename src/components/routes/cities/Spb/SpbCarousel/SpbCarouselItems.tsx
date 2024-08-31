@@ -1,12 +1,10 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-// import spbAttractions from '@data/SpbAttrData/SpbPictures';
 import { useState } from 'react';
 import { TFunction } from 'i18next';
 import spbImagesMap from '@data/citiesPictures/spbPictures';
 import SpbCarouselCaption from './SpbCarouselCaption';
 
-console.log('spbImagesMap', spbImagesMap);
 
 type SpbCarouselItems = {
   t: TFunction;

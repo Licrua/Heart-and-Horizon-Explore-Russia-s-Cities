@@ -1,6 +1,5 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-// import OmskAttractions from '@data/OmskAttrData/OmskPictures';
 import { useState } from 'react';
 import { TFunction } from 'i18next';
 import OmskImagesMap from '@data/citiesPictures/omskPictures';

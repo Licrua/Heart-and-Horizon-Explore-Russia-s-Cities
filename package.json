@@ -1,5 +1,5 @@
 {
-  "name": "my-vue-app",
+  "name": "heart-and-horizon-explore-russias-cities",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.6",
+    "@sentry/react": "^8.27.0",
     "@types/yup": "^0.32.0",
     "@vitejs/plugin-react": "^4.3.1",
     "axios": "^1.7.2",
     "bad-words": "^3.0.4",
     "bootstrap": "^5.3.3",
+    "emailjs-com": "^3.2.0",
     "formik": "^2.4.6",
     "framer-motion": "^11.3.19",
     "i18next": "^23.12.2",

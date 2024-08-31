@@ -1,12 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import citiesSlice from '@slices/cities';
-import trial from '@slices/trial';
 import { api } from './rtkQuery';
 
 const store = configureStore({
   reducer: {
     cities: citiesSlice,
-    citiesTrial: trial,
     [api.reducerPath]: api.reducer,
   },
   middleware(getDefaultMiddleware) {

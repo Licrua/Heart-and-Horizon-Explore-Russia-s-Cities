@@ -1,6 +1,5 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-// import KazanAttractions from '@data/KazanAttrData/KazanPictures';
 import { useState } from 'react';
 import { TFunction } from 'i18next';
 import KazanImagesMap from '@data/citiesPictures/kazanPictures';

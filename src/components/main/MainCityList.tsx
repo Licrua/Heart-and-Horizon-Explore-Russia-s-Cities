@@ -21,7 +21,7 @@ function MainContentCityList({ cityEntities }: MainContentListType) {
   return (
     <Container>
       <Row>
-        <Col className="mb-3 p-3  border-bottom border-dark">
+        <Col className=" p-3  border-bottom border-dark">
           <MainOpeningText t={t} />
         </Col>
       </Row>
