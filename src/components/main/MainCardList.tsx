@@ -29,7 +29,7 @@ function MainCardList({ cityItem, t }: cityItemProp) {
       }}
       whileHover={{
         x: [0, -5, 5, -5, 5, 0],
-        filter: 'saturate(150%)',
+        filter: 'saturate(200%)',
         boxShadow:
           '0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8)',
         transition: { duration: 1, ease: 'easeInOut' },
@@ -44,13 +44,11 @@ function MainCardList({ cityItem, t }: cityItemProp) {
       }}
       viewport={{ once: true }}
       className="p-3 mb-3 bg-body rounded"
-      style={{ height: '600px' }}
     >
       <Card.Img
+        className="rounded"
         variant="top"
-        width="300px"
-        height="300px"
-        src={`/src/assets/images/citiesCardImages/${cityItem.imgName}.jpeg`}
+        src={`/src/assets/images/citiesCardImages/${cityItem.imgName}.webp`}
       />
       <Card.Body className={styles.card_description}>
         <Card.Title>{cityItem.name}</Card.Title>

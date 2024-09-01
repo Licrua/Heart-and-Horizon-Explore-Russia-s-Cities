@@ -1,8 +1,8 @@
-import akademgorodok from '@images/citiesCarouselPictures/NovosibirskPictures/Akademgorodok.jpg';
-import krasnyProspekt from '@images/citiesCarouselPictures/NovosibirskPictures/krasnyProspekt.jpg';
-import novosibirskStateUniversity from '@images/citiesCarouselPictures/NovosibirskPictures/novosibirskStateUniversity.jpg';
-import novosibirskZoo from '@images/citiesCarouselPictures/NovosibirskPictures/novosibirskZoo.jpg';
-import operaAndBalletTheatre from '@images/citiesCarouselPictures/NovosibirskPictures/operaAndBalletTheatre.jpg';
+import akademgorodok from '@images/citiesCarouselPictures/NovosibirskPictures/Akademgorodok.webp';
+import krasnyProspekt from '@images/citiesCarouselPictures/NovosibirskPictures/krasnyProspekt.webp';
+import novosibirskStateUniversity from '@images/citiesCarouselPictures/NovosibirskPictures/novosibirskStateUniversity.webp';
+import novosibirskZoo from '@images/citiesCarouselPictures/NovosibirskPictures/novosibirskZoo.webp';
+import operaAndBalletTheatre from '@images/citiesCarouselPictures/NovosibirskPictures/operaAndBalletTheatre.webp';
 
 const novosibirskImagesMap = {
   akademgorodok,

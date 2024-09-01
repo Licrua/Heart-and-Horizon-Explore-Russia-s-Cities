@@ -1,8 +1,8 @@
-import alyoshaMonument from '@images/citiesCarouselPictures/ChelyabinskPictures/aleshamonument.jpg';
-import gagarinPark from '@images/citiesCarouselPictures/ChelyabinskPictures/gagarinPark.jpg';
+import alyoshaMonument from '@images/citiesCarouselPictures/ChelyabinskPictures/aleshamonument.webp';
+import gagarinPark from '@images/citiesCarouselPictures/ChelyabinskPictures/gagarinPark.webp';
 import kirovkaStreet from '@images/citiesCarouselPictures/ChelyabinskPictures/kirovka_street.webp';
-import operaAndBalletTheatre from '@images/citiesCarouselPictures/ChelyabinskPictures/operaAndBalletTheatre.jpg';
-import revolutionSquare from '@images/citiesCarouselPictures/ChelyabinskPictures/plashad-revolucii.jpg';
+import operaAndBalletTheatre from '@images/citiesCarouselPictures/ChelyabinskPictures/operaAndBalletTheatre.webp';
+import revolutionSquare from '@images/citiesCarouselPictures/ChelyabinskPictures/plashad-revolucii.webp';
 
 const chelyabinskImagesMap = {
   alyoshaMonument,
