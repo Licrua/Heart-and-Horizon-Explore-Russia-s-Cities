@@ -46,6 +46,7 @@ function MainCardList({ cityItem, t }: cityItemProp) {
       className="p-3 mb-3 bg-body rounded"
     >
       <Card.Img
+        loading="lazy"
         className="rounded"
         variant="top"
         src={`/src/assets/images/citiesCardImages/${cityItem.imgName}.webp`}

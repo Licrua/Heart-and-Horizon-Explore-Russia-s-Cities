@@ -57,6 +57,7 @@ function SpbCarouselItems({ t }: SpbCarouselItems) {
                 className="border border-3"
                 src={item.src}
                 alt={item.name}
+                loading="lazy"
               />
               <SpbCarouselCaption item={item} />
             </Carousel.Item>

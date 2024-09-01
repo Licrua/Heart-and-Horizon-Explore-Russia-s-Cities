@@ -52,6 +52,7 @@ function ChelyabinskCarouselItems({ t }: ChelyabinskCarouselItems) {
               key={item.id}
             >
               <img
+                loading="lazy"
                 style={{
                   height: '500px',
                   objectPosition: 'center',

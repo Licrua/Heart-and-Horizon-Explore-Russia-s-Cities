@@ -14,7 +14,7 @@ function NotFound() {
     <Container fluid>
       <Row>
         <Col className="d-flex  vh-100 justify-content-center gap-2 my-3 align-items-center flex-column">
-          <Image width="100px" src={notFoundIcon} />
+          <Image loading="lazy" width="100px" src={notFoundIcon} />
           <h3>{t('notFound.title')}</h3>
           <p>{t('notFound.description')}</p>
           <Button onClick={onMainPageHandler}>{t('notFound.button')}</Button>

@@ -19,6 +19,7 @@ function HeaderLanguageLogo({ languageLogo, t }: languageLogoProp) {
       className="mx-5"
       title={
         <motion.img
+          loading="lazy"
           initial={{ scale: 1 }}
           whileHover={{ scale: 1.2 }}
           width="30"

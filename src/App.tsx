@@ -39,7 +39,6 @@ function App() {
   const citiesRuCollection = dataCitiesRu?.record.cities;
   const citiesEnCollection = dataCitiesEn?.record.cities;
   const currentLanguage = i18n.language;
-  const isWelcomePageLocation = location.pathname === '/';
   const isMainPageLocation = location.pathname === '/main';
 
   useEffect(() => {
@@ -51,7 +50,7 @@ function App() {
       dispatch(toggleThemeSwitcher(true));
       dispatch(toggleMapIconShown(false));
     }
-  }, [isMainPageLocation, isWelcomePageLocation, dispatch]);
+  }, [isMainPageLocation, dispatch]);
 
   useEffect(() => {
     if (citiesRuCollection && currentLanguage === 'ru') {

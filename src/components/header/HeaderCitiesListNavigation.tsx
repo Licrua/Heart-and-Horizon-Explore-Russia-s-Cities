@@ -20,6 +20,7 @@ function HeaderCitiesList({ cities, cityDropDownIcon }: CityListProps) {
       className="mx-3"
       title={
         <motion.img
+          loading="lazy"
           initial={{ scale: 1 }}
           whileHover={{ scale: 1.2 }}
           width="30"

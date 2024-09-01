@@ -63,8 +63,8 @@ const citiesSlice = createSlice({
     toggleMapIconShown: (state, { payload }: PayloadAction<boolean>) => {
       state.isMapIconShown = payload;
     },
-    setCurrentCityIndex: (state, action) => {
-      state.currentCityIndex = action.payload;
+    setCurrentCityIndex: (state, { payload }: PayloadAction<number>) => {
+      state.currentCityIndex = payload;
     },
   },
 });

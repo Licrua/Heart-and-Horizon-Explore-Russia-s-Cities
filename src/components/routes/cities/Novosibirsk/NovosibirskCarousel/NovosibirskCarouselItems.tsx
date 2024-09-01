@@ -59,6 +59,7 @@ function NovosibirskCarouselItems({ t }: NovosibirskCarouselItems) {
                 className="border border-3"
                 src={item.src}
                 alt={item.name}
+                loading="lazy"
               />
               <NovosibirskCarouselCaption item={item} />
             </Carousel.Item>

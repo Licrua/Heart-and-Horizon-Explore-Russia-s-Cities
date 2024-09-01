@@ -57,6 +57,7 @@ function MoscowCarouselItems({ t }: MoscowCarouselItems) {
                 className="border border-3"
                 src={item.src}
                 alt={item.name}
+                loading="lazy"
               />
               <MoscowCarouselCaption item={item} />
             </Carousel.Item>

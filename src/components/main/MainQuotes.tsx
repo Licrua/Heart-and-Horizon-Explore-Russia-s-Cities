@@ -44,6 +44,7 @@ function MainQuotes({ t }: MainQuotesPropType) {
             <Card.Body>
               <blockquote className="blockquote mb-0 text-center ">
                 <Image
+                  loading="lazy"
                   className="border my-3 border-info rounded-circle shadow-lg"
                   width="100px"
                   src={`/src/assets/images/quotesImages/${item.imageName}.png`}
