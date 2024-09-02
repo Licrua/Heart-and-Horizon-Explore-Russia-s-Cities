@@ -35,7 +35,7 @@ function FooterPopUpReccomendation({ t }: FooterPopUpReccomendationProps) {
 
   return (
     <Row>
-      <Col className="d-flex justify-content-center mb-2">
+      <Col className="d-flex  justify-content-center mb-2">
         <span className="me-3">
           <strong>{t('footer.suggestionTitle')}</strong>
         </span>
