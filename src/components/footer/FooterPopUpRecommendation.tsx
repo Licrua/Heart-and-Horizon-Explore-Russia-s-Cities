@@ -64,6 +64,7 @@ function FooterPopUpReccomendation({ t }: FooterPopUpReccomendationProps) {
                     <Field
                       type="email"
                       name="email"
+                      autoComplete="email"
                       as={Form.Control}
                       placeholder={t('footer.emailPlaceholder')}
                       autoFocus
@@ -79,6 +80,7 @@ function FooterPopUpReccomendation({ t }: FooterPopUpReccomendationProps) {
                     <Field
                       as={Form.Control}
                       name="description"
+                      autoComplete="description"
                       component="textarea"
                       className="w-100"
                       rows={4}

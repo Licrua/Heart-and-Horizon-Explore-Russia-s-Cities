@@ -35,7 +35,7 @@ function NavigationButtons() {
 
   return (
     <div className="d-flex justify-content-between m-3">
-      <Button type="button" onClick={goToPrevious}>
+      <Button className="me-3 " type="button" onClick={goToPrevious}>
         {t('buttons.prevPage')}
       </Button>
       <Button type="button" onClick={goToNext}>

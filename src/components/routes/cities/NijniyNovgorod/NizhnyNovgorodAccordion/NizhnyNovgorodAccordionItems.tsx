@@ -31,7 +31,9 @@ function NizhnyNovgorodAccordionItems({
           >
             {item.text}
             {item.highlights.map((highlight: highLightType) => (
-              <span className={highlight.className}>{highlight.text}</span>
+              <span key={highlight.id} className={highlight.className}>
+                {highlight.text}
+              </span>
             ))}
             {item.suffix}
           </Accordion.Body>
