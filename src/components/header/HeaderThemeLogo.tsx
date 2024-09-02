@@ -24,7 +24,6 @@ function HeaderTheme({ themeDarkLogo, themeLightLogo }: themeLogoProps) {
       <Navbar.Brand>
         {CurrentColor === 'white' ? (
           <img
-            loading="lazy"
             src={themeLightLogo.src}
             width="30"
             height="30"
@@ -33,7 +32,6 @@ function HeaderTheme({ themeDarkLogo, themeLightLogo }: themeLogoProps) {
           />
         ) : (
           <img
-            loading="lazy"
             src={themeDarkLogo.src}
             width="30"
             height="30"

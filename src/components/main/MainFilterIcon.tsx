@@ -21,7 +21,6 @@ function MainContentFilterIcon({ filterIcon, t }: filterIconType) {
           alt="Dropdown Toggle"
           width="30px"
           height="30px"
-          loading="lazy"
         />
       </Dropdown.Toggle>
       <Dropdown.Menu>

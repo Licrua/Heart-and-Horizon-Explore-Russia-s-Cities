@@ -61,7 +61,6 @@ function NizhnyNovgorodCarouselItems({ t }: NizhnyNovgorodCarouselItems) {
                 className="border border-3"
                 src={item.src}
                 alt={item.name}
-                loading="lazy"
               />
               <NizhnyNovgorodCarouselCaption item={item} />
             </Carousel.Item>

@@ -50,7 +50,6 @@ function KazanCarouselItems({ t }: KazanCarouselItems) {
               key={item.id}
             >
               <img
-                loading="lazy"
                 style={{
                   height: '500px',
                   objectPosition: 'center',

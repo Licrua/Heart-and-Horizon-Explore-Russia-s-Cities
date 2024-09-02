@@ -16,7 +16,6 @@ function FooterSocialNovbar({ socialIcons }: FooterSocialNovbarType) {
         {socialIcons.map((item) => (
           <Navbar.Brand target="_blank" key={item.id} href={item.href}>
             <img
-              loading="lazy"
               src={item.src}
               alt={item.alt}
               width="30"
