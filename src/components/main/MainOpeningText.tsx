@@ -38,7 +38,6 @@ function MainOpeningText({ t }: MainOpeningTextPropsType) {
           </p>
         ))}
       </div>
-      {/* </div> */}
     </motion.div>
   );
 }

@@ -30,7 +30,7 @@ function MainQuotes({ t }: MainQuotesPropType) {
           <Card
             as={motion.div}
             whileHover={{
-              border: 'solid 2px grey',
+              border: 'solid  grey',
               boxShadow:
                 '-10px 0 10px -5px rgba(0, 0, 0, 0.5), 10px 0 10px -5px rgba(0, 0, 0, 0.5)',
             }}

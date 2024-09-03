@@ -20,6 +20,7 @@ import LoadingSpinner from '@components/loading | error/LoadingSpinner';
 import SimpleLayout from '@components/SimpleLayout';
 import i18n from './i18n';
 import CompleteLayout from './components/CompleteLayout';
+import CityMainContainer from '@components/routes/cities/City/CityMainContainer';
 
 function App() {
   const location = useLocation();
@@ -77,9 +78,10 @@ function App() {
       <Routes>
         <Route element={<CompleteLayout />}>
           <Route path="/main" element={<MainPage />} />
-          {routes.map((item) => (
+		  <Route path='/city' element={<CityMainContainer/>}
+          {/* {routes.map((item) => (
             <Route key={item.id} path={item.path} element={<item.element />} />
-          ))}
+          ))} */}
         </Route>
         <Route path="/" element={<SimpleLayout />}>
           <Route index element={<WelcomePageMain />} />
