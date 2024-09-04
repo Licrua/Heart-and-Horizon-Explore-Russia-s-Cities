@@ -1,12 +1,5 @@
 import { motion } from 'framer-motion';
-
-interface CitySectionType {
-  children: React.ReactNode;
-  sectionVariant: {
-    hidden: object;
-    visible: object;
-  };
-}
+import { CitySectionType } from 'types/cityComponenType';
 
 function CityDescSection({ children, sectionVariant }: CitySectionType) {
   return (

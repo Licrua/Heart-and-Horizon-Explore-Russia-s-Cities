@@ -1,5 +1,5 @@
 {
-	"ChelyabinskTranslation": {
+	"сhelyabinsk": {
 		"title": "Челябинск",
 	  "headers": [
 		{
@@ -58,7 +58,7 @@
 		  "suffix": " представляют из себя места, которые дают глубокое понимание истории и культуры города."
 		}
 	  ],
-	  "ChelyabinskDescriptionSection": [
+	  "descriptionSection": [
 		{
 		  "id": "section1",
 		  "prefix": "Ч",
@@ -103,7 +103,7 @@
 		  }
 		  
 	  ],
-	  "ChelyabinskAttractions": [
+	  "attractions": [
 		{
 		  "name": "Пешеходная улица Кировка",
 		  "id": 0,

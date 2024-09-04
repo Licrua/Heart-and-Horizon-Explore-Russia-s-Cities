@@ -1,5 +1,5 @@
 {
-	"ChelyabinskTranslation": {
+	"chelyabinsk": {
 		"title": "Chelyabinsk",
 	  "headers": [
 		{
@@ -58,7 +58,7 @@
 		  "suffix": " are provides deep insights into the city's history and culture."
 		}
 	  ],
-	  "ChelyabinskDescriptionSection": [
+	  "descriptionSection": [
 		{
 		  "id": "section1",
 		  "prefix": "C",
@@ -102,7 +102,7 @@
 			"highlights": []
 		  }
 	  ],
-	  "ChelyabinskAttractions": [
+	  "attractions": [
 		{
 		  "name": "Kirovka Pedestrian Street",
 		  "id": 0,

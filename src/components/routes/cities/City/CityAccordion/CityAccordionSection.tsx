@@ -1,13 +1,11 @@
-import { ReactNode } from 'react';
 import { motion } from 'framer-motion';
-import { TFunction } from 'i18next';
+import { AccordionSectionChildrenPropType } from 'types/cityComponenType';
 
-type AccordionSectionPropsType = {
-  children: ReactNode;
-  t: TFunction;
-};
-
-function AccordionSection({ children, t }: AccordionSectionPropsType) {
+function AccordionSection({
+  children,
+  t,
+  city,
+}: AccordionSectionChildrenPropType) {
   return (
     <section className="my-3 ">
       <motion.h2
@@ -17,7 +15,7 @@ function AccordionSection({ children, t }: AccordionSectionPropsType) {
         whileHover={{ scale: 1.1, x: 100 }}
         className="mb-3"
       >
-        {t('CityTranslation.headers.0.accordionHeader')}
+        {t(`${city}.headers.0.accordionHeader`)}
       </motion.h2>
       {children}
     </section>

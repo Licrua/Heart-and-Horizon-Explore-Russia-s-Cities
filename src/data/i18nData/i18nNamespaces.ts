@@ -12,7 +12,7 @@ const namespaces: string[] = [
   'nizhnyNovgorodTranslation',
   'kazanTranslation',
   'ekbTranslation',
-  'chelyabinskTranslation',
+  'chelyabinsk',
   'omskTranslation',
   'notFoundTranslation',
   'navigationButtonsTranslation',

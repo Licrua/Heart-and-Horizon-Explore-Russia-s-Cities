@@ -22,8 +22,8 @@ import kazanTranslationRu from '@locales/ru/citiesTranslation/kazanTranslation.j
 import kazanTranslationEn from '@locales/en/citiesTranslation/kazanTranslation.json';
 import ekbTranslationRu from '@locales/ru/citiesTranslation/ekbTranslation.json';
 import ekbTranslationEn from '@locales/en/citiesTranslation/ekbTranslation.json';
-import chelyabinskTranslationEn from '@locales/en/citiesTranslation/chelyabinskTranslation.json';
-import chelyabinskTranslationRu from '@locales/ru/citiesTranslation/chelyabinskTranslation.json';
+import chelyabinskTranslationEn from '@locales/en/citiesTranslation/chelyabinsk.json';
+import chelyabinskTranslationRu from '@locales/ru/citiesTranslation/chelyabinsk.json'
 import omskTranslationEn from '@locales/en/citiesTranslation/omskTranslation.json';
 import omskTranslationRu from '@locales/ru/citiesTranslation/omskTranslation.json';
 import notFoundRu from '@locales/ru/notFoundTranslation.json';
@@ -48,7 +48,7 @@ const resources: { [lang: string]: LocalesTranslation } = {
     kazanTranslation: kazanTranslationEn,
     notFoundTranslation: notFoundEn,
     ekbTranslation: ekbTranslationEn,
-    chelyabinskTranslation: chelyabinskTranslationEn,
+    chelyabinsk: chelyabinskTranslationEn,
     omskTranslation: omskTranslationEn,
     navigationButtonsTranslation: navigationButtonsTranslationEn,
   },
@@ -66,7 +66,7 @@ const resources: { [lang: string]: LocalesTranslation } = {
     kazanTranslation: kazanTranslationRu,
     notFoundTranslation: notFoundRu,
     ekbTranslation: ekbTranslationRu,
-    chelyabinskTranslation: chelyabinskTranslationRu,
+    chelyabinsk: chelyabinskTranslationRu,
     omskTranslation: omskTranslationRu,
     navigationButtonsTranslation: navigationButtonsTranslationRu,
   },

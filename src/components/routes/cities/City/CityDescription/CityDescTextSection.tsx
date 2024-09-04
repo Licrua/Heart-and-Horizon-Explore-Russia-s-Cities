@@ -1,18 +1,11 @@
-import { TFunction } from 'i18next';
+import {
+  highLightType,
+  AccordionSectionPropType,
+} from 'types/cityComponenType';
 
-type CityDescTextSectionProps = {
-  t: TFunction;
-};
-
-interface highlightType {
-  id: string;
-  text: string;
-  className?: string;
-}
-
-function CityDescTextSection({ t, city }: CityDescTextSectionProps) {
+function CityDescTextSection({ t, city }: AccordionSectionPropType) {
   const CityDescriptionSection = Object.values(
-    t(`${city}.CityDescriptionSection`, {
+    t(`${city}.descriptionSection`, {
       returnObjects: true,
     })
   );
@@ -26,14 +19,14 @@ function CityDescTextSection({ t, city }: CityDescTextSectionProps) {
               {section.prefix}
             </span>
             {section.text}
-            {section.highlights.map((highlight: highlightType) => (
+            {section.highlights.map((highlight: highLightType) => (
               <span key={highlight.id} className={highlight.className}>
                 {highlight.text}
               </span>
             ))}
             {section.suffix}
             {section.moreHighlights &&
-              section.moreHighlights.map((highlight: highlightType) => (
+              section.moreHighlights.map((highlight: highLightType) => (
                 <span key={highlight.id} className={highlight.className}>
                   {highlight.text}
                 </span>

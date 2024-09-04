@@ -18,9 +18,9 @@ import {
 import LoadingError from '@components/loading | error/LoadingError';
 import LoadingSpinner from '@components/loading | error/LoadingSpinner';
 import SimpleLayout from '@components/SimpleLayout';
+import CityMainContainer from '@components/routes/cities/City/CityMainContainer';
 import i18n from './i18n';
 import CompleteLayout from './components/CompleteLayout';
-import CityMainContainer from '@components/routes/cities/City/CityMainContainer';
 
 function App() {
   const location = useLocation();
@@ -78,10 +78,10 @@ function App() {
       <Routes>
         <Route element={<CompleteLayout />}>
           <Route path="/main" element={<MainPage />} />
-		  <Route path='/city' element={<CityMainContainer/>}
-          {/* {routes.map((item) => (
-            <Route key={item.id} path={item.path} element={<item.element />} />
-          ))} */}
+          <Route
+            path="/city"
+            element={<CityMainContainer city="chelyabinsk" />}
+          />
         </Route>
         <Route path="/" element={<SimpleLayout />}>
           <Route index element={<WelcomePageMain />} />
@@ -93,3 +93,9 @@ function App() {
 }
 
 export default App;
+
+{
+  /* {routes.map((item) => (
+            <Route key={item.id} path={item.path} element={<item.element />} />
+          ))} */
+}

@@ -1,11 +1,12 @@
 import { Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import { cityTypeProp } from 'types/cityComponenType';
 import CityDescHeader from './CityDescHeader';
 import CitySection from './CityDescSection';
 import CityDescContainer from './CityDescText';
 import CityTextSection from './CityDescTextSection';
 
-function CityDesc({ city }) {
+function CityDesc({ city }: cityTypeProp) {
   const { t } = useTranslation(city);
   const sectionVariant = {
     hidden: { opacity: 0, scale: 0 },
@@ -19,6 +20,7 @@ function CityDesc({ city }) {
   return (
     <Row>
       <Col>
+        <p> {t(`${city}.headers.0.carouselHeader`)}</p>
         <CitySection sectionVariant={sectionVariant}>
           <CityDescHeader t={t} city={city} />
           <CityDescContainer>

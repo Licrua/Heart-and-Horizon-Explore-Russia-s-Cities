@@ -1,33 +1,32 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { TFunction } from 'i18next';
-import CityImagesMap from '@data/citiesPictures/CityPuctures';
+import cityImagesMap from '@data/cityImagesMap';
+import { AccordionSectionPropType } from 'types/cityComponenType';
 import CityCarouselCaption from './CityCarouselCaption';
 
-type CityCarouselItems = {
-  t: TFunction;
-};
-
-function CityCarouselItems({ t }: CityCarouselItems) {
+function CityCarouselItems({ t, city }: AccordionSectionPropType) {
   const [index, setIndex] = useState<number>(0);
+  // @ts-expect-error can't be described in virtue of bug perhaps
+  const imagesMap = cityImagesMap[city];
+
   const handleSelect = (selectedIndex: number) => {
     setIndex(selectedIndex);
   };
+
   const carouselVariants = {
     hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0, transition: { duration: 1 } },
   };
 
-  const CityAttractions = Object.values(
-    t('CityTranslation.CityAttractions', {
+  const cityAttractions = Object.values(
+    t(`${city}.attractions`, {
       returnObjects: true,
     })
   ).map((attraction) => ({
     ...attraction,
-    src: CityImagesMap[attraction.src as keyof typeof CityImagesMap],
+    src: imagesMap[attraction.src as keyof typeof cityImagesMap],
   }));
-
   return (
     <Row>
       <Col xs={12} className="my-2">
@@ -41,7 +40,7 @@ function CityCarouselItems({ t }: CityCarouselItems) {
           activeIndex={index}
           onSelect={handleSelect}
         >
-          {CityAttractions.map((item) => (
+          {cityAttractions.map((item) => (
             <Carousel.Item
               as={motion.div}
               initial={{ opacity: 0 }}

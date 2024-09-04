@@ -1,10 +1,7 @@
 import { motion } from 'framer-motion';
-import { TFunction } from 'i18next';
+import { AccordionSectionPropType } from 'types/cityComponenType';
 
-type CityDescHeaderTypes = {
-  t: TFunction;
-};
-function CityDescHeader({ t, city }: CityDescHeaderTypes) {
+function CityDescHeader({ t, city }: AccordionSectionPropType) {
   return (
     <>
       <h1 className="text-center">{t(`${city}.title`)}</h1>

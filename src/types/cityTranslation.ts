@@ -34,7 +34,7 @@ interface Attraction {
   description: string;
 }
 
-interface CityTranslation {
+export interface CityTranslation {
   headers: Header[];
   accordion: AccordionItem[];
   descriptionSection: DescriptionSection[];
