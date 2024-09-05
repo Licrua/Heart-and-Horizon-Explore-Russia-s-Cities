@@ -1,0 +1,139 @@
+{
+  "ekb": {
+    "title": "Ekaterinburg",
+    "headers": [
+      {
+        "accordionHeader": "Additional Information",
+        "carouselHeader": "Attractions",
+        "descriptionHeader": "Information"
+      }
+    ],
+    "accordion": [
+      {
+        "eventKey": "0",
+        "title": "What Ekaterinburg Is Like",
+        "text": "Ekaterinburg is a major city in the Ural region of Russia, known for its rich history, industrial significance, and vibrant cultural scene. The city is a gateway between Europe and Asia, offering a blend of different cultures.",
+        "highlights": [
+          {
+            "id": "highlight1",
+            "text": "the Church on the Blood,",
+            "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+          },
+          {
+            "id": "highlight2",
+            "text": "the Ekaterinburg Opera and Ballet Theatre",
+            "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+          }
+        ],
+        "suffix": " and the impressive Vysotsky Tower, offering panoramic views of the city."
+      },
+      {
+        "eventKey": "1",
+        "title": "Best Season to Visit",
+        "text": "Summer, from June to August, is the best time to visit Ekaterinburg. During this period, the city enjoys warm and pleasant weather, perfect for exploring its many outdoor attractions. Spring and autumn also offer mild weather, while winter, though cold, adds a certain charm with snow-covered streets and parks.",
+        "highlights": [],
+        "suffix": ""
+      },
+      {
+        "eventKey": "2",
+        "title": "What to Pay Attention to",
+        "text": "When visiting Ekaterinburg, be sure to explore landmarks like ",
+        "highlights": [
+          {
+            "id": "highlight3",
+            "text": "the Sevastyanov's House,",
+            "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+          },
+          {
+            "id": "highlight4",
+            "text": "the Keyboard Monument,",
+            "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+          },
+          {
+            "id": "highlight5",
+            "text": "the Ganina Yama Monastery",
+            "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+          }
+        ],
+        "suffix": " - spiritual and historical site just outside the city."
+      }
+    ],
+    "descriptionSection": [
+      {
+        "id": "section1",
+        "prefix": "E",
+        "text": "katerinburg is one of Russia's largest cities, founded in 1723. It is known for its industrial heritage and cultural significance, making it a key city in the Ural region. Ekaterinburg is famous for its ",
+        "highlights": [
+          {
+            "id": "highlight1",
+            "text": "Church on the Blood,",
+            "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+          },
+          {
+            "id": "highlight2",
+            "text": "Opera and Ballet Theatre",
+            "className": "bg-body-secondary text-black fst-italic px-1 me-2"
+          }
+        ],
+        "suffix": " and other notable landmarks. The city has also played a significant role in Russian history, particularly during the last days of the Romanov dynasty."
+      },
+      {
+        "id": "section2",
+        "prefix": "T",
+        "text": "he cityscape of Ekaterinburg is a mix of modern skyscrapers and historical buildings. Attractions like ",
+        "highlights": [
+          {
+            "id": "highlight3",
+            "text": "Vysotsky Tower,",
+            "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+          },
+          {
+            "id": "highlight4",
+            "text": "the Iset River Embankment",
+            "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+          }
+        ],
+        "suffix": " are popular spots for both locals and tourists. Ekaterinburg is particularly beautiful at night, with its illuminated streets and landmarks creating a stunning view."
+      },
+      {
+        "id": "section3",
+        "prefix": "Y",
+        "text": "ekaterinburg captivates with its unique architecture and cultural heritage, blending historical landmarks with modern buildings. The city is known for its vibrant cultural events and lively urban atmosphere.",
+        "highlights": [],
+        "suffix": " The city's transportation network also plays a crucial role, providing convenient movement across different districts. Modern trams and buses connect key points, helping both residents and tourists navigate Yekaterinburg with ease."
+      }
+    ],
+    "attractions": [
+      {
+        "name": "Church on the Blood",
+        "id": 0,
+        "src": "churchOnTheBlood",
+        "description": "The Church on the Blood is a significant religious and historical site, built on the spot where the last Russian Tsar, Nicholas II, and his family were executed."
+      },
+      {
+        "name": "Vysotsky Tower",
+        "id": 1,
+        "src": "vysotskyTower",
+        "description": "Vysotsky Tower is one of the tallest buildings in Russia, offering panoramic views of Ekaterinburg and the surrounding Ural Mountains."
+      },
+      {
+        "name": "Sevastyanov's House",
+        "id": 2,
+        "src": "sevastyanovsHouse",
+        "description": "Sevastyanov's House is an architectural gem of Ekaterinburg, known for its ornate design and rich history. It is one of the most photographed buildings in the city."
+      },
+      {
+        "name": "Keyboard Monument",
+        "id": 3,
+        "src": "keyboardMonument",
+        "description": "The Keyboard Monument is a unique outdoor installation in the shape of a giant keyboard, located on the bank of the Iset River."
+      },
+      {
+        "name": "Ganina Yama Monastery",
+        "id": 4,
+        "src": "ganinaYamaMonastery",
+        "description": "Ganina Yama Monastery is a spiritual and historical site located near Ekaterinburg, built on the site where the remains of the Romanov family were discovered."
+      }
+    ]
+  }
+}

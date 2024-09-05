@@ -1,6 +1,6 @@
 {
 	"chelyabinsk": {
-		"title": "Chelyabinsk",
+	  "title": "Chelyabinsk",
 	  "headers": [
 		{
 		  "accordionHeader": "Additional Information",
@@ -47,7 +47,7 @@
 			{
 			  "id": "highlight4",
 			  "text": "the Red Communar Factory,",
-			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+			 		 "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
 			},
 			{
 			  "id": "highlight5",
@@ -58,49 +58,51 @@
 		  "suffix": " are provides deep insights into the city's history and culture."
 		}
 	  ],
-	  "descriptionSection": [
+	 "descriptionSection": [
 		{
-		  "id": "section1",
-		  "prefix": "C",
-		  "text": "helyabinsk is a city that blends industrial might with cultural heritage. Founded in 1736, it has grown into one of the most important industrial centers in Russia. The city is also known for its vibrant arts scene, with landmarks like ",
-		  "highlights": [
-			{
-			  "id": "highlight1",
-			  "text": "the Kirovka Pedestrian Street,",
-			  "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
-			},
-			{
-			  "id": "highlight2",
-			  "text": "the Opera and Ballet Theatre",
-			  "className": "bg-body-secondary text-black fst-italic px-1 me-2"
-			}
-		  ],
-		  "suffix": " and other notable attractions drawing both locals and tourists."
-		},
-		{
-		  "id": "section2",
-		  "prefix": "T",
-		  "text": "he cityscape of Chelyabinsk is characterized by a mix of Soviet-era architecture and modern developments. Attractions like ",
-		  "highlights": [
-			{
-			  "id": "highlight3",
-			  "text": "the Alyosha Monument,",
-			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
-			},
-			{
-			  "id": "highlight4",
-			  "text": "and the Gagarin Park",
-			  "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
-			}
-		  ],
-		  "suffix": " and others attractions are popular spots for both locals and visitors. The city's unique charm comes to life in its public spaces and vibrant community life."
-		},
-		{
+			"id": "section1",
+			"prefix": "C",
+			"text": "helyabinsk is a city that blends industrial might with cultural heritage. Founded in 1736, it has grown into one of the most important industrial centers in Russia. The city is also known for its vibrant arts scene, with landmarks like ",
+			"highlights": [
+			  {
+				"id": "highlight1",
+				"text": "the Kirovka Pedestrian Street,",
+				"className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+			  },
+			  {
+				"id": "highlight2",
+				"text": "the Opera and Ballet Theatre",
+				"className": "bg-body-secondary text-black fst-italic px-1 me-2"
+			  }
+			],
+			"suffix": " and other notable attractions drawing both locals and tourists."
+		  },
+		  {
+			"id": "section2",
+			"prefix": "T",
+			"text": "he cityscape of Chelyabinsk is characterized by a mix of Soviet-era architecture and modern developments. Attractions like ",
+			"highlights": [
+			  {
+				"id": "highlight3",
+				"text": "the Alyosha Monument,",
+				"className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			  },
+			  {
+				"id": "highlight4",
+				"text": "and the Gagarin Park",
+				"className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+			  }
+			],
+			"suffix": " and others attractions are popular spots for both locals and visitors. The city's unique charm comes to life in its public spaces and vibrant community life."
+		  },
+		  {
 			"id": "section3",
-			"prefix": "С",
+			"prefix": "C",
 			"text": "helyabinsk's urban transportation system is a model of efficiency and comfort. It provides reliable and convenient movement around the city, connecting both historical landmarks and modern attractions. With well-organized bus and tram routes, you can easily explore both the cultural and contemporary aspects of the city.",
-			"highlights": []
+			"highlights": [],
+			"suffix": ""
 		  }
+		  
 	  ],
 	  "attractions": [
 		{

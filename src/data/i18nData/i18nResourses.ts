@@ -8,24 +8,24 @@ import footerPageTranslationEn from '@locales/en/footerPageTranslation.json';
 import footerPageTranslationRu from '@locales/ru/footerPageTranslation.json';
 import validationTranslationEn from '@locales/en/validationTranslation.json';
 import validationTranslationRu from '@locales/ru/validationTranslation.json';
-import moscowTranslationEn from '@locales/en/citiesTranslation/moscowTranslation.json';
-import moscowTranslationRu from '@locales/ru/citiesTranslation/moscowTranslation.json';
-import spbTranslationEn from '@locales/en/citiesTranslation/spbTranslation.json';
-import spbTranslationRu from '@locales/ru/citiesTranslation/spbTranslation.json';
+import moscowTranslationEn from '@locales/en/citiesTranslation/moscow.json';
+import moscowTranslationRu from '@locales/ru/citiesTranslation/moscow.json';
+import spbTranslationEn from '@locales/en/citiesTranslation/spb.json';
+import spbTranslationRu from '@locales/ru/citiesTranslation/spb.json';
 import quotesTranslationRu from '@locales/ru/quotesTranslation.json';
 import quotesTranslationEn from '@locales/en/quotesTranslation.json';
-import nskTranslationEn from '@locales/en/citiesTranslation/novosibirskTranslation.json';
-import nskTranslationRu from '@locales/ru/citiesTranslation/novosibirskTranslation.json';
-import nizhnyNovgorodTranslationRu from '@locales/ru/citiesTranslation/nizhnyNovgorodTranslation.json';
-import nizhnyNovgorodTranslationEn from '@locales/en/citiesTranslation/nizhnyNovgorodTranslation.json';
-import kazanTranslationRu from '@locales/ru/citiesTranslation/kazanTranslation.json';
-import kazanTranslationEn from '@locales/en/citiesTranslation/kazanTranslation.json';
-import ekbTranslationRu from '@locales/ru/citiesTranslation/ekbTranslation.json';
-import ekbTranslationEn from '@locales/en/citiesTranslation/ekbTranslation.json';
+import nskTranslationEn from '@locales/en/citiesTranslation/novosibirsk.json';
+import nskTranslationRu from '@locales/ru/citiesTranslation/novosibirsk.json';
+import nizhnyNovgorodTranslationRu from '@locales/ru/citiesTranslation/nizhnyNovgorod.json';
+import nizhnyNovgorodTranslationEn from '@locales/en/citiesTranslation/nizhnyNovgorod.json';
+import kazanTranslationRu from '@locales/ru/citiesTranslation/kazan.json';
+import kazanTranslationEn from '@locales/en/citiesTranslation/kazan.json';
+import ekbTranslationRu from '@locales/ru/citiesTranslation/ekb.json';
+import ekbTranslationEn from '@locales/en/citiesTranslation/ekb.json';
 import chelyabinskTranslationEn from '@locales/en/citiesTranslation/chelyabinsk.json';
-import chelyabinskTranslationRu from '@locales/ru/citiesTranslation/chelyabinsk.json'
-import omskTranslationEn from '@locales/en/citiesTranslation/omskTranslation.json';
-import omskTranslationRu from '@locales/ru/citiesTranslation/omskTranslation.json';
+import chelyabinskTranslationRu from '@locales/ru/citiesTranslation/chelyabinsk.json';
+import omskTranslationEn from '@locales/en/citiesTranslation/omsk.json';
+import omskTranslationRu from '@locales/ru/citiesTranslation/omsk.json';
 import notFoundRu from '@locales/ru/notFoundTranslation.json';
 import notFoundEn from '@locales/en/notFoundTranslation.json';
 import navigationButtonsTranslationRu from '@locales/ru/navigationButtonsTranslation.json';
@@ -40,16 +40,16 @@ const resources: { [lang: string]: LocalesTranslation } = {
     headerPageTranslation: headerPageTranslationEn,
     footerPageTranslation: footerPageTranslationEn,
     validationTranslation: validationTranslationEn,
-    moscowTranslation: moscowTranslationEn,
-    spbTranslation: spbTranslationEn,
+    moscow: moscowTranslationEn,
+    spb: spbTranslationEn,
     quotesTranslation: quotesTranslationEn,
-    novosibirskTranslation: nskTranslationEn,
-    nizhnyNovgorodTranslation: nizhnyNovgorodTranslationEn,
-    kazanTranslation: kazanTranslationEn,
+    novosibirsk: nskTranslationEn,
+    nizhnyNovgorod: nizhnyNovgorodTranslationEn,
+    kazan: kazanTranslationEn,
     notFoundTranslation: notFoundEn,
-    ekbTranslation: ekbTranslationEn,
+    ekb: ekbTranslationEn,
     chelyabinsk: chelyabinskTranslationEn,
-    omskTranslation: omskTranslationEn,
+    omsk: omskTranslationEn,
     navigationButtonsTranslation: navigationButtonsTranslationEn,
   },
   ru: {
@@ -58,16 +58,16 @@ const resources: { [lang: string]: LocalesTranslation } = {
     headerPageTranslation: headerPageTranslationRu,
     footerPageTranslation: footerPageTranslationRu,
     validationTranslation: validationTranslationRu,
-    moscowTranslation: moscowTranslationRu,
-    spbTranslation: spbTranslationRu,
+    moscow: moscowTranslationRu,
+    spb: spbTranslationRu,
     quotesTranslation: quotesTranslationRu,
-    novosibirskTranslation: nskTranslationRu,
-    nizhnyNovgorodTranslation: nizhnyNovgorodTranslationRu,
-    kazanTranslation: kazanTranslationRu,
+    novosibirsk: nskTranslationRu,
+    nizhnyNovgorod: nizhnyNovgorodTranslationRu,
+    kazan: kazanTranslationRu,
     notFoundTranslation: notFoundRu,
-    ekbTranslation: ekbTranslationRu,
+    ekb: ekbTranslationRu,
     chelyabinsk: chelyabinskTranslationRu,
-    omskTranslation: omskTranslationRu,
+    omsk: omskTranslationRu,
     navigationButtonsTranslation: navigationButtonsTranslationRu,
   },
 };

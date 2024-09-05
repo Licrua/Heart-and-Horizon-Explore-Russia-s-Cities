@@ -7,7 +7,7 @@ import {
   setCities,
   toggleMapIconShown,
 } from '@slices/cities';
-import ScrollToTopArrow from '@components/ScrollToTopArrow';
+import ScrollToTopArrow from '@components/layout/ScrollToTopArrow';
 import WelcomePageMain from '@components/routes/welcomePage/WelcomePageMain';
 import MainPage from '@components/routes/MainPage';
 import NotFound from '@components/routes/NotFound';
@@ -17,10 +17,11 @@ import {
 } from '@store/rtkQuery';
 import LoadingError from '@components/loading | error/LoadingError';
 import LoadingSpinner from '@components/loading | error/LoadingSpinner';
-import SimpleLayout from '@components/SimpleLayout';
-import CityMainContainer from '@components/routes/cities/City/CityMainContainer';
+import SimpleLayout from '@components/layout/SimpleLayout';
+import CityMainContainer from '@components/routes/City/CityMainContainer';
+import ucFirst from '@utils/ucFirst';
 import i18n from './i18n';
-import CompleteLayout from './components/CompleteLayout';
+import CompleteLayout from './components/layout/CompleteLayout';
 
 function App() {
   const location = useLocation();
@@ -44,13 +45,8 @@ function App() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (isMainPageLocation) {
-      dispatch(toggleThemeSwitcher(false));
-      dispatch(toggleMapIconShown(true));
-    } else {
-      dispatch(toggleThemeSwitcher(true));
-      dispatch(toggleMapIconShown(false));
-    }
+    dispatch(toggleThemeSwitcher(!isMainPageLocation));
+    dispatch(toggleMapIconShown(isMainPageLocation));
   }, [isMainPageLocation, dispatch]);
 
   useEffect(() => {
@@ -78,10 +74,13 @@ function App() {
       <Routes>
         <Route element={<CompleteLayout />}>
           <Route path="/main" element={<MainPage />} />
-          <Route
-            path="/city"
-            element={<CityMainContainer city="chelyabinsk" />}
-          />
+          {routes.map((item) => (
+            <Route
+              key={item.id}
+              path={`/${item.path}`}
+              element={<CityMainContainer city={ucFirst(item.name)} />}
+            />
+          ))}
         </Route>
         <Route path="/" element={<SimpleLayout />}>
           <Route index element={<WelcomePageMain />} />
@@ -93,9 +92,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* {routes.map((item) => (
-            <Route key={item.id} path={item.path} element={<item.element />} />
-          ))} */
-}

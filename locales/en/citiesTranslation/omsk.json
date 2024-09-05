@@ -1,0 +1,167 @@
+{
+  "omsk": {
+    "title": "Omsk",
+    "headers": [
+      {
+        "accordionHeader": "Additional Information",
+        "carouselHeader": "Attractions",
+        "descriptionHeader": "Information"
+      }
+    ],
+    "accordion": [
+      {
+        "eventKey": "0",
+        "title": "What Omsk is Like",
+        "text": "Omsk is one of the oldest cities in Siberia, founded in 1716 as a fortress. Today, Omsk is an important cultural and industrial center in Russia, known for its theaters, museums, and historic buildings.",
+        "highlights": [
+          {
+            "id": "highlight1",
+            "text": "Omsk Academic Drama Theater,",
+            "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+          },
+          {
+            "id": "highlight2",
+            "text": "Vrubel Museum,",
+            "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+          }
+        ],
+        "suffix": " as well as the Irtysh River embankments, which make Omsk attractive to tourists. The city is famous for its festivals and cultural events, attracting guests from all over the country."
+      },
+      {
+        "eventKey": "1",
+        "title": "Best Season to Visit",
+        "text": "Summer, from June to August, is the ideal time to visit Omsk, when the weather is warm and pleasant. Spring and fall are also suitable for visiting the city, with cooler weather and fewer tourists. Winter in Omsk can be harsh with its severe cold, but numerous winter festivals are held during this season.",
+        "highlights": [],
+        "suffix": ""
+      },
+      {
+        "eventKey": "2",
+        "title": "What to Pay Attention To",
+        "text": "When visiting Omsk, be sure to pay attention to such landmarks as ",
+        "highlights": [
+          {
+            "id": "highlight3",
+            "text": "Omsk Fortress,",
+            "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+          },
+          {
+            "id": "highlight4",
+            "text": "Lenin Monument,",
+            "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+          },
+          {
+            "id": "highlight5",
+            "text": "Lyubinsky Prospekt",
+            "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+          }
+        ],
+        "suffix": " and many others. We also recommend visiting the Omsk Regional Museum to learn more about the history and culture of the region."
+      }
+    ],
+    "descriptionSection": [
+      {
+        "id": "section1",
+        "prefix": "O",
+        "text": "msk is one of the largest cities in Siberia, combining historical heritage and modern development. Here you can see such architectural monuments as ",
+        "highlights": [
+          {
+            "id": "highlight1",
+            "text": "Omsk Fortress,",
+            "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+          },
+          {
+            "id": "highlight2",
+            "text": "Assumption Cathedral",
+            "className": "bg-body-secondary text-dark fst-italic px-1 me-2"
+          }
+        ],
+        "suffix": ".The city is also known for its cultural institutions such as ",
+        "moreHighlights": [
+          {
+            "id": "moreHighlight1",
+            "text": "Omsk Drama Theater,",
+            "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+          },
+          {
+            "id": "moreHighlight2",
+            "text": "Vrubel Museum,",
+            "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+          },
+          {
+            "id": "moreHighlight3",
+            "text": "Lyubinsky Prospekt.",
+            "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+          }
+        ]
+      },
+      {
+        "id": "section2",
+        "prefix": "T",
+        "text": "he city impresses with its architecture and cozy streets such as ",
+        "highlights": [
+          {
+            "id": "highlight3",
+            "text": "Karl Marx Prospekt,",
+            "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+          },
+          {
+            "id": "highlight4",
+            "text": "Lenin Street",
+            "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+          }
+        ],
+        "suffix": ".These areas of the city are full of life and offer many cafes, shops, and cultural venues."
+      },
+      {
+        "id": "section3",
+        "prefix": "T",
+        "text": "he transportation system of Omsk ensures convenient movement around the city. Special attention is drawn to transportation landmarks such as ",
+        "highlights": [
+          {
+            "id": "highlight5",
+            "text": "the Omsk Metro Museum",
+            "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+          },
+          {
+            "id": "highlight6",
+            "text": "the Left Bank Transport Hub,",
+            "className": "bg-body-secondary fst-italic text-dark px-1 me-2"
+          }
+        ],
+        "suffix": "which highlight the importance and development of the city's transportation infrastructure and make it easy to reach all the major districts of Omsk."
+      }
+    ],
+    "attractions": [
+      {
+        "name": "Omsk Drama Theater",
+        "id": 0,
+        "src": "omskDramaTheatre",
+        "description": "Omsk Drama Theater is one of the oldest theaters in Siberia, offering a wide repertoire of dramatic performances."
+      },
+      {
+        "name": "Assumption Cathedral",
+        "id": 1,
+        "src": "assumptionCathedral",
+        "description": "Assumption Cathedral is a majestic Orthodox cathedral that dominates the architecture of Omsk."
+      },
+      {
+        "name": "Omsk State Circus",
+        "id": 2,
+        "src": "omskCircus",
+        "description": "Omsk State Circus is one of the most popular entertainment venues in the city, offering spectacular shows for the whole family."
+      },
+      {
+        "name": "Vrubel Museum of Fine Arts",
+        "id": 3,
+        "src": "vrubelMuseum",
+        "description": "Vrubel Museum of Fine Arts is the largest art museum in Omsk, housing works by famous Russian artists."
+      },
+      {
+        "name": "30 Years of the Komsomol Park of Culture and Leisure",
+        "id": 4,
+        "src": "vlksmPark",
+        "description": "30 Years of the Komsomol Park of Culture and Leisure is one of the most popular parks in Omsk, offering various activities for the whole family."
+      }
+    ]
+  }
+}

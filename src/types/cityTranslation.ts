@@ -7,7 +7,7 @@ interface Header {
 interface Highlight {
   id: string;
   text: string;
-  className: string;
+  className?: string;
 }
 
 interface AccordionItem {
