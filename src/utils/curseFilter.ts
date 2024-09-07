@@ -1,9 +1,9 @@
 import Filter from 'bad-words';
 
 interface curseFilterType {
-  name?: string;
+  name: string;
   email: string;
-  description?: string;
+  description: string;
 }
 
 const curseFilter = (values: curseFilterType) => {

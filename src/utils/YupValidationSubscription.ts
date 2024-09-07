@@ -7,7 +7,8 @@ const validationSchemaSubscription = Yup.object({
     .required(i18next.t('required', { ns: 'validationTranslation' })),
   name: Yup.string()
     .required(i18next.t('required', { ns: 'validationTranslation' }))
-    .min(3, i18next.t('min', { ns: 'validationTranslation' })),
+    .min(2, i18next.t('nameMinLength', { ns: 'validationTranslation' }))
+    .max(10, i18next.t('nameMaxLength', { ns: 'validationTranslation' })),
 });
 
 export default validationSchemaSubscription;

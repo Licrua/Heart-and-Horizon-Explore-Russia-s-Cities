@@ -6,6 +6,7 @@ import filterIcon from '@images/navbar-logo/filter.webp';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import styles from '@styles/MainComponents/MainText.module.scss';
+import { memo } from 'react';
 import MainContentFilterIcon from './MainFilterIcon';
 import MainCardList from './MainCardList';
 import MainOpeningText from './MainOpeningText';
@@ -15,14 +16,20 @@ import MainQuotes from './MainQuotes';
 type MainContentListType = {
   cityEntities: City[];
 };
-function MainContentCityList({ cityEntities }: MainContentListType) {
+
+const MemoizedMainContentFilterIcon = memo(MainContentFilterIcon);
+const MemoizedMainCardList = memo(MainCardList);
+const MemoizedMainQuotes = memo(MainQuotes);
+const MemoizedMainOpeningText = memo(MainOpeningText);
+
+const MainContentCityList = memo(({ cityEntities }: MainContentListType) => {
   const { t } = useTranslation(['mainPageTranslation', 'quotesTranslation']);
 
   return (
     <Container>
       <Row>
         <Col className=" p-3  border-bottom border-dark">
-          <MainOpeningText t={t} />
+          <MemoizedMainOpeningText t={t} />
         </Col>
       </Row>
       <Row>
@@ -55,13 +62,13 @@ function MainContentCityList({ cityEntities }: MainContentListType) {
               </em>
             </p>
           </div>
-          <MainContentFilterIcon t={t} filterIcon={filterIcon} />
+          <MemoizedMainContentFilterIcon t={t} filterIcon={filterIcon} />
         </Col>
       </Row>
       <Row xs={1} md={2} className="g-4">
         {cityEntities.map((item) => (
           <Col id={`col/${item.id}`} key={item.id}>
-            <MainCardList t={t} cityItem={item} />
+            <MemoizedMainCardList t={t} cityItem={item} />
           </Col>
         ))}
       </Row>
@@ -85,11 +92,11 @@ function MainContentCityList({ cityEntities }: MainContentListType) {
       </Row>
       <Row className="border-top border-dark">
         <Col className="my-4">
-          <MainQuotes t={t} />
+          <MemoizedMainQuotes t={t} />
         </Col>
       </Row>
     </Container>
   );
-}
+});
 
 export default MainContentCityList;

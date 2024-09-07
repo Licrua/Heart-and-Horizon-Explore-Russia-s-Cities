@@ -1,16 +1,13 @@
 import routes from '@data/routesData';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { useAppDispatch } from '@store/hooks';
-import { useEffect } from 'react';
+import { useEffect, useMemo, lazy, Suspense } from 'react';
 import {
   toggleThemeSwitcher,
   setCities,
   toggleMapIconShown,
 } from '@slices/cities';
 import ScrollToTopArrow from '@components/layout/ScrollToTopArrow';
-import WelcomePageMain from '@components/routes/welcomePage/WelcomePageMain';
-import MainPage from '@components/routes/MainPage';
-import NotFound from '@components/routes/NotFound';
 import {
   useGetCitiesDataEnQuery,
   useGetCitiesDataRuQuery,
@@ -18,10 +15,18 @@ import {
 import LoadingError from '@components/loading | error/LoadingError';
 import LoadingSpinner from '@components/loading | error/LoadingSpinner';
 import SimpleLayout from '@components/layout/SimpleLayout';
-import CityMainContainer from '@components/routes/City/CityMainContainer';
 import ucFirst from '@utils/ucFirst';
 import i18n from './i18n';
 import CompleteLayout from './components/layout/CompleteLayout';
+
+const CityMainContainer = lazy(
+  () => import('@components/routes/City/CityMainContainer')
+);
+const WelcomePageMain = lazy(
+  () => import('@components/routes/welcomePage/WelcomePageMain')
+);
+const MainPage = lazy(() => import('@components/routes/MainPage'));
+const NotFound = lazy(() => import('@components/routes/NotFound'));
 
 function App() {
   const location = useLocation();
@@ -38,9 +43,16 @@ function App() {
     isLoading: isLoadingCitiesEn,
   } = useGetCitiesDataEnQuery();
 
-  const citiesRuCollection = dataCitiesRu?.record.cities;
-  const citiesEnCollection = dataCitiesEn?.record.cities;
+  const citiesRuCollection = useMemo(
+    () => dataCitiesRu?.record.cities,
+    [dataCitiesRu]
+  );
+  const citiesEnCollection = useMemo(
+    () => dataCitiesEn?.record.cities,
+    [dataCitiesEn]
+  );
   const currentLanguage = i18n.language;
+
   const isMainPageLocation = location.pathname === '/main';
 
   useEffect(() => {
@@ -71,22 +83,24 @@ function App() {
   return (
     <>
       <ScrollToTopArrow />
-      <Routes>
-        <Route element={<CompleteLayout />}>
-          <Route path="/main" element={<MainPage />} />
-          {routes.map((item) => (
-            <Route
-              key={item.id}
-              path={`/${item.path}`}
-              element={<CityMainContainer city={ucFirst(item.name)} />}
-            />
-          ))}
-        </Route>
-        <Route path="/" element={<SimpleLayout />}>
-          <Route index element={<WelcomePageMain />} />
-          <Route path="*" element={<NotFound />} />
-        </Route>
-      </Routes>
+      <Suspense fallback={<LoadingSpinner />}>
+        <Routes>
+          <Route element={<CompleteLayout />}>
+            <Route path="/main" element={<MainPage />} />
+            {routes.map((item) => (
+              <Route
+                key={item.id}
+                path={`/${item.path}`}
+                element={<CityMainContainer city={ucFirst(item.name)} />}
+              />
+            ))}
+          </Route>
+          <Route path="/" element={<SimpleLayout />}>
+            <Route index element={<WelcomePageMain />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
+      </Suspense>
     </>
   );
 }

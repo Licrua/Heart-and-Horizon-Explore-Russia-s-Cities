@@ -9,7 +9,8 @@ const validationSchemaPopUp = Yup.object({
     .required(i18next.t('required', { ns: translation })),
   description: Yup.string()
     .required(i18next.t('required', { ns: translation }))
-    .min(10, i18next.t('min', { ns: translation })),
+    .min(10, i18next.t('descriptionMinLength', { ns: translation }))
+    .max(300, i18next.t('descriptionMaxLength', { ns: translation })),
 });
 
 export default validationSchemaPopUp;

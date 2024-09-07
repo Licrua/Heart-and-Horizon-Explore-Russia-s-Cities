@@ -1,6 +1,7 @@
 import { Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { cityTypeProp } from 'types/cityComponenType';
+import { memo } from 'react';
 import CityDescHeader from './CityDescHeader';
 import CitySection from './CityDescSection';
 import CityDescContainer from './CityDescText';
@@ -17,13 +18,16 @@ function CityDesc({ city }: cityTypeProp) {
     },
   };
 
+  const MemoizedCityDescHeader = memo(CityDescHeader);
+  const MemoizedCityTextSection = memo(CityTextSection);
+
   return (
     <Row>
       <Col>
         <CitySection sectionVariant={sectionVariant}>
-          <CityDescHeader t={t} city={city} />
+          <MemoizedCityDescHeader t={t} city={city} />
           <CityDescContainer>
-            <CityTextSection t={t} city={city} />
+            <MemoizedCityTextSection t={t} city={city} />
           </CityDescContainer>
         </CitySection>
       </Col>

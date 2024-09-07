@@ -5,6 +5,7 @@ import { TFunction } from 'i18next';
 import notify from '@utils/toastifyNotify';
 import curseFilter from '@utils/curseFilter';
 import onMailSend from '@utils/emailJsService';
+import React from 'react';
 import FooterFormButton from './FooterFormButton';
 import FooterFormField from './FooterFormField';
 
@@ -12,7 +13,7 @@ type FooterFormProps = {
   t: TFunction;
 };
 
-function FooterForm({ t }: FooterFormProps) {
+const FooterForm = React.memo(({ t }: FooterFormProps) => {
   type formikValues = {
     email: string;
     name: string;
@@ -63,6 +64,6 @@ function FooterForm({ t }: FooterFormProps) {
       </Col>
     </Row>
   );
-}
+});
 
 export default FooterForm;

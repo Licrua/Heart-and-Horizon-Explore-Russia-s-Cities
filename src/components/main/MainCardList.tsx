@@ -4,18 +4,19 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { TFunction } from 'i18next';
 import styles from '@styles/MainComponents/MainText.module.scss';
+import React, { useMemo } from 'react';
 
 type cityItemProp = {
   cityItem: City;
   t: TFunction;
 };
 
-function MainCardList({ cityItem, t }: cityItemProp) {
+const MainCardList = React.memo(({ cityItem, t }: cityItemProp) => {
   const navigate = useNavigate();
   const handleClick = (value: string) => {
     navigate(`/${value}`);
   };
-  const cityRoute = cityItem.imgName.split('.')[0];
+  const cityRoute = useMemo(() => cityItem.imgName.split('.')[0], [cityItem]);
   const citiesPopulation = cityItem.population.toString();
   const citiesFoundatonDate = cityItem.foundation_date;
 
@@ -74,5 +75,5 @@ function MainCardList({ cityItem, t }: cityItemProp) {
       </Card.Body>
     </Card>
   );
-}
+});
 export default MainCardList;

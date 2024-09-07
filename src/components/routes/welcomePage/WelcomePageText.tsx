@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import { memo } from 'react';
 import WelcomePageLanguageSelector from './WelcomePageLanguageSelector';
 
 type MainGreetingTextType = {
@@ -8,12 +9,15 @@ type MainGreetingTextType = {
 };
 
 function WelcomePageText({ styles }: MainGreetingTextType) {
+  console.log('styless', styles);
+
   const { t } = useTranslation('welcomePageTranslation');
   const navigator = useNavigate();
   const onGrettingTogglerHandler = () => {
     navigator('/main');
   };
 
+  const MemoizedWelcomePageLanguageSelector = memo(WelcomePageLanguageSelector);
   return (
     <motion.div
       initial={{
@@ -32,7 +36,7 @@ function WelcomePageText({ styles }: MainGreetingTextType) {
       className={styles.content}
     >
       <h1>{t('welcome')}</h1>
-      <WelcomePageLanguageSelector />
+      <MemoizedWelcomePageLanguageSelector t={t} />
       <div className={styles.font}>
         <p>{t('greeting')}</p>
         <p>

@@ -1,6 +1,6 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import cityImagesMap from '@data/cityImagesMap';
 import { AccordionSectionPropType } from 'types/cityComponenType';
 import CityCarouselCaption from './CityCarouselCaption';
@@ -19,14 +19,18 @@ function CityCarouselItems({ t, city }: AccordionSectionPropType) {
     visible: { opacity: 1, x: 0, transition: { duration: 1 } },
   };
 
-  const cityAttractions = Object.values(
-    t(`${city}.attractions`, {
-      returnObjects: true,
-    })
-  ).map((attraction) => ({
-    ...attraction,
-    src: imagesMap[attraction.src as keyof typeof cityImagesMap],
-  }));
+  const cityAttractions = useMemo(
+    () =>
+      Object.values(
+        t(`${city}.attractions`, {
+          returnObjects: true,
+        })
+      ).map((attraction) => ({
+        ...attraction,
+        src: imagesMap[attraction.src as keyof typeof imagesMap],
+      })),
+    [city, t, imagesMap]
+  );
   return (
     <Row>
       <Col xs={12} className="my-2">

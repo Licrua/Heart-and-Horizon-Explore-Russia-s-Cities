@@ -2,12 +2,16 @@ import FooterMain from '@components/footer/FooterMain';
 import HeaderMain from '@components/header/HeaderMain';
 import { Outlet, useLocation } from 'react-router-dom';
 import routes from '@data/routesData';
+import { useMemo } from 'react';
 import NavigationButtons from './NavigationButtons';
 
 function CompleteLayout() {
   const location = useLocation();
-  const routesPath = routes.map((item) => item.path);
-  const isCityPath = routesPath.includes(location.pathname);
+  const routesPath = useMemo(() => routes.map((item) => item.path), []);
+  const isCityPath = useMemo(
+    () => routesPath.includes(location.pathname),
+    [routesPath, location.pathname]
+  );
 
   return (
     <>
