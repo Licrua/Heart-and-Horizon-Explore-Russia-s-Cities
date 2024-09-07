@@ -9,8 +9,6 @@ type MainGreetingTextType = {
 };
 
 function WelcomePageText({ styles }: MainGreetingTextType) {
-  console.log('styless', styles);
-
   const { t } = useTranslation('welcomePageTranslation');
   const navigator = useNavigate();
   const onGrettingTogglerHandler = () => {
