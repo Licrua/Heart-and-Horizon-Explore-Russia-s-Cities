@@ -1,7 +1,12 @@
+import { useAppSelector } from '@store/hooks';
 import { motion } from 'framer-motion';
-import { AccordionSectionPropType } from 'types/cityComponenType';
+import { useAccordionButton } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+// import { AccordionSectionPropType } from 'types/cityComponenType';
 
-function CityDescHeader({ t, city }: AccordionSectionPropType) {
+function CityDescHeader() {
+  const city = useAppSelector((state) => state.cities.currentCityName);
+  const { t } = useTranslation(city);
   return (
     <>
       <h1 className="text-center">{t(`${city}.title`)}</h1>

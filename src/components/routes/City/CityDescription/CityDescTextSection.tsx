@@ -1,9 +1,10 @@
-import {
-  highLightType,
-  AccordionSectionPropType,
-} from 'types/cityComponenType';
+import { useAppSelector } from '@store/hooks';
+import { useTranslation } from 'react-i18next';
+import { highLightType } from 'types/cityComponenType';
 
-function CityDescTextSection({ t, city }: AccordionSectionPropType) {
+function CityDescTextSection() {
+  const city = useAppSelector((state) => state.cities.currentCityName);
+  const { t } = useTranslation(city);
   const CityDescriptionSection = Object.values(
     t(`${city}.descriptionSection`, {
       returnObjects: true,

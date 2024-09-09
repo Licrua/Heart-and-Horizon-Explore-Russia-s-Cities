@@ -1,8 +1,12 @@
 import { Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import { AccordionSectionPropType } from 'types/cityComponenType';
+import { useTranslation } from 'react-i18next';
+import { useAppSelector } from '@store/hooks';
 
-function CityCarouselHeader({ t, city }: AccordionSectionPropType) {
+function CityCarouselHeader() {
+  const city = useAppSelector((state) => state?.cities?.currentCityName);
+  const { t } = useTranslation(city);
+
   return (
     <Row>
       <Col className="my-2" md={6}>

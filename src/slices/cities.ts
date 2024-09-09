@@ -20,6 +20,7 @@ export type citiesState = EntityState<City, number> & {
   themeColor: string;
   isMapIconShown: boolean;
   currentCityIndex: number;
+  currentCityName: string;
 };
 
 const citiesAdapter: EntityAdapter<City, number> = createEntityAdapter<City>();
@@ -30,6 +31,7 @@ const initialState: citiesState = citiesAdapter.getInitialState({
   isSorted: true,
   isMapIconShown: false,
   currentCityIndex: 0,
+  currentCityName: '',
 });
 const citiesSlice = createSlice({
   name: 'cities',
@@ -66,6 +68,9 @@ const citiesSlice = createSlice({
     setCurrentCityIndex: (state, { payload }: PayloadAction<number>) => {
       state.currentCityIndex = payload;
     },
+    setCurrentCityName: (state, { payload }: PayloadAction<string>) => {
+      state.currentCityName = payload;
+    },
   },
 });
 
@@ -76,6 +81,7 @@ export const {
   setCities,
   toggleMapIconShown,
   setCurrentCityIndex,
+  setCurrentCityName,
 } = citiesSlice.actions;
 export const {
   selectEntities,

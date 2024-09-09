@@ -1,14 +1,16 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { useState, useMemo } from 'react';
-import cityImagesMap from '@data/cityImagesMap';
-import { AccordionSectionPropType } from 'types/cityComponenType';
+import cityImagesMap, { CityImagesMapType } from '@data/cityImagesMap';
+import { useTranslation } from 'react-i18next';
+import { useAppSelector } from '@store/hooks';
+import { LoadingSpinner } from 'video-react';
 import CityCarouselCaption from './CityCarouselCaption';
 
-function CityCarouselItems({ t, city }: AccordionSectionPropType) {
+function CityCarouselItems() {
   const [index, setIndex] = useState<number>(0);
-  // @ts-expect-error can't be described in virtue of bug perhaps
-  const imagesMap = cityImagesMap[city];
+  const city = useAppSelector((state) => state?.cities?.currentCityName);
+  const { t } = useTranslation(city);
 
   const handleSelect = (selectedIndex: number) => {
     setIndex(selectedIndex);
@@ -19,18 +21,33 @@ function CityCarouselItems({ t, city }: AccordionSectionPropType) {
     visible: { opacity: 1, x: 0, transition: { duration: 1 } },
   };
 
-  const cityAttractions = useMemo(
-    () =>
-      Object.values(
-        t(`${city}.attractions`, {
-          returnObjects: true,
-        })
-      ).map((attraction) => ({
+  //   const cityAttractions = useMemo(
+  //     () =>
+  //       Object.values(
+  //         t(`${city}.attractions`, {
+  //           returnObjects: true,
+  //         })
+  //       ).map((attraction) => ({
+  //         ...attraction,
+  //         src: imagesMap[attraction.src as keyof typeof imagesMap],
+  //       })),
+  //     [city, t, imagesMap]
+  //   );
+
+  const cityAttractions = useMemo(() => {
+    const imagesMap = cityImagesMap[city as keyof CityImagesMapType] || {};
+    return Object.values(t(`${city}.attractions`, { returnObjects: true })).map(
+      (attraction) => ({
         ...attraction,
-        src: imagesMap[attraction.src as keyof typeof imagesMap],
-      })),
-    [city, t, imagesMap]
-  );
+        src: imagesMap[attraction.src as keyof typeof imagesMap] || '',
+      })
+    );
+  }, [city, t]);
+
+  if (!cityAttractions.length) {
+    return <LoadingSpinner />;
+  }
+
   return (
     <Row>
       <Col xs={12} className="my-2">

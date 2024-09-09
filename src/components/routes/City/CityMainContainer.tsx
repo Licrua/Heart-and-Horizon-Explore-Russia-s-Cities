@@ -1,7 +1,8 @@
 import { Container } from 'react-bootstrap';
-import { useAppSelector } from '@store/hooks';
+import { useAppDispatch, useAppSelector } from '@store/hooks';
 import { cityTypeProp } from 'types/cityComponenType';
-import { memo } from 'react';
+import { useEffect } from 'react';
+import { setCurrentCityName } from '@slices/cities';
 import CityAttractionCarousel from './CityCarousel/CityCarouselMain';
 import CityAccordionInfo from './CityAccordion/CityAccordionMain';
 import CityDesc from './CityDescription/CityDescMain';
@@ -10,18 +11,19 @@ function CityMainContainer({ city }: cityTypeProp) {
   const currentThemeCurrent = useAppSelector(
     (state) => state.cities.themeColor
   );
+  const dispatch = useAppDispatch();
 
-  const MemoizedCityDesc = memo(CityDesc);
-  const MemoizedCityAttractionCarousel = memo(CityAttractionCarousel);
-  const MemoizedCityAccordionInfo = memo(CityAccordionInfo);
+  useEffect(() => {
+    dispatch(setCurrentCityName(city));
+  }, [city, dispatch]);
 
   return (
     <Container
       className={currentThemeCurrent === 'black' ? 'text-white bg-black' : ''}
     >
-      <MemoizedCityDesc city={city} />
-      <MemoizedCityAttractionCarousel city={city} />
-      <MemoizedCityAccordionInfo city={city} />
+      <CityDesc />
+      <CityAttractionCarousel />
+      <CityAccordionInfo />
     </Container>
   );
 }

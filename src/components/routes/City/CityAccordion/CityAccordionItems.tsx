@@ -1,12 +1,13 @@
 import { Accordion } from 'react-bootstrap';
 import { useAppSelector } from '@store/hooks';
-import {
-  highLightType,
-  AccordionSectionPropType,
-} from 'types/cityComponenType';
+import { highLightType } from 'types/cityComponenType';
+import { useTranslation } from 'react-i18next';
 
-function CityAccordionItems({ t, city }: AccordionSectionPropType) {
+function CityAccordionItems() {
   const currentTheme = useAppSelector((state) => state.cities.themeColor);
+  const city = useAppSelector((state) => state.cities.currentCityName);
+  const { t } = useTranslation(city);
+
   const accordionData = Object?.values(
     t(`${city}.accordion`, { returnObjects: true })
   );

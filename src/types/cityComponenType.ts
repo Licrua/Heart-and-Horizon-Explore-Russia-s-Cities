@@ -1,21 +1,17 @@
-import { TFunction } from 'i18next';
 import { ReactNode } from 'react';
 
 type cityTypeProp = {
   city: string;
 };
 
-type translationTypeProp = {
-  t: TFunction;
-};
+// type translationTypeProp = {
+//   t: TFunction;
+// };
 
 type AccordionSectionChildrenPropType = {
   children: ReactNode;
-  t: TFunction;
-  city: string;
 };
 type AccordionSectionPropType = {
-  t: TFunction;
   city: string;
 };
 
@@ -35,7 +31,7 @@ interface CitySectionType {
 
 export type {
   cityTypeProp,
-  translationTypeProp,
+  //   translationTypeProp,
   AccordionSectionChildrenPropType,
   AccordionSectionPropType,
   highLightType,

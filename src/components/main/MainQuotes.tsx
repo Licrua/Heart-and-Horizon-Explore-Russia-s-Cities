@@ -1,14 +1,11 @@
-import { TFunction } from 'i18next';
 import { Card, Image, Button } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import styles from '@styles/MainComponents/MainQuotes.module.scss';
+import { useTranslation } from 'react-i18next';
 
-type MainQuotesPropType = {
-  t: TFunction;
-};
-
-function MainQuotes({ t }: MainQuotesPropType) {
+function MainQuotes() {
+  const { t } = useTranslation(['mainPageTranslation', 'quotesTranslation']);
   const quotes = Object.values(
     t('quotes.authors', { returnObjects: true, ns: 'quotesTranslation' })
   );

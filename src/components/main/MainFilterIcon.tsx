@@ -1,15 +1,15 @@
 import { City, sortItems } from '@slices/cities';
 import { useAppDispatch } from '@store/hooks';
-import { TFunction } from 'i18next';
 import { Dropdown } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 type filterIconType = {
   filterIcon: string;
-  t: TFunction;
 };
 
-function MainContentFilterIcon({ filterIcon, t }: filterIconType) {
+function MainContentFilterIcon({ filterIcon }: filterIconType) {
   const dispatch = useAppDispatch();
+  const { t } = useTranslation(['mainPageTranslation', 'quotesTranslation']);
 
   const onHandlerSort = (value: keyof City) => dispatch(sortItems(value));
 

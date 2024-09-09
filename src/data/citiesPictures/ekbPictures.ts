@@ -3,12 +3,13 @@ import vysotskyTower from '@images/citiesCarouselPictures/EkbPictures/258174376_
 import keyboardMonument from '@images/citiesCarouselPictures/EkbPictures/ekatchp-601.webp';
 import ganinaYamaMonastery from '@images/citiesCarouselPictures/EkbPictures/ganinayama.webp';
 import churchOnTheBlood from '@images/citiesCarouselPictures/EkbPictures/высокое-разреш-храм.webp';
+import { EkbPicturesType } from '@data/cityImagesMap';
 
-const kazanImagesMap = {
+const ekbImagesMap: EkbPicturesType = {
   sevastyanovsHouse,
   vysotskyTower,
   keyboardMonument,
   ganinaYamaMonastery,
   churchOnTheBlood,
 };
-export default kazanImagesMap;
+export default ekbImagesMap;

@@ -2,7 +2,6 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAppSelector } from '@store/hooks';
 import { selectEntities } from '@slices/cities';
 import citiesLogo from '@data/headerLogos/headerLogosList';
-import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
 import HeaderMainLogo from './HeaderMainLogo';
 import HeaderTheme from './HeaderThemeLogo';
@@ -19,7 +18,6 @@ function HeaderMain() {
   const MemoizedHeaderLanguageLogo = memo(HeaderLanguageLogo);
   const MemoizedHeaderCitiesList = memo(HeaderCitiesList);
   const MemoizedHeaderMapLogo = memo(HeaderMapLogo);
-  const { t } = useTranslation('headerPageTranslation');
 
   const [
     cityLogo,
@@ -40,7 +38,7 @@ function HeaderMain() {
         fluid
         className="d-flex justify-content-between align-items-center "
       >
-        <MemoizedHeaderMainLogo cityLogo={cityLogo} t={t} />
+        <MemoizedHeaderMainLogo cityLogo={cityLogo} />
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
           id="basic-navbar-nav"
@@ -51,7 +49,7 @@ function HeaderMain() {
               cities={citiesEntites}
               cityDropDownIcon={cityDropDownLogo}
             />
-            <MemoizedHeaderLanguageLogo t={t} languageLogo={languageLogo} />
+            <MemoizedHeaderLanguageLogo languageLogo={languageLogo} />
             {themeToggler && (
               <MemoizedHeaderTheme
                 themeDarkLogo={themeDarkLogo}

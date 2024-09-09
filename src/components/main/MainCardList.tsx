@@ -2,20 +2,20 @@ import { Card, ListGroup } from 'react-bootstrap';
 import { City } from '@slices/cities';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { TFunction } from 'i18next';
 import styles from '@styles/MainComponents/MainText.module.scss';
 import React, { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 
 type cityItemProp = {
   cityItem: City;
-  t: TFunction;
 };
 
-const MainCardList = React.memo(({ cityItem, t }: cityItemProp) => {
+const MainCardList = React.memo(({ cityItem }: cityItemProp) => {
   const navigate = useNavigate();
   const handleClick = (value: string) => {
     navigate(`/${value}`);
   };
+  const { t } = useTranslation(['mainPageTranslation', 'quotesTranslation']);
   const cityRoute = useMemo(() => cityItem.imgName.split('.')[0], [cityItem]);
   const citiesPopulation = cityItem.population.toString();
   const citiesFoundatonDate = cityItem.foundation_date;

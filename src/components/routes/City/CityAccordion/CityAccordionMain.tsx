@@ -1,24 +1,17 @@
 import { Accordion, Container, Row, Col } from 'react-bootstrap';
-import { useTranslation } from 'react-i18next';
-import { cityTypeProp } from 'types/cityComponenType';
-import { memo } from 'react';
 import CityAccordionItems from './CityAccordionItems';
 import AccordionSection from './CityAccordionSection';
 
-function CityAccordionMain({ city }: cityTypeProp) {
-  const { t } = useTranslation(city);
-  const MemoizedAccordionSection = memo(AccordionSection);
-  const MemoizedCityAccordionItems = memo(CityAccordionItems);
-
+function CityAccordionMain() {
   return (
     <Container>
       <Row>
         <Col>
-          <MemoizedAccordionSection city={city} t={t}>
+          <AccordionSection>
             <Accordion defaultActiveKey="0">
-              <MemoizedCityAccordionItems city={city} t={t} />
+              <CityAccordionItems />
             </Accordion>
-          </MemoizedAccordionSection>
+          </AccordionSection>
         </Col>
       </Row>
     </Container>

@@ -1,19 +1,16 @@
 import { Row, Col, Form as BootstrapForm } from 'react-bootstrap';
 import { Formik, Form } from 'formik';
 import validationSchemaSubscription from '@utils/YupValidationSubscription';
-import { TFunction } from 'i18next';
 import notify from '@utils/toastifyNotify';
 import curseFilter from '@utils/curseFilter';
 import onMailSend from '@utils/emailJsService';
-import React from 'react';
+import { useTranslation } from 'react-i18next';
 import FooterFormButton from './FooterFormButton';
 import FooterFormField from './FooterFormField';
 
-type FooterFormProps = {
-  t: TFunction;
-};
+function FooterForm() {
+  const { t } = useTranslation('footerPageTranslation');
 
-const FooterForm = React.memo(({ t }: FooterFormProps) => {
   type formikValues = {
     email: string;
     name: string;
@@ -64,6 +61,6 @@ const FooterForm = React.memo(({ t }: FooterFormProps) => {
       </Col>
     </Row>
   );
-});
+}
 
 export default FooterForm;

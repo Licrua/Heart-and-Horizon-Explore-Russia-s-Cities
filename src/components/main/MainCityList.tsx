@@ -17,10 +17,7 @@ type MainContentListType = {
   cityEntities: City[];
 };
 
-const MemoizedMainContentFilterIcon = memo(MainContentFilterIcon);
 const MemoizedMainCardList = memo(MainCardList);
-const MemoizedMainQuotes = memo(MainQuotes);
-const MemoizedMainOpeningText = memo(MainOpeningText);
 
 const MainContentCityList = memo(({ cityEntities }: MainContentListType) => {
   const { t } = useTranslation(['mainPageTranslation', 'quotesTranslation']);
@@ -29,7 +26,7 @@ const MainContentCityList = memo(({ cityEntities }: MainContentListType) => {
     <Container>
       <Row>
         <Col className=" p-3  border-bottom border-dark">
-          <MemoizedMainOpeningText t={t} />
+          <MainOpeningText />
         </Col>
       </Row>
       <Row>
@@ -62,13 +59,13 @@ const MainContentCityList = memo(({ cityEntities }: MainContentListType) => {
               </em>
             </p>
           </div>
-          <MemoizedMainContentFilterIcon t={t} filterIcon={filterIcon} />
+          <MainContentFilterIcon filterIcon={filterIcon} />
         </Col>
       </Row>
       <Row xs={1} md={2} className="g-4">
         {cityEntities.map((item) => (
           <Col id={`col/${item.id}`} key={item.id}>
-            <MemoizedMainCardList t={t} cityItem={item} />
+            <MemoizedMainCardList cityItem={item} />
           </Col>
         ))}
       </Row>
@@ -92,7 +89,7 @@ const MainContentCityList = memo(({ cityEntities }: MainContentListType) => {
       </Row>
       <Row className="border-top border-dark">
         <Col className="my-4">
-          <MemoizedMainQuotes t={t} />
+          <MainQuotes />
         </Col>
       </Row>
     </Container>

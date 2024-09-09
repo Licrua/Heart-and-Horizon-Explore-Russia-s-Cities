@@ -1,11 +1,11 @@
+import { useAppSelector } from '@store/hooks';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { AccordionSectionChildrenPropType } from 'types/cityComponenType';
 
-function AccordionSection({
-  children,
-  t,
-  city,
-}: AccordionSectionChildrenPropType) {
+function AccordionSection({ children }: AccordionSectionChildrenPropType) {
+  const city = useAppSelector((state) => state.cities.currentCityName);
+  const { t } = useTranslation(city);
   return (
     <section className="my-3 ">
       <motion.h2

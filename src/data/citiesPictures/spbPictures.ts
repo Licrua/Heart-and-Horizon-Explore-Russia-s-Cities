@@ -3,8 +3,9 @@ import lazarevBridge from '@images/citiesCarouselPictures/SpbPictures/lazarevBrd
 import nevskyProspect from '@images/citiesCarouselPictures/SpbPictures/nevskypospect.webp';
 import kazanCathedral from '@images/citiesCarouselPictures/SpbPictures/kazan_cathedral.webp';
 import spasNaKrovi from '@images/citiesCarouselPictures/SpbPictures/soborspb.webp';
+import { SpbPicturesType } from '@data/cityImagesMap';
 
-const spbImagesMap = {
+const spbImagesMap: SpbPicturesType = {
   peterhof,
   lazarevBridge,
   nevskyProspect,

@@ -1,7 +1,7 @@
 import { Navbar } from 'react-bootstrap';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { TFunction } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 type headerLogoProps = {
   cityLogo: {
@@ -9,9 +9,9 @@ type headerLogoProps = {
     id: number;
     src: string;
   };
-  t: TFunction;
 };
-function HeaderMainLogo({ cityLogo, t }: headerLogoProps) {
+function HeaderMainLogo({ cityLogo }: headerLogoProps) {
+  const { t } = useTranslation('headerPageTranslation');
   const location = useLocation();
   const navigate = useNavigate();
   const handlerOnButton = () => {

@@ -7,7 +7,7 @@ import NizhnyNovgorodPictures from '@data/citiesPictures/nizhnyNovgorod';
 import EkbPictures from '@data/citiesPictures/ekbPictures';
 import ChelyabinskPictures from '@data/citiesPictures/chelyabinskPuctures';
 
-type MoscowPictures = {
+export type MoscowPicturesType = {
   moscowCity: string;
   moscowPavilion: string;
   moscowKremlin: string;
@@ -15,7 +15,7 @@ type MoscowPictures = {
   moscowVasilBlazhSobor: string;
 };
 
-type SpbPictures = {
+export type SpbPicturesType = {
   peterhof: string;
   lazarevBridge: string;
   nevskyProspect: string;
@@ -23,7 +23,7 @@ type SpbPictures = {
   spasNaKrovi: string;
 };
 
-type KazanPictures = {
+export type KazanPicturesType = {
   kazanKremlin: string;
   kulSharifMosque: string;
   templeOfAllReligions: string;
@@ -31,7 +31,7 @@ type KazanPictures = {
   kazanFamilyCenter: string;
 };
 
-type NovosibirskPictures = {
+export type NovosibirskPicturesType = {
   akademgorodok: string;
   krasnyProspekt: string;
   novosibirskStateUniversity: string;
@@ -39,7 +39,7 @@ type NovosibirskPictures = {
   operaAndBalletTheatre: string;
 };
 
-type OmskPictures = {
+export type OmskPicturesType = {
   omskDramaTheatre: string;
   assumptionCathedral: string;
   vrubelMuseum: string;
@@ -47,7 +47,7 @@ type OmskPictures = {
   omskCircus: string;
 };
 
-type NizhnyNovgorodPictures = {
+export type NizhnyNovgorodPicturesType = {
   chkalovStaircase: string;
   bolshayaPokrovskayaStreet: string;
   verkhnevolzhskayaEmbankment: string;
@@ -55,7 +55,7 @@ type NizhnyNovgorodPictures = {
   nizhnyNovgorodKremlin: string;
 };
 
-type EkbPictures = {
+export type EkbPicturesType = {
   sevastyanovsHouse: string;
   vysotskyTower: string;
   keyboardMonument: string;
@@ -63,7 +63,7 @@ type EkbPictures = {
   churchOnTheBlood: string;
 };
 
-type ChelyabinskPictures = {
+export type ChelyabinskPicturesType = {
   alyoshaMonument: string;
   gagarinPark: string;
   kirovkaStreet: string;
@@ -71,18 +71,18 @@ type ChelyabinskPictures = {
   revolutionSquare: string;
 };
 
-type CityImagesMap = {
-  moscow: MoscowPictures;
-  spb: SpbPictures;
-  kazan: KazanPictures;
-  novosibirsk: NovosibirskPictures;
-  omsk: OmskPictures;
-  nizhnyNovgorod: NizhnyNovgorodPictures;
-  ekb: EkbPictures;
-  chelyabinsk: ChelyabinskPictures;
+export type CityImagesMapType = {
+  moscow: MoscowPicturesType;
+  spb: SpbPicturesType;
+  kazan: KazanPicturesType;
+  novosibirsk: NovosibirskPicturesType;
+  omsk: OmskPicturesType;
+  nizhnyNovgorod: NizhnyNovgorodPicturesType;
+  ekb: EkbPicturesType;
+  chelyabinsk: ChelyabinskPicturesType;
 };
 
-const cityImagesMap: CityImagesMap = {
+const cityImagesMap: CityImagesMapType = {
   moscow: MoscowPictures,
   spb: SpbPictures,
   kazan: KazanPictures,

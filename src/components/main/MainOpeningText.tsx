@@ -1,12 +1,9 @@
 import styles from '@styles/MainComponents/MainText.module.scss';
 import { motion } from 'framer-motion';
-import { TFunction } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
-type MainOpeningTextPropsType = {
-  t: TFunction;
-};
-
-function MainOpeningText({ t }: MainOpeningTextPropsType) {
+function MainOpeningText() {
+  const { t } = useTranslation(['mainPageTranslation', 'quotesTranslation']);
   const containerVariants = {
     hidden: { opacity: 0, y: '-100vh' },
     visible: {

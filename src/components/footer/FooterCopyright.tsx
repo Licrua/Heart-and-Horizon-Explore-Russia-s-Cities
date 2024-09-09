@@ -1,12 +1,8 @@
-import React from 'react'; // Ensure React is imported
-import { TFunction } from 'i18next';
 import { Col, Row } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
-type FooterCopyrightPropsType = {
-  t: TFunction;
-};
-
-const FooterCopyright = React.memo(({ t }: FooterCopyrightPropsType) => {
+function FooterCopyright() {
+  const { t } = useTranslation('footerPageTranslation');
   return (
     <Row>
       <Col className="d-flex w-100 justify-content-center">
@@ -14,6 +10,6 @@ const FooterCopyright = React.memo(({ t }: FooterCopyrightPropsType) => {
       </Col>
     </Row>
   );
-});
+}
 
 export default FooterCopyright;

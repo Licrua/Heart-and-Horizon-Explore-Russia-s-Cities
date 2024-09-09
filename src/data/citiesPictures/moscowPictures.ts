@@ -3,8 +3,9 @@ import moscowPavilion from '@images/citiesCarouselPictures/MoscowPictures/pavili
 import moscowKremlin from '@images/citiesCarouselPictures/MoscowPictures/kremlin.webp';
 import moscowUniversity from '@images/citiesCarouselPictures/MoscowPictures/Main_MGU_building.webp';
 import moscowVasilBlazhSobor from '@images/citiesCarouselPictures/MoscowPictures/soborVasilya.webp';
+import { MoscowPicturesType } from '@data/cityImagesMap';
 
-const moscowImagesMap = {
+const moscowImagesMap: MoscowPicturesType = {
   moscowCity,
   moscowPavilion,
   moscowKremlin,

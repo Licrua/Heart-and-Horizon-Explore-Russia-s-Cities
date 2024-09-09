@@ -1,7 +1,7 @@
 import { NavDropdown } from 'react-bootstrap';
 import setLanguage from '@utils/setLanguage';
-import { TFunction } from 'i18next';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 type languageLogoProp = {
   languageLogo: {
@@ -9,10 +9,10 @@ type languageLogoProp = {
     id: number;
     alt: string;
   };
-  t: TFunction;
 };
 
-function HeaderLanguageLogo({ languageLogo, t }: languageLogoProp) {
+function HeaderLanguageLogo({ languageLogo }: languageLogoProp) {
+  const { t } = useTranslation('headerPageTranslation');
   return (
     <NavDropdown
       align="end"
