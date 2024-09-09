@@ -21,19 +21,6 @@ function CityCarouselItems() {
     visible: { opacity: 1, x: 0, transition: { duration: 1 } },
   };
 
-  //   const cityAttractions = useMemo(
-  //     () =>
-  //       Object.values(
-  //         t(`${city}.attractions`, {
-  //           returnObjects: true,
-  //         })
-  //       ).map((attraction) => ({
-  //         ...attraction,
-  //         src: imagesMap[attraction.src as keyof typeof imagesMap],
-  //       })),
-  //     [city, t, imagesMap]
-  //   );
-
   const cityAttractions = useMemo(() => {
     const imagesMap = cityImagesMap[city as keyof CityImagesMapType] || {};
     return Object.values(t(`${city}.attractions`, { returnObjects: true })).map(
@@ -43,6 +30,8 @@ function CityCarouselItems() {
       })
     );
   }, [city, t]);
+
+
 
   if (!cityAttractions.length) {
     return <LoadingSpinner />;
