@@ -6,10 +6,10 @@ import Modal from 'react-bootstrap/Modal';
 import { motion } from 'framer-motion';
 import { Formik, Field, Form as FormikForm, ErrorMessage } from 'formik';
 import notify from '@utils/toastifyNotify';
-import validationSchemaPopUp from '@utils/YupValidationPopUp';
 import curseFilter from '@utils/curseFilter';
 import onMailSend from '@utils/emailJsService';
 import { useTranslation } from 'react-i18next';
+import * as Yup from 'yup';
 
 function FooterPopUpReccomendation() {
   const [show, setShow] = useState(false);
@@ -29,6 +29,16 @@ function FooterPopUpReccomendation() {
       notify('error');
     }
   };
+
+  const validationSchemaPopUp = Yup.object({
+    email: Yup.string()
+      .email(t('footer.validationFooter.email'))
+      .required(t('footer.validationFooter.required')),
+    description: Yup.string()
+      .required(t('footer.validationFooter.required'))
+      .min(10, t('footer.validationFooter.descriptionMinLength'))
+      .max(300, t('footer.validationFooter.descriptionMaxLength')),
+  });
 
   return (
     <Row>

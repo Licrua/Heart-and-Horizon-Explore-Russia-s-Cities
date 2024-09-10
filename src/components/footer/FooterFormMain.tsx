@@ -1,10 +1,10 @@
 import { Row, Col, Form as BootstrapForm } from 'react-bootstrap';
 import { Formik, Form } from 'formik';
-import validationSchemaSubscription from '@utils/YupValidationSubscription';
 import notify from '@utils/toastifyNotify';
 import curseFilter from '@utils/curseFilter';
 import onMailSend from '@utils/emailJsService';
 import { useTranslation } from 'react-i18next';
+import * as Yup from 'yup';
 import FooterFormButton from './FooterFormButton';
 import FooterFormField from './FooterFormField';
 
@@ -15,6 +15,16 @@ function FooterForm() {
     email: string;
     name: string;
   };
+
+  const validationSchemaSubscription = Yup.object({
+    email: Yup.string()
+      .email(t('footer.validationFooter.email'))
+      .required(t('footer.validationTranslation.required')),
+    name: Yup.string()
+      .required(t('footer.validationFooter.required'))
+      .min(2, t('footer.validationFooter.nameMinLength'))
+      .max(10, t('footer.validationFooter.nameMaxLength')),
+  });
 
   return (
     <Row>

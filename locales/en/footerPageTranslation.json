@@ -13,6 +13,14 @@
     "closeButton": "Close",
     "saveButton": "Save and Send",
 	"successNotify": "Form has been sent successfully. Have a nice time!",
-	"errorNotify": "Opps! Something wents wrong. Try again later."
+	"errorNotify": "Opps! Something wents wrong. Try again later.",
+	"validationFooter": {
+	"email": "Invalid email address",
+	"required": "This field is required",
+	"nameMinLength": "Must be at least 2 characters",
+	"nameMaxLength": "Must be no more than 10 characters",
+	"descriptionMinLength": "Must be at least 10 characters",
+	"descriptionMaxLength": "Must be no more than 300 characters"
+}
   }
 }

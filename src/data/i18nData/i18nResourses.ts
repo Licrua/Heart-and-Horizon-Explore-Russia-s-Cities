@@ -6,8 +6,6 @@ import headerPageTranslationEn from '@locales/en/headerPageTranslation.json';
 import headerPageTranslationRu from '@locales/ru/headerPageTranslation.json';
 import footerPageTranslationEn from '@locales/en/footerPageTranslation.json';
 import footerPageTranslationRu from '@locales/ru/footerPageTranslation.json';
-import validationTranslationEn from '@locales/en/validationTranslation.json';
-import validationTranslationRu from '@locales/ru/validationTranslation.json';
 import moscowTranslationEn from '@locales/en/citiesTranslation/moscow.json';
 import moscowTranslationRu from '@locales/ru/citiesTranslation/moscow.json';
 import spbTranslationEn from '@locales/en/citiesTranslation/spb.json';
@@ -39,7 +37,6 @@ const resources: { [lang: string]: LocalesTranslation } = {
     mainPageTranslation: mainPageTranslationEn,
     headerPageTranslation: headerPageTranslationEn,
     footerPageTranslation: footerPageTranslationEn,
-    validationTranslation: validationTranslationEn,
     moscow: moscowTranslationEn,
     spb: spbTranslationEn,
     quotesTranslation: quotesTranslationEn,
@@ -57,7 +54,6 @@ const resources: { [lang: string]: LocalesTranslation } = {
     mainPageTranslation: mainPageTranslationRu,
     headerPageTranslation: headerPageTranslationRu,
     footerPageTranslation: footerPageTranslationRu,
-    validationTranslation: validationTranslationRu,
     moscow: moscowTranslationRu,
     spb: spbTranslationRu,
     quotesTranslation: quotesTranslationRu,

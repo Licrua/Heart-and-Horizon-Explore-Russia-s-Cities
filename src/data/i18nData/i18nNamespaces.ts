@@ -4,7 +4,6 @@ const namespaces: string[] = [
   'headerPageTranslation',
   'footerPageTranslation',
   'notifyTranslation',
-  'validationTranslation',
   'moscow',
   'spb',
   'quotesTranslation',
