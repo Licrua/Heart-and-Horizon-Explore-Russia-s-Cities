@@ -1,4 +1,5 @@
-# Heart and Horizon - Explore Russia's Cities(https://russian-cities-project-2.onrender.com/)
+# Heart and Horizon - Explore Russia's Cities
+**Посмотреть проект в онлайне - https://russian-cities-project-2.onrender.com/**
 
 ## Описание
 
